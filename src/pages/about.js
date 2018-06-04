@@ -6,8 +6,7 @@ export default ({ data }) =>
         About {data.site.siteMetadata.title}
         </h1>
     <p>
-      We're the only site running on your computer dedicated to showing the best
-      photos and videos of pandas eating lots of food.
+      This is the paragraph value.
     </p>
   </div>
 

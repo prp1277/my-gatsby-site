@@ -19,6 +19,7 @@ A business analyst interested in using technology to improve efficiencies and au
 * Purchased 221 Products from 22 vendors, managed inventory levels and communications between vendors, a centralized repurchasing team, sales representatives and customers
 
 ## State Street
+
  **Client Operations - Associate II - Consultant** (February 2017 - August 2017)
 * Participated in a daily work-flow to maintain the general ledger for a family of mutual funds
 * Documented procedures for processing transactions, journal entries and validating data between sources
