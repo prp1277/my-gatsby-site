@@ -35,6 +35,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+node_modules
+public
 
 # Typescript v1 declaration files
 typings/
@@ -60,3 +62,5 @@ typings/
 .cache/
 public
 yarn-error.log
+.cache
+.vscode
