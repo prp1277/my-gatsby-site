@@ -1,0 +1,2 @@
+webpackJsonp([0xf927f8900006],{359:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Fake News!",author:"Patrick Powell",description:"My Personal and Professional Blog"}}},pathContext:{}}}});
+//# sourceMappingURL=path---about-04d0697fe8745218e1aa.js.map
