@@ -14,21 +14,12 @@ export default ({ data })=> {
                       <th>Created</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {data.allFile.edges.map(({ node }, index) =>
+                <tbody>{data.allFile.edges.map(({ node }, index) =>
                     <tr key={index}>
-                    <td>
-                        {node.publicURL}
-                     </td>
-                     <td>
-                        {node.base}
-                     </td>
-                     <td>
-                         {node.sourceInstanceName}
-                         </td>
-                    <td>
-                        {node.birthTime}
-                        </td>
+                      <td>https://prp1277.github.io{node.publicURL}</td>
+                      <td>{node.base}</td>
+                      <td>{node.sourceInstanceName}</td>
+                      <td>{node.birthTime}</td>
                     </tr>
                     )}
                 </tbody>

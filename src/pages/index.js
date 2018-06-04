@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <div style={{  margin: `1rem auto`, maxWidth:750 }}>
       <g.H1 display={"inline-block"}>
-        [Welcome to My Blog]()
+        Welcome to My Blog!
       </g.H1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
