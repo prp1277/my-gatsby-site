@@ -21,6 +21,3 @@ module.exports = {
       },  
   ]
 }
-{
-  pathPrefix: "/prp1277.github.io"
-}
