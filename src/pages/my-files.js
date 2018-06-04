@@ -8,19 +8,27 @@ export default ({ data })=> {
           <table>
               <thead>
                   <tr>
-                      <th>Path</th>
-                      <th>Date/Time</th>
+                      <th>Public URL</th>
+                      <th>Name</th>
+                      <th>Source</th>
+                      <th>Created</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.allFile.edges.map(({ node }, index) =>
                     <tr key={index}>
                     <td>
-                        {node.relativePath}
+                        {node.publicURL}
                      </td>
                      <td>
-                        {node.ctime}
+                        {node.base}
                      </td>
+                     <td>
+                         {node.sourceInstanceName}
+                         </td>
+                    <td>
+                        {node.birthTime}
+                        </td>
                     </tr>
                     )}
                 </tbody>
@@ -33,9 +41,8 @@ export const query = graphql`
       allFile{
           edges {
               node {
-                  name
-                  ctime
-                  relativePath
+                  publicURL
+                  base
                   sourceInstanceName
                   birthTime(fromNow: true)
               }

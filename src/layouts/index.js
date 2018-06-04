@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
-//This index.js is site-wide navhar doesnt change
+
+import Container from "../components/container";
+//This index.js is site-wide navbar doesn't change
+
 const ListLink = props =>
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>
@@ -8,11 +11,12 @@ const ListLink = props =>
     </Link>
   </li>
 
-export default ({ children }) =>
-  <div style={{ margin: `0 auto`, maxWidth:`0 auto`, padding: `1.25rem 1rem` }}>
-    <header style={{ marginBottom: `1.5rem` }}>
+export default ({ children }) => (
+  <Container>
+  <div style={{ margin: `0 auto`, maxWidth:`0 auto`, padding: `1rem 1rem` }}>
+    <header style={{ marginBottom: `1rem` }}>
       <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h1 style={{ display: `inline` }}>Fake News!</h1>
+        <h1 style={{ display: `inline-block` }}>Fake News!</h1>
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <ListLink to="/">Home</ListLink>
@@ -23,3 +27,5 @@ export default ({ children }) =>
     </header>
     {children()}
   </div>
+  </Container>
+);

@@ -2,6 +2,9 @@ module.exports = {
     siteMetadata: {
         title: 'Fake News!',
         author: "Patrick Powell",
+          Phone: "14024159083",
+          Email: "prp1277@gmail.com",
+          LinkedIn: "https://Linkedin.com/in/prpowell1277",
         siteUrl: `https://prp1277.github.io`,
         description: `My Personal Blog`
     },

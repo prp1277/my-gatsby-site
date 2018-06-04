@@ -1,8 +1,14 @@
 import React from "react";
+import Link from "gatsby-link";
+
+import Container from "../components/container";
 
 export default () => (
+  <Container>
   <div>
-    <h1>[Contact Info](You should put a link here)</h1>
+    <h1 style={{ display: `center`, alignContent: "text-center" }}>
+    Get In Touch!
+     </h1>
       <p><a href="mailto:prp1277@gmail.com">Prp1277@gmail.com</a>
        </p>
    
@@ -18,4 +24,5 @@ export default () => (
       <p><a href="https://prp1277.github.io/resume/">Resume</a>
        </p>
   </div>
+  </Container>
 );

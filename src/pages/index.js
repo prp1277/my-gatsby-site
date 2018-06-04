@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography";
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <div style={{  margin: `1rem auto`, maxWidth:750 }}>
       <g.H1 display={"inline-block"}>
         [Welcome to My Blog]()
       </g.H1>
