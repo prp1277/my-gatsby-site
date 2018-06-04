@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <div>
       <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Amazing Pandas Eating Things
+        Welcome to My Blog
       </g.H1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -20,7 +20,7 @@ export default ({ data }) => {
         >
           <g.H3 marginBottom={rhythm(1 / 4)}>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
+            <g.Span color="#0000FF">— {node.frontmatter.date}</g.Span>
           </g.H3>
           <p>{node.excerpt}
           </p>
