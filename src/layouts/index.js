@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-//This index.js is site-wide
+//This index.js is site-wide navhar doesnt change
 const ListLink = props =>
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>

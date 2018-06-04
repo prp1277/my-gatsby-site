@@ -2,7 +2,7 @@ import React from "react";
 
 export default () => (
   <div>
-    <h1>Contact Info</h1>
+    <h1>[Contact Info](You should put a link here)</h1>
       <p><a href="mailto:prp1277@gmail.com">Prp1277@gmail.com</a>
        </p>
    
