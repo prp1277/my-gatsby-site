@@ -1,11 +1,5 @@
 ---
-title: "trial"
+title: "Trial"
 date: "2018-06-03"
 ---
-# Testing
-
-## 1
-
-### 2
-
-#### 3
+# Post 1: The Trial

@@ -8,10 +8,8 @@ export default ({ data })=> {
           <table>
               <thead>
                   <tr>
-                      <th>relativePath</th>
-                      <th>prettySize</th>
-                      <th>extension</th>
-                      <th>birthTime</th>
+                      <th>Path</th>
+                      <th>Date/Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -19,16 +17,10 @@ export default ({ data })=> {
                     <tr key={index}>
                     <td>
                         {node.relativePath}
-                    </td>
-                    <td>
-                        {node.prettySize}
-                    </td>
-                    <td>
-                        {node.extension}
-                    </td>
-                    <td>
-                        {node.birthTime}
-                        </td>
+                     </td>
+                     <td>
+                        {node.ctime}
+                     </td>
                     </tr>
                     )}
                 </tbody>
@@ -41,9 +33,10 @@ export const query = graphql`
       allFile{
           edges {
               node {
+                  name
+                  ctime
                   relativePath
-                  prettySize
-                  extension
+                  sourceInstanceName
                   birthTime(fromNow: true)
               }
           }
