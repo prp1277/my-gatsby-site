@@ -1,10 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import Container from "../components/container";
+import container from "./components/container";
 
 export default () => (
-  <Container>
   <div>
     <h1 style={{ display: `center`, alignContent: "text-center" }}>
     Get In Touch!
@@ -24,5 +23,4 @@ export default () => (
       <p><a href="https://prp1277.github.io/resume/">Resume</a>
        </p>
   </div>
-  </Container>
 );
