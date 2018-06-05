@@ -4,7 +4,9 @@ layout: page
 permalink: /resume/
 tags: [Resume, Markdown, post_url, link]
 ---
- [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
+# Patrick Powell | Business Analyst
+
+[Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
 
 A business analyst interested in using technology to improve efficiencies and automate processes.
 

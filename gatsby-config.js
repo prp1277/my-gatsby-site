@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Fake News!',
+    title: 'Fake News',
     author: `Patrick Powell`,
     description: `My Personal and Professional Blog`,
   },
@@ -9,17 +9,19 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-      {resolve:`gatsby-transformer-remark`,
-       options: {
-        plugins: [`gatsby-remark-responsive-iframe`]
+      {
+        resolve:`gatsby-transformer-remark`,
+        options: {
+         plugins: [`gatsby-remark-responsive-iframe`]
       },
     },
     `gatsby-plugin-glamor`,
-    {resolve: `gatsby-source-filesystem`,
+    {
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: "src",
         path: `${__dirname}/src/`,
-          }
+          },
     },
     {resolve: `gatsby-plugin-typography`,
        options: {
