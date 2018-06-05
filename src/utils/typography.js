@@ -1,7 +1,7 @@
 import Typography from "typography";
-import GithubTheme from "typography-theme-Github";
+import githubTheme from "typography-theme-github";
 //import bootstrapTheme from "typography-theme-bootstrap"
 
-const typography = new Typography(GithubTheme);
+const typography = new Typography(githubTheme);
 
 export default typography;
