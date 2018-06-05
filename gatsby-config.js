@@ -12,7 +12,8 @@ module.exports = {
       {resolve:`gatsby-transformer-remark`,
        options: {
         plugins: [`gatsby-remark-responsive-iframe`]
-      }}
+      },
+    },
     `gatsby-plugin-glamor`,
     {resolve: `gatsby-source-filesystem`,
       options: {
