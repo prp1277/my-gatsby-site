@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import Container from "../components/container";
+import container from "../components/container";
 //This index.js is site-wide navbar doesn't change
 
 const ListLink = props =>
@@ -16,7 +16,6 @@ const ListLink = props =>
   </li>
 
 export default ({ children }) => (
-  <Container>
   <div style={{ 
     margin: `0 auto`, 
     maxWidth:`0 auto`, 
@@ -53,5 +52,4 @@ export default ({ children }) => (
     </header>
     {children()}
   </div>
-  </Container>
 );
