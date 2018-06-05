@@ -27,9 +27,10 @@ export default ({ data })=> {
         </div>
     )
 }
+
 export const query = graphql`
   query MyFilesQuery {
-      allFile{
+      allFile {
           edges {
               node {
                   publicURL
