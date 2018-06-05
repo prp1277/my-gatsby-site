@@ -4,10 +4,11 @@ import Link from "gatsby-link"
 
 import { rhythm } from "../utils/typography";
 //This is the index.js that controls what pages look like
+
 export default ({ data }) => {
   console.log(data);
   return (
-    <div style={{  margin: `1rem auto`, maxWidth:750 }}>
+    <div>
       <g.H1 display={"inline-block"}>
         Welcome to My Blog!
       </g.H1>

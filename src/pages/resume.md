@@ -1,11 +1,8 @@
 ---
 title: Patrick Powell | Business Analyst
-layout: page
-permalink: /resume/
+date: "2018-05-29"
 tags: [Resume, Markdown, post_url, link]
 ---
-# Patrick Powell | Business Analyst
-
 [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
 
 A business analyst interested in using technology to improve efficiencies and automate processes.

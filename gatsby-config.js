@@ -21,13 +21,13 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: "prp1277.github.io",
-        path: `${__dirname}/source/`,
+        path: `${__dirname}/src/`,
           },
     },
     {
       resolve: 'gatsby-plugin-typography',
        options: {
-         pathToConfigModule: '/source/utils/typography',
+         pathToConfigModule: '/src/utils/typography',
           },
       },  
   ]
