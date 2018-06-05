@@ -5,9 +5,9 @@ export default ({ data }) =>
     <h1>
     About  {data.site.siteMetadata.title}
      </h1>
-       <p>
-        Paragraph
-        </p>
+     <p>
+       This is version 2.0 of my personal website using Gatsby.js and React.
+     </p>
   </div>
 
 export const query = graphql`

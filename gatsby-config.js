@@ -6,7 +6,13 @@ module.exports = {
   },
   
   plugins: [
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+      {resolve:`gatsby-transformer-remark`,
+       options: {
+        plugins: [`gatsby-remark-responsive-iframe`]
+      }}
     `gatsby-plugin-glamor`,
     {resolve: `gatsby-source-filesystem`,
       options: {
