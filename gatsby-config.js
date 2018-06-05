@@ -3,29 +3,31 @@ module.exports = {
     title: 'Fake News',
     author: `Patrick Powell`,
     description: `My Personal and Professional Blog`,
+    pages: ['about', 'contact', 'my-files', 'resume']
   },
   
   plugins: [
-    `gatsby-plugin-offline`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
       {
-        resolve:`gatsby-transformer-remark`,
+        resolve:'gatsby-transformer-remark',
         options: {
-         plugins: [`gatsby-remark-responsive-iframe`]
+         plugins: ['gatsby-remark-responsive-iframe']
       },
     },
-    `gatsby-plugin-glamor`,
+    'gatsby-plugin-glamor',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: "src",
         path: `${__dirname}/src/`,
           },
     },
-    {resolve: `gatsby-plugin-typography`,
+    {
+      resolve: 'gatsby-plugin-typography',
        options: {
-         pathToConfigModule: `src/utils/typography`,
+         pathToConfigModule: 'src/utils/typography',
           },
       },  
   ]
