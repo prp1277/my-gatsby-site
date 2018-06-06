@@ -9,6 +9,8 @@ export default ({ data })=> {
               <thead>
                   <tr>
                       <th>Public URL</th>
+                      <th>Relative Path</th>
+                      <th>Relative Directory</th>
                       <th>Name</th>
                       <th>Source</th>
                       <th>Created</th>
@@ -17,6 +19,8 @@ export default ({ data })=> {
                 <tbody>{data.allFile.edges.map(({ node }, index) =>
                     <tr key={index}>
                       <td>https://prp1277.github.io{node.publicURL}</td>
+                      <td>{node.relativePath}</td>
+                      <td>{node.relativeDirectory}</td>
                       <td>{node.base}</td>
                       <td>{node.sourceInstanceName}</td>
                       <td>{node.birthTime}</td>
@@ -34,6 +38,8 @@ export const query = graphql`
           edges {
               node {
                   publicURL
+                  relativePath
+                  relativeDirectory
                   base
                   sourceInstanceName
                   birthTime(fromNow: true)

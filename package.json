@@ -9,6 +9,7 @@
     "serve": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "gatsby": "^1.9.250",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.40",
