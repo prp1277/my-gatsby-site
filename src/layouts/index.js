@@ -1,56 +1,30 @@
 import React from "react";
-import g from "glamorous";
 import Link from "gatsby-link";
 
-import { rhythm } from "../utils/typography";
+import Container from "../components/container"
 
-export default ({ data }) => {
-  return (
-    <div>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Welcome to my Blog
-      </g.H1>
-      <h4>
-        {data.allMarkdownRemark.totalCount} Posts
-      </h4>
-      {data.allMarkdownRemark.edges.map(({ node }) =>
-        <div key={node.id}>
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: `none`, color: `inherit` }}
-          >
+const ListLink = props =>
+  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <Link to={props.to}>
+      {props.children}
+    </Link>
+  </li>
 
-            <g.H3 marginBottom={rhythm(1 / 4)}>
-              {node.frontmatter.title}{" "}
-              <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-            </g.H3>
-            <p>
-              {node.excerpt}
-            </p>
-          </Link>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export const query = graphql`
-  query LayoutQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
+export default ({ children }) => (
+  <Container>
+  <div style={{ margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
+    <header style={{ marginBottom: `1.5rem` }}>
+      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+        <h1 style={{ display: `inline` }}>Fake News!</h1>
+      </Link>
+      <ul style={{ listStyle: `none`, float: `right` }}>
+        <ListLink to="/">Home</ListLink>
+        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/resume/">CV</ListLink>
+        <ListLink to="/contact/">Contact</ListLink>
+      </ul>
+    </header>
+    {children()}
+  </div>
+  </Container>
+);
