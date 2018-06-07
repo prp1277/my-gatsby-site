@@ -16,6 +16,20 @@ module.exports = {
      plugins: ["gatsby-remark-responsive-iframe"]
     },
   },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `img`,
+      path: `${__dirname}/src/img`,
+    },
+  },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `data`,
+      path: `${__dirname}/src/data`,
+    },
+  },
   "gatsby-plugin-glamor",
     {
       resolve: "gatsby-source-filesystem",

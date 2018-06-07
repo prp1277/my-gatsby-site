@@ -9,7 +9,6 @@ export default ({ data }) =>
      <h3>
        Hi, my name is Patrick Powell and I wish I knew how to put a picture here!
      </h3>
-     <Img resolutions={data.file.childImageSharp.resolutions}/>
      <p>
        This is version 2.0 of my personal website. Things didn't go great on version 1.0 using Jekyll and Github pages, 
        so I figured I'd further complicate things and learn another language to make this one work a little bit better. 
@@ -40,16 +39,3 @@ export const query = graphql`
       }
   }
 `
-export const query = graphql`
-  query GatsbyImageSampleQuery {
-    file(relativePath: { eq: "src/img/LinkedIn.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        resolutions(width: 125, height: 125) {
-          ...GatsbyImageSharpResolutions
-        }
-      }
-    }
-  }
-`;
