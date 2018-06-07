@@ -11,7 +11,7 @@ export default ({ data }) => {
       <g.H1 display={"inline-block"}
       >Welcome To My Blog!
       </g.H1>
-      <h4>{data.allMarkdownRemark.totalCount}  Posts</h4>
+      <h4>{data.allMarkdownRemark.totalCount}  Posts and Counting</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <Link

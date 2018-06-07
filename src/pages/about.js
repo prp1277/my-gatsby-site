@@ -8,7 +8,7 @@ export default ({ data }) =>
      <h3>
        Hi, my name is Patrick Powell and I wish I knew how to put a picture here!
      </h3>
-     <a href="https://prp1277.github.io/img/LinkedIn.jpg"><img src="/img/LinkedIn.jpg" alt="LinkedIn Picture"></img></a>
+     <a><img src="/img/LinkedIn.jpg" alt="LinkedIn Picture"></img></a>
      <p>
        This is version 2.0 of my personal website. Things didn't go great on version 1.0 using Jekyll and Github pages, 
        so I figured I'd further complicate things and learn another language to make this one work a little bit better. 
