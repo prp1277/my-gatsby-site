@@ -5,7 +5,7 @@ import React from "react";
 
 export default ({children}) => (
 <div style={{ 
-    backgroundColor: "#B6B6B4",
+    backgroundColor: "#FFFFFF",
     margin: ".5rem auto", 
     maxWidth:"750", 
     color: "black" }}>
