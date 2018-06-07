@@ -6,13 +6,7 @@ date: "2018-06-03"
 https://github.com/prp1277/prp1277.github.io/
 
 # Netflify URL:
-https://prp1277-gh.netlify.com/
-
-# Github-Pages URL:
-https://prp1277.github.io
-
-## Build Command
-`Gatsby Build`
+https://prp1277.netlify.com/
 
 ### [Helpful Links](https://github.com/prp1277/lib)
 
