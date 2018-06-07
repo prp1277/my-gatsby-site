@@ -2,8 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 
 export default () => (
-  <div>
-    <h1 style={{ display: "text-center", alignContent: "text-center" }}>
+  <div style={{ alignItems: "center" }}>
+  <h1>
     Get In Touch!
      </h1>
       <p><a href="mailto:prp1277@gmail.com">Prp1277@gmail.com</a></p>

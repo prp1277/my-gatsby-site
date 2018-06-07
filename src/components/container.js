@@ -5,8 +5,9 @@ import React from "react";
 
 export default ({children}) => (
 <div style={{ 
-    margin: "1rem auto", 
-    maxWidth:750, 
+    backgroundColor: "#B6B6B4",
+    margin: ".5rem auto", 
+    maxWidth:"750", 
     color: "black" }}>
 {children}
 </div>

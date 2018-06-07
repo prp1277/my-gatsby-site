@@ -8,22 +8,21 @@ export default ({ data }) => {
   console.log(data);
   return (
     <div>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Welcome To My Blog!
+      <g.H1 display={"inline-block"}
+      >Welcome To My Blog!
       </g.H1>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h4>{data.allMarkdownRemark.totalCount}  Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
+      <div key={node.id}>
         <Link
         to={node.fields.slug}
-        css={{ textDecoration: `none`, color: `inherit`}}
-        >
+        css={{ textDecoration: `none`, color: `inherit` }}>
           <g.H3 marginBottom={rhythm(1 / 4)}>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-          </g.H3>
-          <p>{node.excerpt}
-          </p>
+            <g.Span color="#BBB"
+            >— {node.frontmatter.date}</g.Span>
+            </g.H3>
+          <p>{node.excerpt}</p>
           </Link>
         </div>
       ))}
@@ -33,7 +32,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark (sort: 
+    allMarkdownRemark (sort:
     {fields: [frontmatter___date], order: DESC})
     {
       totalCount
