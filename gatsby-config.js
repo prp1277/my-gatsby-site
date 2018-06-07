@@ -13,7 +13,14 @@ module.exports = {
   {
     resolve:"gatsby-transformer-remark",
     options: {
-     plugins: ["gatsby-remark-responsive-iframe"]
+     plugins: [
+       {
+       Resolve: "gatsby-remark-images",
+         options: {
+           maxWidth: 590,
+         }
+        }
+      ]
     },
   },
   "gatsby-plugin-glamor",
