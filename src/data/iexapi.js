@@ -2,8 +2,6 @@
 
 import react from "react";
 
-import {{ Ticker }} from "./assets/iexSymbols"
-
 export class Home extends React.Component {
     constructor(props) {
         super(props);

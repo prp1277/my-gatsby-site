@@ -1,0 +1,2 @@
+GET https://api.iextrading.com/1.0/stock/market/batch?symbols= {{ Ticker }}
+ &types=chart HTTP/1.1

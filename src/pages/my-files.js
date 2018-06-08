@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 
 export default ({ data })=> {
     console.log(data)
@@ -11,7 +12,7 @@ export default ({ data })=> {
           <table>
               <thead>
                   <tr>
-                      <th>Source</th>
+                      <th>Local Folder Name</th>
                       <th>Relative Path</th>
                       <th>Public URL</th>
                       <th>Created</th>
@@ -21,7 +22,7 @@ export default ({ data })=> {
                     <tr key={index}>
                       <td>{node.sourceInstanceName}</td>
                       <td>{node.relativePath}</td>
-                      <td>{node.publicURL}</td>
+                      <td>https://prp1277.netlifly.com{node.publicURL}</td>
                       <td>{node.birthTime}</td>
                     </tr>
                     )}
