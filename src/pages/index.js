@@ -16,7 +16,7 @@ export default ({ data }) => {
       <div key={node.id}>
         <Link
         to={node.fields.slug}
-        css={{ textDecoration: `none`, color: `inherit` }}>
+        css={{ textDecoration: `none`, color: `black` }}>
           <g.H3 marginBottom={rhythm(1 / 4)}>
             {node.frontmatter.title}{" "}
             <g.Span color="#BBB"

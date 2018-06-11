@@ -15,7 +15,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
-  return new Promise((resolve,reject) => {
+  return new Promise((resolve,reject) => { //create pages is a function? arguments are graphql and boundActionCreators? query is a string
     graphql(`
       {
         allMarkdownRemark {
