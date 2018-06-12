@@ -1,14 +1,17 @@
 import React from "react";
 
 //Should probably be called post container
-//This controls the actual blog post text and margin
+//This controls the actual blog post content
 
 export default ({children}) => (
 <div style={{ 
-    backgroundColor: "#FFFFFF",
-    margin: ".5rem auto", 
-    maxWidth:"750", 
-    color: "black" }}>
+    display: "block",
+    color: "black",
+    margin: `auto`,
+    width: `75%`,
+    minHeight: 500,
+    marginBottom: `0px`
+}}>
 {children}
 </div>
 );

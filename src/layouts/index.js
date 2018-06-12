@@ -1,32 +1,67 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import Container from "../components/container"
-
 //This should probably be called Nav
 //4 Links in the top right -> ListLink is variable name
-const ListLink = props =>
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+const ListLink = props =>  
+  <li style={{ 
+    display: `inline-block`, 
+    marginRight: `1rem`,
+    marginLeft: `1rem`,
+    }}>
     <Link to={props.to}>
     {props.children}</Link>
   </li>
 
 //Header styling and usability using ListLink as a variable
 //props.children = {children()} -> 
-export default ({ children }) => (
-  <Container>
-  <header style={{ marginBottom: "0px", textDecoration: "none" }}>
-     <Link to="/" style={{textShadow: "none", backgroundImage: "none", textDecoration: "none" }}>
-     <h1 style={{ display: "inline", textDecorationLine: "none", color: "black" }}>Fake News!</h1>
+//Container is the component holding this all together
+export default ({ children }) => 
+  <div style={{ 
+    margin: `0 auto`, 
+    maxWidth: `100%`,  
+    backgroundColor: `WhiteSmoke`,
+    }}>
+  <header style={{ 
+    backgroundColor: `Green`, 
+    marginBottom: `1.5rem`,
+    }}>
+     <Link to="/" style={{
+       color: `Snow`,
+       textShadow: "none", 
+       backgroundImage: "none", 
+     }}>
+     <h1 style={{ 
+       display: "inline-block", 
+       marginLeft: `2rem`,  
+       }}>Fake News!</h1>
        </Link>
-     <ul style={{ listStyle: "none", float: "right" }}>
-       <ListLink to="/">Home</ListLink>
-       <ListLink to="/about/">About</ListLink>
-       <ListLink to="/resume/">CV</ListLink>
-       <ListLink to="/contact/">Contact</ListLink>
-       <ListLink to="/my-files/">Index</ListLink>
+     <ul style={{ 
+         listStyle: `none`, 
+         float: `right`, 
+         textAlign: `center`, 
+         fontSize: `20px` }}>
+       <Link to="/" style={{
+           color: `Snow`, 
+           marginRight: `1rem`, 
+           marginLeft: `1rem`}}>Home</Link>
+       <Link to="/about/" style={{
+           color: `Snow`, 
+           marginRight: `1rem`,
+           marginLeft: `1rem`}}>About</Link>
+       <Link to="/resume/" style={{
+           color: `Snow`, 
+           marginRight: `1rem`,
+           marginLeft: `1rem`}}>CV</Link>
+       <Link to="/contact/" style={{
+           color: `Snow`, 
+           marginRight: `1rem`,
+           marginLeft: `1rem`}}>Contact</Link>
+       <Link to="/my-files/" style={{
+           color: `Snow`, 
+           marginRight: `1rem`,
+           marginLeft: `1rem`}}>Index</Link>
       </ul>
   </header>
 {children()}
-  </Container>
-);
+      </div>

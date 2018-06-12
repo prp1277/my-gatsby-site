@@ -1,35 +1,40 @@
 import React from "react";
-import g from "glamorous";
 import Link from "gatsby-link"
 
 import { rhythm } from "../utils/typography";
+import Container from "../components/container";
 
+//This is the "home" page of the website
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
-      <g.H1 display={"inline-block"}
-      >Welcome To My Blog!
-      </g.H1>
-      <h4>{data.allMarkdownRemark.totalCount}  Posts and Counting</h4>
+    <Container>
+    <h1 textAlign={"center"}
+    >Welcome To My Blog!
+      </h1>
+      <h3>{data.allMarkdownRemark.totalCount}  Posts and Counting</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link
-        to={node.fields.slug}
-        css={{ textDecoration: `none`, color: `black` }}>
-          <g.H3 marginBottom={rhythm(1 / 4)}>
+        <div key={node.id}>
+          <Link
+            to={node.fields.slug}
+            css={{ 
+              textDecoration: `none`, 
+              color: `inherit` 
+              }}>
+          <h2 marginBottom={rhythm(1 / 4)}>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB"
-            >— {node.frontmatter.date}</g.Span>
-            </g.H3>
+            <span color="#BBB"
+            >— {node.frontmatter.date}</span>
+            </h2>
           <p>{node.excerpt}</p>
           </Link>
         </div>
       ))}
-    </div>
+    </Container>
   );
 };
 
+//This is the post pagination query and output
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark (sort:
@@ -41,7 +46,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
           }
           fields {
             slug
