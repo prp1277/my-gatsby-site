@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "gatsby-link";
-import Footer from "../components/footer";
-import Container from "../components/container";
 
 //This should probably be called Nav
 //4 Links in the top right -> ListLink is variable name
@@ -18,7 +16,7 @@ const ListLink = props =>
 //Header styling and usability using ListLink as a variable
 //props.children = {children()} -> 
 //Container is the component holding this all together
-export default ({ children }) => 
+export default ({children}) => (
   <div style={{ 
     margin: `0 auto`, 
     maxWidth: `100%`,  
@@ -66,5 +64,5 @@ export default ({ children }) =>
       </ul>
   </header>
 {children()}
-<Footer/>
       </div>
+);

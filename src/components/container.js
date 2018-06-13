@@ -9,8 +9,6 @@ export default ({children}) => (
     color: "black",
     margin: `auto`,
     width: `75%`,
-    minHeight: 500,
-    marginBottom: `0px`
 }}>
 {children}
 </div>

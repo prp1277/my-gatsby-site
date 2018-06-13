@@ -57,7 +57,7 @@ typings/
 
 # dotenv environment variables file
 .env
-
+.vscode/iex-import.js
 .cache/
 public
 yarn-error.log

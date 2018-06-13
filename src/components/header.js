@@ -1,20 +1,19 @@
-const header = (
-    <Header>
-       <Logo title="LinkedIn" link="https://prp1277.github.io/static/LinkedIn-dfbd71c0fae03cd7d16ce2433df200e9.jpg"/>
-       <NavigationList>
-           <NavigationItem link="#home" text="Home"/>
-           <NavigationItem text="Team">
-               <NavigationList>
-                   <NavigationItem link="#local" text="Local"/>
-                   <NavigationItem link="#" text="Remote"/>
-                   <NavigationItem link="#" text="Desktop"/>
-                   <NavigationItem link="#" text="Train"/>
-               </NavigationList>
-           </NavigationItem>
-           <NavigationItem link="#contact" text="Contact"/>
-           <NavigationItem link="#" text="About Us"/>
-       </NavigationList>
-       <input type="search" placeholder="Search..."/>
-    </Header>
-)
-render(header, document.getElementById('header'));
+import React from "react"
+import Link from "gatsby-link"
+
+const Header = (
+    <header style={{ marginBottom: `1.5rem`, backgroundColor: `green` }}>
+     <Link style={{ backgroundImage: `none`, textShadow: `none`, }}>
+       <h1 style={{ marginLeft: `2rem`, display: `inline-block` }}>Fake News!</h1>
+     </Link>
+     <ul style={{ listStyle: `none`, textAlign: `center`, fontSize: `20px`, float: `right` }}>
+       <Link to="/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Home</Link>
+       <Link to="/about/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>About</Link>
+       <Link to="/resume/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>CV</Link>
+       <Link to="/contact/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Contact</Link>
+       <Link to="/my-files/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Index</Link>
+       </ul>
+    </header>
+);
+
+export default Header
