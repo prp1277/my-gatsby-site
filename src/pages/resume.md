@@ -1,11 +1,9 @@
 ---
-title: Resume
+title: Patrick Powell | Business Analyst
 date: "2018-05-29"
 peramink: /resume/
 tags: [Resume, Markdown, post_url, link]
 ---
-# Patrick Powell | Business Analyst
-
 [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
 
 A business analyst with experience in the Financial Services industry interested in using emerging technology to improve processes and optimize efficiency.
@@ -13,6 +11,7 @@ A business analyst with experience in the Financial Services industry interested
 # Employment
 
 ## Reinhart Foodservice
+
  **Purchasing Assistant** (August 2017 - February 2018)
 * Built, managed and maintained Excel and Power Bi dashboards for inventory valuation to provide insights to management
 * Created dynamic Excel templates using VBA and Power Queries to optimize Procurement, Warehousing and Transportation
@@ -30,11 +29,13 @@ A business analyst with experience in the Financial Services industry interested
 * Ran macros to eliminate human error and improve efficiency
 
 ## Waddell & Reed
+
  **Customer Service Representative** (February 2016 - October 2016)
 * Received telephone inquiries and provided support to shareholders and financial advisors
 * Used DST's TA2000 and AWD software to maintain shareholder information and records
 
 ## Key Bank Real Estate Capital
+
  **Loan Surveillance & Asset Management, Surveillance Internship** (Summer 2015)
 * Monitored loans serviced by Key Bank to ensure future cash flow and minimize credit risk
 * Analyzed Operating Statements and Rent Rolls, noted changes in income, expenses, occupancy and client defaults and reported significant changes to management

@@ -2,16 +2,36 @@
 title: "readme"
 date: "2018-06-03"
 ---
-# Repository URL:
-https://github.com/prp1277/prp1277.github.io/
+# Things
 
-# Netflify URL:
-https://prp1277.netlify.com/
+## src
+> This is the root directory.
 
-### [Helpful Links](https://github.com/prp1277/lib)
+### Components
 
-* [Gatsby Tutorial](https://www.gatsbyjs.org/tutorial/)
-* [Gatsby Plugins](https://www.gatsbyjs.org/plugins/)
-* [W3schools Language Reference](https://www.w3schools.com/)
-* [Quick HTML Cheat Sheet](http://www.unc.edu/~twtaylor/teaching/29/web/cheat.html)
-* [Markdown Tables](https://1drv.ms/u/s!AoLkNBOSNnKyhfMTbr5_h5clS-9hTw)
+* Things that build other things go here 
+
+### Data
+
+* I haven't really figured out this folder yet.
+
+### Img
+
+* I think the only image is my linkedin picture. I should probably add more
+
+### Layouts
+
+* index.js is the only one so far
+
+### Pages
+
+* Blog
+
+### Templates
+
+* Formatting
+  * this is a sub-sub-heading
+
+### Utils
+
+* Typography lives here
