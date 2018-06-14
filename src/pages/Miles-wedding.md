@@ -1,5 +1,5 @@
 ---
-Title: “Alex & David’s Wedding Weekend”
+Title: “Miles Wedding Itinerary"
 Date: “2018-06-15”
 ---
 # Itinerary 
