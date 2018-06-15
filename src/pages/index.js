@@ -10,7 +10,7 @@ export default ({ data }) => {
   return (
     <Container>
     <h1 textAlign={"center"}
-    >Welcome To My Blog!
+    >Welcome To My Website!
       </h1>
       <h3>{data.allMarkdownRemark.totalCount}  Posts and Counting</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
