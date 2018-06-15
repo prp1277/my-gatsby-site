@@ -1,6 +1,6 @@
 ---
-title: “Miles Wedding Itinerary"
-date: “2018-06-14”
+title: Miles Wedding Itinerary
+date: "2018-06-14"
 ---
 # Itinerary
 
