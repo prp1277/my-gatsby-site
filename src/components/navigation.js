@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 
-//This should probably be called Nav
+//This is a backup copy of layouts/index.js 
 //4 Links in the top right -> ListLink is variable name
 const ListLink = props =>  
   <li style={{ 
@@ -38,8 +38,7 @@ export default ({children}) => (
        </Link>
      <ul style={{ 
          listStyle: `none`, 
-         float: `right`, 
-         textAlign: `center`, 
+         float: `right`,  
          fontSize: `20px` }}>
        <Link to="/" style={{
            color: `Snow`, 

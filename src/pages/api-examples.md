@@ -8,13 +8,16 @@ date: "2018-06-14"
 Return the Quote, News and Chart for Apple and Facebook from the [IEX Trading Api](https://api.iextrading.com).
 
 ## The Tools:
-[Ticker.json](https://prp1277.github.io/static/Ticker-258c7f6e5370e98d12b56867f35785b8.json) - JSON file with a list of symbols supported by the API.
+[Ticker.json](https://prp1277.github.io/static/Ticker-258c7f6e5370e98d12b56867f35785b8.json) - json file with a list of symbols supported by the API.
 
+```json
       "Tickers": {
         "Symbol":"Company Name"
         }
+```
 
-[The Request](https://api.iextrading.com/1.0/stock/market/batch?symbols=aapl,fb&types=quote,news,chart&range=1m&last=5) -
+[The Request](https://api.iextrading.com/1.0/stock/market/batch?symbols=aapl,fb&types=quote,news,chart&range=1m&last=5)
+
 `https://api.iextrading.com/1.0/stock/market/batch?symbols=aapl,fb&types=quote,news,chart&range=1m&last=5`
 
 [.http request](https://prp1277.github.io/static/apicall-c0da56ed7b29b8008f93d03b7e05e235.http) - File used to make the request using VSCode
@@ -28,7 +31,7 @@ Return the Quote, News and Chart for Apple and Facebook from the [IEX Trading Ap
 
 ## Using JavaScript's XMLHttpRequest
 
-```js
+```javascript
 var request = new XMLHttpRequest;
 
 request.open(get,`https://api.iextrading.com/1.0/stock/market/batch?symbols=aapl,fb&types=quote,news,chart&range=1m&last=5`);
@@ -48,7 +51,7 @@ request.send
 
 ## Using Node.js GET Method
 
-```js
+```javascript
 var request = require('request');
 
 request({
@@ -66,7 +69,7 @@ request({
 
 ## Another React Attempt
 
-```js
+```javascript
 class ApiCall extends React.Component{
     render() {
         return(
@@ -82,3 +85,7 @@ class ApiCall extends React.Component{
     }
 }
 ```
+
+
+### Notes:
+

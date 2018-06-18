@@ -6,10 +6,9 @@ import React from "react";
 export default ({children}) => (
 <div style={{ 
     display: "block",
-    color: "black",
     margin: `auto`,
     width: `75%`,
-    marginBottom: `1rem`
+    marginBottom: `1.5rem`
 }}>
 {children}
 </div>

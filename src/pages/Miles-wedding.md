@@ -23,7 +23,6 @@ Omaha, NE
 [3117 S 161st Cir.](https://www.redfin.com/NE/Omaha/3117-S-161st-Cir-68130/home/88356460) </br>
 Omaha, NE
 
-
 ## Saturday - 6/16/2018
 
 ### 8:00 AM - Wake Up and Eat
