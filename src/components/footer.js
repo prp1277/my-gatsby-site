@@ -9,11 +9,11 @@ const Footer = (props) => (
         marginTop: `1rem`,
         textAlign: `center`, 
         }} itemScope itemType = "http://schema.org/WPFooter">
-          <Link to = "/" style = {{ color:`snow` }}>Home </Link>
-          <Link to = "/about/" style = {{ color:`snow` }} >About </Link>
-          <Link to = "/resume/" style = {{ color:`snow` }} >CV </Link>
-          <Link to = "/contact/" style = {{ color:`snow` }} >Contact </Link>
-          <Link to = "/my-files/" style = {{ color:`snow` }} >Index </Link>
+          <Link to = "/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Home </Link>
+          <Link to = "/about/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }} >About </Link>
+          <Link to = "/resume/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }} >CV </Link>
+          <Link to = "/contact/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }} >Contact </Link>
+          <Link to = "/my-files/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }} >Index </Link>
       </footer>            
     </div>
 

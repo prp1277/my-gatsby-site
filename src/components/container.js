@@ -1,14 +1,18 @@
 import React from "react";
 
-//Should probably be called post container
-//This controls the actual blog post content
+/* This is the post-container component 
+*  it controls the body style for any
+*  file that imports "<Container> from "../components/container";
+*/
 
 export default ({children}) => (
-<div style={{ 
+<div className="post-container" style={{ 
     display: "block",
     margin: `auto`,
-    width: `75%`,
-    marginBottom: `1.5rem`
+    width: `75%`,    //75% leaves 12.50% padding on each side
+    minHeight: 500,  //500 is one roll-click 
+    marginBottom: `1rem`,
+    color: `inherit`
 }}>
 {children}
 </div>

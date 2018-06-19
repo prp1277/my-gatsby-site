@@ -1,1 +1,0 @@
-GET https://api.iextrading.com/1.0/stock/market/batch?symbols=aapl,fb,goog,amzn&types=chart HTTP/1.1
