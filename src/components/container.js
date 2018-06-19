@@ -6,12 +6,12 @@ import React from "react";
 */
 
 export default ({children}) => (
-<div className="post-container" style={{ 
+<div className="post-container" 
+style={{ 
     display: "block",
-    margin: `auto`,
-    width: `75%`,    //75% leaves 12.50% padding on each side
+    margin: `3rem`,
+    width: `85%`,    //75% leaves 12.50% padding on each side
     minHeight: 500,  //500 is one roll-click 
-    marginBottom: `1rem`,
     color: `inherit`
 }}>
 {children}

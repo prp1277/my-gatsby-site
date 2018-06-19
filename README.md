@@ -4,6 +4,10 @@ date: "2018-06-13"
 ---
 # Things
 
+> Use [jsfiddle.net](http://jsfiddle.net/boilerplate/react-jsx) to generate, run and test JS / HTML / CSS.
+
+![fiddle.jpg](http://prp1277.netlify.com/static/fiddle-ad93391cccc1dde62df76bf0d260a6aa.jpg)
+
 ## src
 > root directory.
 

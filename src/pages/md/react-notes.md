@@ -3,9 +3,12 @@ title: "React Notes"
 date: "2018-06-11"
 ---
 
-> [Lynda Learning from LinkedIn](https://www.lynda.com/React-js-tutorials/React-Toolbox-ES6-JSX-more/645063/731441-4.html)
+> [Lynda Learning from LinkedIn](https://prp1277.github.io/md/react-notes.md#Lynda)</br>
+> [W3adda Components](https://prp1277.github.io/md/react-notes.md#w3adda-react-tutorial)
 
-State and props - how you define things in react.
+# Lynda
+
+_State and props_ - how you define things in react.
 
 One way data flow - all downhill - from parent to children
 * _lifting up state_ will be used later to pass upstream
@@ -18,9 +21,9 @@ Components are React's building blocks
 
 * They should be reusable
 * They are composed of elements
-* Figure out components and data before starting anything
+* Figure out what components and data you need before starting anything
 
-Components are js functions or classes
+Components are either js functions or classes
 
 Separation of concerns - lots of people on lots of moving parts - make them independent and reusable so they can be used by everyone.
 
@@ -117,3 +120,30 @@ var ProductCustomizer = createReactClass({
 ```
 
 Since the size selector and the color selectors are so similar you can keep most of the structure and just change some of the labeling. Add it to the initial state and the render function, again, most of the time it's easy enough to copy and paste the line from earlier and make adjustments.
+____
+
+# [W3adda React Tutorial](W3adda.com/react-js-tutorial/reactjs-components)
+
+## Component Types
+
+### Functional - Stateless - simplest form
+
+* Receives a single object `<div>` of props as function and returns DOM Element in HTML-like syntax (JSX)
+
+```js
+function Name(props){
+  return <h1>Name, {props.name} !</h1>;
+}
+  ```
+
+### Class Components
+
+* Receive props the same way, but add private input (state) to track the internal state
+* These are the components that extend React.Component and use render / return methods
+* Create a Javascript class that extends from React.Component class and define a render() method
+
+```js
+ ReactDOM.render(<element name=""/>, document.getElementById('div-ID'));
+ ```
+
+The DOM Element must be available in the src/index.html file

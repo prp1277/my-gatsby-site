@@ -4,10 +4,8 @@ import Container from "../components/container";
 
 export default ({ data }) => 
   <Container>
-    <h1>
-    About  {data.site.siteMetadata.author}</h1>
-     <h3>
-       Hi, I'm Patrick Powell and I'm learning how to create websites and apps using Javascript React.</h3>
+    <h1>About  {data.site.siteMetadata.author}</h1>
+     <h2>Hi, I'm Patrick Powell and I'm learning how to create websites and apps using Javascript React.</h2>
         <p>
           This is version 2.0 of my personal website. Things didn't go great on version 1.0 using Jekyll and Github pages, 
           so I figured I'd further complicate things and learn another language to make this one work a little bit better.</p>

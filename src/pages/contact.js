@@ -1,11 +1,10 @@
 import React from "react";
-import Link from "gatsby-link";
+import Footer from "../components/footer"
+import Container from "../components/container";
 
-export default () => (
-  <div style={{ textAlign: `center`, width: `100%`, height: 500 }}>
-  <h1>
-    Get In Touch!
-     </h1>
+export default ({ data }) => 
+  <Container>
+  <h1>Get In Touch!</h1>
       <p><a href="mailto:prp1277@gmail.com">Prp1277@gmail.com</a>
         </p>
       <p><a href="https://prp1277.github.io/resume/">Resume</a>
@@ -16,6 +15,4 @@ export default () => (
         </p>
       <p><a href="https://github.com/prp1277">GitHub</a>
         </p>
-
-        </div>
-);
+        </Container>
