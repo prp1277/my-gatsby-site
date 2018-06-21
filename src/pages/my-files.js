@@ -7,9 +7,6 @@ export default ({ data })=> {
     return (
       <Container>
           <h1>Index</h1>
-          <p>Here's something I don't understand... I have all these files but can't figure out how to get them all working.
-              I don't think I have all my plugins and such working right. Also, the dimensions of this page aren't right.
-          </p>
           <table>
               <thead>
                   <tr>

@@ -9,7 +9,7 @@ const Header = (props) => (
     backgroundColor: `green`,
     marginBottom: `1rem`
   }} itemScope itemType = "http://schema.org/WPHeader">
-    <ul style={{ listStyle: `none`, fontSize: `20px`, float: `right` }}>
+    <ul style={{ listStyle: `none`, fontSize: `20px`, float: `right`, display: `inline-block` }}>
     <Link to="/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Home</Link>
     <Link to="/about/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>About</Link>
     <Link to="/md/resume/" style={{ color: `snow`, marginRight: `1rem`, marginLeft: `1rem` }}>CV</Link>
