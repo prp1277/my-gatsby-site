@@ -10,7 +10,7 @@ export default ({children}) => (
 style={{ 
     display: "block",
     margin: `3rem`,
-    width: `85%`,    //75% leaves 12.50% padding on each side
+    width: `95%`,    //75% leaves 12.50% padding on each side
     minHeight: 500,  //500 is one roll-click 
     color: `inherit`
 }}>

@@ -1,12 +1,24 @@
 ---
-title: "readme"
-date: "2018-06-13"
+title: 'readme'
+date: '2018-06-13'
+path: 'readme'
+published: '2018-06-21'
 ---
 # Things
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prp1277/prp1277.github.io)
 
 > Use [jsfiddle.net](http://jsfiddle.net/boilerplate/react-jsx) to generate, run and test JS / HTML / CSS.
 
 ![fiddle.jpg](http://prp1277.netlify.com/static/fiddle-ad93391cccc1dde62df76bf0d260a6aa.jpg)
+
+## Local
+
+* .cache - previous builds and such
+* .vscode - vscode settings
+* ignore - trash
+* node_modules - where dependencies stay
+* public - where the website is built
 
 ## src
 > root directory.
