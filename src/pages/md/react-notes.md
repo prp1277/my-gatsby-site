@@ -147,3 +147,135 @@ function Name(props){
  ```
 
 The DOM Element must be available in the src/index.html file
+
+# RSS Feed
+> [Source](https://moduscreate.com/blog/react-native-listview-with-section-headers/)
+
+## Data Structure
+
+1. An Array of Section IDs
+2. An Array of Row IDs
+3. An Object to hold the data - _dataBlob_
+
+```js
+// Initialize DataSource and implement methods
+getInitialState(){
+  var getSectionData = (dataBlob, sectionID) => {
+    return dataBlob[sectionID];
+  }
+  
+  var getRowData = (dataBlob, sectionID, rowID) => {
+    return dataBlob[sectionID + ':' + rowID];
+  }
+
+  return {
+    loaded: false,
+    dataSource: new ListView.DataSource({
+      getSectionData: getSectionData,
+      getRowData: getRowData
+      rowHasChanged: (row1, row2) => row1 !== row2,
+      sectionHeaderHasChanged: (s1,s2) => s1 !== s2
+    })
+  }
+}
+```
+
+### Mock json Data
+
+```json
+{
+  "results": [
+    {
+      "organization": "Broadcast Instructional Mechanical",
+      "id": 12348124,
+      "users": [
+        {
+          "user": {
+            "gender": "female",
+            "name": {
+              "title": "miss",
+              "first": "marga",
+              "last": "seegers"
+            },
+            "location": {
+              "street": "9234 kintgenshaven",
+              "city": "epe",
+              "state": "groningen",
+              "zip": "24360"
+            },
+            "email": "marga.seegers25@example.com",
+            "username": "orangeleopard377",
+            "password": "427900",
+            "salt": "KrIEhHan",
+            "md5": "589a574553250be33f3b1170624ad2d1",
+            "sha1": "b95ebe39ae6119c5d578938b2d0be8abf674d22c",
+            "sha256": "591584f0bcd6ab1700b59f7bad4ef84917d9ad1270a5a3f4fdd0519fd6d6f37e",
+            "registered": "1412818529",
+            "dob": "368162464",
+            "phone": "(468)-937-2959",
+            "cell": "(971)-550-2808",
+            "BSN": "95632864",
+            "picture": {
+              "large": "http:\/\/api.randomuser.me\/portraits\/women\/35.jpg",
+              "medium": "http:\/\/api.randomuser.me\/portraits\/med\/women\/35.jpg",
+              "thumbnail": "http:\/\/api.randomuser.me\/portraits\/thumb\/women\/35.jpg"
+            },
+            "version": "0.6",
+            "nationality": "NL"
+          },
+          "seed": "0e4de8b1953a999b06"
+        }
+      ]
+    },
+    {
+      "organization" : "Organization Name",
+      "id" : 010101,
+      "users" : []
+    }
+  ]
+}
+```
+
+### Fetch the Data
+
+```js
+// Map the incoming data to the json file
+fetchData(){
+  fetch(API_URL).then(response) => response.json()).then((responseData) => {
+    var organizations = responseData.results,
+    length = organizations.length,
+    dataBlob = {},
+    sectionIDs = [],
+    rowIDs = [],
+    organization,
+    users,
+    userLength,
+    user,
+    i,
+    j;
+  
+    // Concatenate using variables
+    for (i = 0; i < length; i++){
+      organization = organizations[i];
+
+      sectionIDs.push(organization.id);
+      dataBlob[organization.id] = organization.organization;
+
+      users = organization.users;userLength = users.Length;
+
+      rowIDs[i] = [];
+
+      for(j = 0; j < userLength; j++) {
+        user = users[j].user;
+        rowIDs[i].push(user.md5);
+        dataBlob[organization.id + ':' + user.md5] = user;
+      }
+    }
+    this.setState({
+      dataSource: this.state.dataSource.cloneWithRowAndSections(dataBlob, sectionIDs, rowIDs),
+      loaded: true
+    });
+
+  }).done();
+}
+```

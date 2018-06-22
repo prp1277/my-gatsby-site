@@ -1,6 +1,7 @@
 ---
-title: Api Calls
+title: "Api Calls"
 date: "2018-06-14"
+path: "/api-examples"
 ---
 # Making API Calls in React
 
