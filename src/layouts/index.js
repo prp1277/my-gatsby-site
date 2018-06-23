@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Sidebar from "../components/sidebar";                                                                                                                                                                                
 
 //This is the landing / home page 
 const ListLink = props =>  
@@ -18,7 +19,7 @@ const ListLink = props =>
 
 export default ({ children }) => 
   <div>
-    <Header/>
+    <Header />
     {children()}
-    <Footer/>
+    <Footer />
   </div>

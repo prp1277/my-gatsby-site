@@ -26,7 +26,6 @@ published: '2018-06-21'
 ### Components
 
 * Things that build other things go here
-  * container - wrapper for middle block
   * counter - counts pages - from gatsby.js tutorial
   * footer - constant footer for each page
   * header - constant topper for each page

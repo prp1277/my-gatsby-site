@@ -6,10 +6,11 @@ const Footer = (props) => (
       <footer className = "footer-nav" style = {{ 
         borderTop: `2px solid #BBB`, 
         backgroundColor: `green`,
-        marginTop: `1rem`,
         textAlign: `center`, 
         fontSize: `20px`,
-        height: `45px`
+        height: `40px`,
+        bottom: 0,
+        width: `100%`,
         }} itemScope itemType = "http://schema.org/WPFooter">
           <Link to = "/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }}>Home </Link>
           <Link to = "/about/" style = {{ color:`snow`, marginRight: `1rem`, marginLeft: `1rem` }} >About </Link>

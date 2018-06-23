@@ -2,13 +2,12 @@ import React from "react";
 import Link from "gatsby-link"
 
 import { rhythm } from "../utils/typography";
-import Container from "../components/container";
 
 //This is essentially the "app"
 export default ({ data }) => {
   console.log(data);
   return (
-    <Container>
+    <div>
     <h1 textAlign={"center"}>Welcome To My Website!
     </h1>
       <h3>{data.allMarkdownRemark.totalCount}  Posts and Counting
@@ -23,7 +22,7 @@ export default ({ data }) => {
           </Link>
         </div>
       ))}
-    </Container>
+    </div>
   );
 };
 

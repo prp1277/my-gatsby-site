@@ -1,11 +1,9 @@
 import React from "react";
-import Link from "gatsby-link";
-import Container from "../components/container"
 
 export default ({ data })=> {
     console.log(data)
     return (
-      <Container>
+      <div>
           <h1>Plugins
           </h1>
               <table>
@@ -21,7 +19,7 @@ export default ({ data })=> {
                     )}
                   </tbody>
               </table>
-      </Container>
+      </div>
     )
 }
 

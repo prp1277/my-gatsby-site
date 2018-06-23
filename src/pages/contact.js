@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../components/footer"
-import Container from "../components/container";
 
 export default ({ data }) => 
-  <Container>
+  <div>
   <h1 style={{ textAlign: `center` }}> Get In Touch!</h1>
       <p style={{ textAlign: `center` }}><a href="mailto:prp1277@gmail.com"> Prp1277@gmail.com</a>
         </p>
@@ -15,4 +14,4 @@ export default ({ data }) =>
         </p>
       <p style={{ textAlign: `center` }}><a href="https://github.com/prp1277"> GitHub</a>
         </p>
-        </Container>
+        </div>
