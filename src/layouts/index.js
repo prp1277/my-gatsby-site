@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";                                                                                                                                                                                
+require("prismjs/themes/prism-okaidia.css");
 
 //This is the landing / home page 
 const ListLink = props =>  

@@ -5,15 +5,13 @@ import React from "react";
  * of the screen
 */
 const sideBar = props => (
-    <div 
-    className="sidebar"
+    <div className = 'sidebar' 
     style={{ 
-        float: `right`,
-        width: `25%`,
+        float: `right`, 
+        width: `25%`, 
         padding: `15px`,
-     }}
-    >
+        }}>
     </div>
 )
 
-export default SideBar
+export default sideBar
