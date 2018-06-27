@@ -1,5 +1,7 @@
 import React from "react";
-import Link from "gatsby-link"
+import Link from "gatsby-link";
+import Header from "../components/header";
+import Footer from "../components/footer"
 
 import { rhythm } from "../utils/typography";
 
@@ -8,7 +10,8 @@ export default ({ data }) => {
   console.log(data);
   return (
     <div>
-    <h1 textAlign={"center"}>Welcome To My Website!
+      <Header /> 
+    <h1 style={{ textAlign: `center` }}>Welcome To My Website!
     </h1>
       <h3>{data.allMarkdownRemark.totalCount}  Posts and Counting
       </h3>
@@ -22,6 +25,7 @@ export default ({ data }) => {
           </Link>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };
