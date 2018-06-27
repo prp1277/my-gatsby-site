@@ -4,7 +4,7 @@ import React from "react";
  * it lives on the right side
  * of the screen
 */
-const sideBar = props => (
+const sidebar = props => (
     <div className = 'sidebar' 
     style={{ 
         float: `right`, 
@@ -14,4 +14,4 @@ const sideBar = props => (
     </div>
 )
 
-export default sideBar
+export default Sidebar
