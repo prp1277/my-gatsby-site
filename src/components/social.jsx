@@ -3,23 +3,19 @@ import Link from 'gatsby-link';
 
 const SMLinks = (props) => (
   <div className="social"
-   style={{
-       float: `left`,
-       width: `75%`,
-       padding: `15px`,
-       }}>
+   style={{ float: `left`, width: `75%`, padding: `15px` }}>
     <li>
         <Link title="Follow-me" to="https://twitter.com/patp0w" target="">
-        <i class="fa fa-twitter"/>
+          <i class="fa fa-twitter"/>
          </Link>
         <Link title="My LinkedIn Profile" to="https://linkedin.com/in/prpowell1277" target="">
-        <i class="fa fa-linkedin"/>
+          <i class="fa fa-linkedin"/>
          </Link>
         <Link title="My Github Profile" to="https://github.com/prp1277" target="">
-        <i class="fa fa-github"/>
+          <i class="fa fa-github"/>
          </Link>
         <Link title="Follow-me" to="https://facebook.com/patrick.powell1" target="">
-        <i class="fa fa-facebook"/>
+          <i class="fa fa-facebook"/>
          </Link>
     </li>
   </div>

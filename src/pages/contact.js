@@ -2,7 +2,14 @@ import React from "react";
 import Footer from "../components/footer"
 
 export default ({ data }) => 
-  <div>
+  <div className="blog-post" style={{  
+    display: "block",
+    maxWidth: `42rem`,
+    color: `inherit`,
+    marginLeft: `auto`,
+    marginRight: `auto`,
+    padding: `1.5rem 1.125rem`,
+    paddingTop: `1.5rem`}}>
   <h1 style={{ textAlign: `center` }}> Get In Touch!</h1>
       <p style={{ textAlign: `center` }}><a href="mailto:prp1277@gmail.com"> Prp1277@gmail.com</a>
         </p>

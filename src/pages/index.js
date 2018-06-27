@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Header from "../components/header";
 import Footer from "../components/footer"
+require("prismjs/themes/prism-coy.css");
 
 import { rhythm } from "../utils/typography";
 
@@ -9,23 +10,25 @@ import { rhythm } from "../utils/typography";
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
-      <Header /> 
-    <h1 style={{ textAlign: `center` }}>Welcome To My Website!
+    <div className="blog-post" style={{  
+      display: "block",
+      maxWidth: `42rem`,
+      color: `inherit`,
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      padding: `1.5rem 1.125rem`,
+      paddingTop: `1.5rem`}}>
+  <h1 style={{ textAlign: `center`, maxWidth: `50rem`, marginLeft: `auto`, marginRight: `auto`, display: `block`, clear: `both` }}>Welcome To My Website!<small>{" - "}{data.allMarkdownRemark.totalCount} Posts and Counting</small>
     </h1>
-      <h3>{data.allMarkdownRemark.totalCount}  Posts and Counting
-      </h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
+        <div className="card" style={{ textAlign: `center`, maxWidth: `50rem`, marginLeft: `auto`, marginRight: `auto`, marginTop: `auto`, marginBottom:`auto`, display: `block`, clear: `both` }} key={node.id}>
           <Link to={node.fields.slug} css={{ color: `inherit` }}>
-          <h2 marginBottom={rhythm(1 / 4)}>{node.frontmatter.title}{" "}
-            <span color="#BBB">— {node.frontmatter.date}</span>
+          <h2 marginBottom={rhythm(1 / 4)}>{node.frontmatter.title}{" "}<small color="#BBB">— {node.frontmatter.date}</small>
             </h2>
           <p>{node.excerpt}</p>
           </Link>
         </div>
       ))}
-      <Footer />
     </div>
   );
 };

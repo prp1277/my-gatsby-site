@@ -3,7 +3,14 @@ import React from "react";
 export default ({ data })=> {
     console.log(data)
     return (
-      <div>
+      <div className="container" style={{  
+        display: "block",
+        maxWidth: `42rem`,
+        color: `inherit`,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        padding: `1.5rem 1.125rem`,
+        paddingTop: `1.5rem`}}>
           <h1>Plugins
           </h1>
               <table>

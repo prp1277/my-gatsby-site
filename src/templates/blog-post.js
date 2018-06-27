@@ -1,14 +1,20 @@
 import React from "react";
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div className="blog-post" style={{  
       display: "block",
-      width: `95%`,
-      color: `inherit`
-  }}>
-      <h1>{post.frontmatter.title}</h1>
+      maxWidth: `42rem`,
+      color: `inherit`,
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      padding: `1.5rem 1.125rem`,
+      paddingTop: `1.5rem`}}>
+      <h1 style={{ textAlign: `center` }}>{post.frontmatter.title}</h1>
+      <p style={{ textAlign: `center` }}>Posted - {post.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
   );
