@@ -1,8 +1,9 @@
 ---
-title: Patrick Powell | Business Analyst
+title: "Patrick Powell | Business Analyst"
 date: "2018-05-29"
-permalink: md/resume/
-tags: [Resume, Markdown, post_url, link]
+path: "/md/resume/"
+tags: [ Resume, Markdown, post_url, link ]
+published: "true"
 ---
 [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
 

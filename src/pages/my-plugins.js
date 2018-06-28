@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ data })=> {
+/* export default ({ data })=> {
     console.log(data)
     return (
       <div className="container" style={{  
@@ -40,21 +40,53 @@ query MyPluginsQuery {
       }
     }
   }
+` */
+
+export default ({ data })=> {
+  console.log(data)
+  return (
+    <div className="table-container" style={{  
+      display: "block",
+      maxWidth: `42rem`,
+      color: `inherit`,
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      padding: `1.5rem 1.125rem`,
+      paddingTop: `1.5rem`}}>
+      <h1 style={{ textAlign: `center` }}>Paths</h1>
+      <table>
+              <thead>
+                  <tr>
+                      <th>Local Folder Name</th>
+                      <th>Relative Path</th>
+                    </tr>
+                </thead>
+                <tbody>{data.allFile.edges.map(({ node }, index) =>
+                    <tr key={index}>
+                      <td>{node.relativePath}</td>
+                      <td>{node.publicURL}</td>
+                    </tr>
+                    )}
+                </tbody>
+            </table>
+        </div>
+    )
+}
+
+export const query = graphql`
+query PathMapping {
+  site {
+    siteMetadata {
+      siteURL
+    }
+  }
+  allFile {
+    edges {
+      node {
+        relativePath
+        publicURL
+      }
+    }
+  }
+}
 `
-/*
-dev-404-page
-component-page-creator
-component-layout-creator
-internal-data-bridge
-prod-404
-query-runner
-gatsby-plugin-offline
-gatsby-transformer-sharp
-gastby-transformer-remark
-gatsby-plugin-sharp
-gatsby-remark-responsive-iframe
-gatsby-source-filesystem
-gatsby-plugin-glamor
-gatsby-plugin-typography
-default-site-plugin
-*/

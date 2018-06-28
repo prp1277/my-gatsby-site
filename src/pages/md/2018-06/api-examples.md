@@ -1,7 +1,8 @@
 ---
-title: "Api Calls"
-date: "2018-06-14"
-path: "/api-examples"
+title: `Api Examples`
+path: `/md/2018-06/api-examples`
+published: `false`
+date: `2018-06-14`
 ---
 
 ## Background Information

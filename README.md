@@ -60,3 +60,5 @@ published: true
 ### Utils
 
 * Typography lives here
+
+I do not own the icons, here is the link to their license: https://fontawesome.com/license

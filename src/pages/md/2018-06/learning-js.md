@@ -1,7 +1,7 @@
 ---
 title: "Learning Javascript"
 date: "2018-06-22"
-published: true
+published: "false"
 path: "/learning-js"
 ---
 # Sources / Table of Contents

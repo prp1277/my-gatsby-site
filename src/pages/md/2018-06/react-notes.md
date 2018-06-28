@@ -1,6 +1,8 @@
 ---
 title: "React Notes"
 date: "2018-06-11"
+path: "/md/react-notes"
+published: "true"
 ---
 
 > [Lynda Learning from LinkedIn](https://prp1277.github.io/md/react-notes.md#Lynda)</br>
