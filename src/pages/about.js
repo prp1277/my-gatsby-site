@@ -17,7 +17,7 @@ export default ({ data }) =>
           I'm hosting the content on Github Pages, using Gatsby to compile everything and Netlify for continuous integration. 
           It's all a little more complicated than I'd planned, but I've learned a lot along the way. 
           There's still a lot more I have to learn (images are pretty high on that list), but that will come in time.</p>
-          <h3>What Makes It Work?</h3>
+          <h3 style={{ textAlign: `center` }}>What Makes It Work?</h3>
           <p>
           I'm glad you asked! I've been slowly finding out through trial-and-(mostly)-error.</p>
           <ul>
