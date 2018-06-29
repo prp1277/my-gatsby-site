@@ -8,7 +8,6 @@ export default ({ data }) => {
     <div className="blog-post" style={{  
       display: "block",
       maxWidth: `42rem`,
-      color: `inherit`,
       marginLeft: `auto`,
       marginRight: `auto`,
       padding: `1.5rem 1.125rem`,

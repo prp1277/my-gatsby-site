@@ -4,61 +4,48 @@ date: '2018-06-13'
 path: 'readme'
 published: true
 ---
-# Things
+# [Prp1277](https://prp1277.github.io)
+>Source code for my personal website
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prp1277/prp1277.github.io)
 
+## Work in Progress
+
+### Tree View
+>[Source](https://github.com/wangsongiam/songwang.io/blob/master/README.md)
+
+```md
+.
+├── gatsby-node.js        > Nodes Manipulations
+└── gatsby-config.js      > Gatsby Configuration
+├── static
+│  └── admin              > Netlify CMS
+├── src
+│  ├── components
+│  ├── state/             > Redux's reducers, actions..
+│  ├── html.jsx           > React Entry Point
+│  ├── images             > Image Uploads
+│  ├── layouts/           > Global layout
+│  ├── templates
+│  └── theme              > Styled Components
+│  ├── pages              > Pages
+│  │  ├── about
+│  │  ├── index.js        > Landing
+│  │  ├── search.js       > Search
+│  │  └── tags.js         > Tag
+│  │  ├── blog            > Posts
+│  │  │  ├── blog/
+│  │  │  ├── links/
+│  │  │  └── notes/
+```
+
+## Reference
+
+![The more you know](https://media.giphy.com/media/3og0IMJcSI8p6hYQXS/giphy.gif)
+
+[Font-Awesome License](https://fontawesome.com/license)
+
 [React Cheat Sheet](https://reactcheatsheet.com)
 
-![fiddle.jpg](http://prp1277.netlify.com/static/fiddle-ad93391cccc1dde62df76bf0d260a6aa.jpg)
-
-## Local
-
-* .cache - previous builds and such
-* .vscode - vscode settings
-* ignore - trash
-* node_modules - where dependencies stay
-* public - where the website is built
-
-## src
-> root directory.
-
-### Components
-
-* Things that build other things go here
-  * counter - counts pages - from gatsby.js tutorial
-  * footer - constant footer for each page
-  * header - constant topper for each page
-  * navigation - links for header and footer
-  * post-link - links for each post
-
-### Data
-
-* I haven't really figured out this folder yet.
-  * apicall - http request without parameters
-  * apirequest - react.js to get data from github's api
-  * iexapi - [Source]](https://github.com/philcallister/ticker-react/blob/master/app/components/Ticker/index.js)
-  * Ticker - tickers supported by the iex api
-
-### Img
-
-* I think the only image is my linkedin picture. I should probably add more
-
-### Layouts
-
-* index.js - the main index page for the site
-
-### Pages
-
-* Blog
-
-### Templates
-
-* blogpost - controls the format of markdown posts
-  * 
-
-### Utils
-
-* Typography lives here
-
-I do not own the icons, here is the link to their license: https://fontawesome.com/license
+Glamor replaces `(prop)` styling component with `className`
+`<div style={{ css }}> => <div className>`

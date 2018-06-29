@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 import Header from "../components/header";
-import Footer from "../components/footer"
+import Footer from "../components/footer";
+import { css } from "gatsby-plugin-glamor";
 require("prismjs/themes/prism-coy.css");
 
 import { rhythm } from "../utils/typography";
@@ -22,7 +23,7 @@ export default ({ data }) => {
     </h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div className="card" style={{ textAlign: `center`, maxWidth: `50rem`, marginLeft: `auto`, marginRight: `auto`, marginTop: `auto`, marginBottom:`auto`, display: `block`, clear: `both` }} key={node.id}>
-          <Link to={node.fields.slug} css={{ color: `inherit` }}>
+          <Link to={node.fields.slug}>
           <h2 marginBottom={rhythm(1 / 4)}>{node.frontmatter.title}{" "}<small color="#BBB">— {node.frontmatter.date}</small>
             </h2>
           <p>{node.excerpt}</p>

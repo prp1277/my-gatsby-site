@@ -56,9 +56,11 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+.cache
 .env
-.vscode/_test_
-.cache/
+/.vscode/_test_
+/.cache/
 public
 yarn-error.log
 ignore/
+src/pages/md/calendar.md
