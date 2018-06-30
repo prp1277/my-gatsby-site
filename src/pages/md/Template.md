@@ -3,9 +3,8 @@ title: "Template"
 path: "/md/<>"
 published: "false"
 date: "2018-06-01"
+tags: [shortcuts, utilities, math]
 ---
-
-## Key Bindings for OneNote
 
 ```jsonc
 {

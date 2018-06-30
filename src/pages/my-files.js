@@ -15,17 +15,15 @@ export default ({ data })=> {
           <table>
               <thead>
                   <tr>
-                      <th>Local Folder Name</th>
-                      <th>Relative Path</th>
                       <th>Public URL</th>
+                      <th>Local Folder</th>
                       <th>Created</th>
                     </tr>
                 </thead>
                 <tbody>{data.allFile.edges.map(({ node }, index) =>
                     <tr key={index}>
-                      <td>{node.sourceInstanceName}</td>
-                      <td>{node.relativePath}</td>
                       <td>https://prp1277.github.io{node.publicURL}</td>
+                      <td>{node.sourceInstanceName}</td>
                       <td>{node.birthTime}</td>
                     </tr>
                     )}
@@ -36,16 +34,19 @@ export default ({ data })=> {
 }
 
 export const query = graphql`
-  query MyFilesQuery {
-      allFile {
-          edges {
-              node {
-                  sourceInstanceName
-                  relativePath
-                  publicURL
-                  birthTime(fromNow: true)
-              }
-          }
-      }
+query MyFilesQuery {
+  site {
+    siteMetadata {
+      siteURL
+    }
   }
+  allFile {
+    edges {
+      node {
+        relativePath
+        publicURL
+      }
+    }
+  }
+}
 `

@@ -22,7 +22,6 @@ published: true
 │  └── admin              > Netlify CMS
 ├── src
 │  ├── components
-│  ├── state/             > Redux's reducers, actions..
 │  ├── html.jsx           > React Entry Point
 │  ├── images             > Image Uploads
 │  ├── layouts/           > Global layout
@@ -33,7 +32,7 @@ published: true
 │  │  ├── index.js        > Landing
 │  │  ├── search.js       > Search
 │  │  └── tags.js         > Tag
-│  │  ├── blog            > Posts
+│  │  ├── md              > Posts
 │  │  │  ├── blog/
 │  │  │  ├── links/
 │  │  │  └── notes/

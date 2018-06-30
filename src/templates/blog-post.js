@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/header"
-import Footer from "../components/footer"
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -30,3 +28,22 @@ export const query = graphql`
     }
   }
 `;
+
+/* 
+query{
+  allMarkdownRemark{
+    edges{
+      node{
+        id
+        htmlAst //HTML As Text
+        frontmatter{
+          title
+          path
+          tags
+          date
+        }
+      }
+    }
+  }
+}
+*/

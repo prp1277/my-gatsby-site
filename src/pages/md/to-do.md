@@ -5,9 +5,13 @@ published: "true"
 date: "2018-06-28"
 ---
 
-# Site
+# Issues
 
+* [ ] Log Issues
+  * [ ] [Footer nav](\\src\components\footer.jsx) sucks
+  * [ ] [md/my-files/](md/my-files/) isn't inline
 * [ ] Better contrast for links
+* [ ] React-ify resume
 * [ ] Automate Task list - To do component?
   * [ ] Find progress bar bootstrap / .css
   * [ ] [Editor Tasks in VsCode](https://code.visualstudio.com/docs/editor/tasks)

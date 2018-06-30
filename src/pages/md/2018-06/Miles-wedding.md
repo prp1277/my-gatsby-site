@@ -1,6 +1,7 @@
 ---
-title: Miles Wedding Itinerary
+title: "Miles Wedding Itinerary"
 date: "2018-06-14"
+path: "/md/miles-wedding"
 ---
 # Itinerary
 
