@@ -1,10 +1,11 @@
 import react from "react";
 
-const Container = ({ children }) => (
+const Wrapper = ({ children }) => (
   <div>{{ children }}</div>
 );
 
 export default ({children}) => (
-    <div className="wrapper">{children}
+    <div className="Wrapper">
+    {children}
     </div>
 );

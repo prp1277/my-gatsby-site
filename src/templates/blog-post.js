@@ -27,22 +27,3 @@ export const query = graphql`
     }
   }
 `;
-
-/* 
-query{
-  allMarkdownRemark{
-    edges{
-      node{
-        id
-        htmlAst //HTML As Text
-        frontmatter{
-          title
-          path
-          tags
-          date
-        }
-      }
-    }
-  }
-}
-*/

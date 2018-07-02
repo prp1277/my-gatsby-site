@@ -1,16 +1,13 @@
 import React from "react";
+import Container from "../components/container"
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 export default ({ data })=> {
     console.log(data)
     return (
-        <div className="container" style={{  
-            display: "block",
-            maxWidth: `42rem`,
-            color: `inherit`,
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            padding: `1.5rem 1.125rem`,
-            paddingTop: `1.5rem`}}>
+        <Container>
+          <Header />
           <h1>Index</h1>
           <table>
               <thead>
@@ -29,7 +26,8 @@ export default ({ data })=> {
                     )}
                 </tbody>
             </table>
-        </div>
+            <Footer />
+        </Container>
     )
 }
 
