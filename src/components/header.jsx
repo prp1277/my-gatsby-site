@@ -17,9 +17,9 @@ const Header = (props) => (
       display: `inline-block`, 
       fontSize: `15px`
        }}>
-    <Link 
-    to="/" 
-    style={{ 
+       <Link 
+       to="/" 
+       style={{ 
       color: `snow`, 
       marginRight: `1rem`, 
       marginLeft: `1rem` 
@@ -62,9 +62,17 @@ const Header = (props) => (
     textDecoration: `none` }}>
   <Link 
   to="/" 
-  style={{ color: `snow` }}
-  >B2=>BI</Link>
+  style={{ 
+    color: `snow`
+  }}
+  >B2 -> BI</Link>
   </h1>
+  <p
+  style={{ 
+    color: `snow`,
+    marginLeft: `2rem`
+  }}
+  >Helping Business Do Business, Intelligently</p>
     </div>
 )
 
