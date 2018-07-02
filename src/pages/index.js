@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Container from "../components/container"
+import Wrapper from "../components/wrapper"
 require("prismjs/themes/prism-coy.css");
 
 import { rhythm } from "../utils/typography";
@@ -12,7 +12,7 @@ import { rhythm } from "../utils/typography";
 export default ({ data }) => {
   console.log(data);
   return (
-    <Container>
+    <Wrapper>
       <Header />
       <h1 
       css={{ 
@@ -40,19 +40,14 @@ export default ({ data }) => {
           clear: `both`
          }} 
          key={node.id}>
-          <Link 
-          to={node.fields.slug}>
-          <h2 
-          marginBottom={rhythm(1 / 4)}
-          >{node.frontmatter.title}{" "}
-          <small color="#BBB">— {node.frontmatter.date}</small>
-            </h2>
-          <p>{node.excerpt}</p>
+          <Link to={node.fields.slug}>
+          <h2 marginBottom={rhythm(1 / 4)}>{node.frontmatter.title}<p><small>{node.frontmatter.date}</small></p></h2>
           </Link>
+          <p>{node.excerpt}</p>
         </div>
       ))}
       <Footer />
-    </Container>
+    </Wrapper>
   );
 };
 
@@ -68,7 +63,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: " MMM DD, YYYY")
           }
           fields {
             slug

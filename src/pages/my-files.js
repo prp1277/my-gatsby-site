@@ -1,12 +1,12 @@
 import React from "react";
-import Container from "../components/container"
+import Wrapper from "../components/wrapper"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
 export default ({ data })=> {
     console.log(data)
     return (
-        <Container>
+        <Wrapper>
           <Header />
           <h1>Index</h1>
           <table>
@@ -27,7 +27,7 @@ export default ({ data })=> {
                 </tbody>
             </table>
             <Footer />
-        </Container>
+        </Wrapper>
     )
 }
 

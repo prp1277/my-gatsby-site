@@ -1,23 +1,27 @@
 import React from "react";
-import Container from "../components/container"
+import Wrapper from "../components/wrapper"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
 export default ({ data }) => 
-<Container>
+<Wrapper>
 <Header />
-  <h1 css={{ textAlign: `center` }}> Get In Touch!</h1>
+<div className="Content" css={{ height: `auto`, marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem`, textAlign: `center` }}>
+  <h1 css={{ textAlign: `center` }}>Contact Information</h1>
       <ul>
-        <p css={{ textAlign: `center` }}><a href="mailto:prp1277@gmail.com"> Prp1277@gmail.com</a>
-        </p>
-      <p css={{ textAlign: `center` }}><a href="https://prp1277.github.io/md/resume/"> Resume</a>
-        </p>
-      <p css={{ textAlign: `center` }}><a href="tel:14024159083"> Cell Phone</a>
-        </p>
-      <p css={{ textAlign: `center` }}><a href="https://linkedin.com/in/prpowell1277"> LinkedIn</a>
-        </p>
-      <p css={{ textAlign: `center` }}><a href="https://github.com/prp1277"> GitHub</a>
-        </p>
-        </ul>
+        <a href={"mailto:prp1277@gmail.com"}>Email
+        </a><br/>
+        <a href={"https://prp1277.github.io/md/resume/"}>Resume
+        </a><br/>
+        <a href={"tel:14024159083"}>Cell Phone
+        </a><br/>
+        <a href={"https://linkedin.com/in/prpowell1277"}>LinkedIn
+        </a><br/>
+        <a href={"https://github.com/prp1277"}>GitHub
+        </a><br/>
+      </ul>
+    <h2>Additional Resources</h2>
+      <p> https://W3schools.com </p>
+        </div>
         <Footer />
-        </Container>
+        </Wrapper>
