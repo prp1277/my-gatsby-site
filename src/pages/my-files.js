@@ -8,24 +8,21 @@ export default ({ data })=> {
     return (
         <Wrapper>
           <Header />
+          <div className="Content" css={{ height: `auto`, marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem`, textAlign: `center` }}>
           <h1>Index</h1>
           <table>
               <thead>
                   <tr>
-                      <th>Public URL</th>
-                      <th>Local Folder</th>
-                      <th>Created</th>
+                      <th style={{ textAlign: `center` }}>Public URL</th>
                     </tr>
                 </thead>
                 <tbody>{data.allFile.edges.map(({ node }, index) =>
                     <tr key={index}>
                       <td>https://prp1277.github.io{node.publicURL}</td>
-                      <td>{node.sourceInstanceName}</td>
-                      <td>{node.birthTime}</td>
                     </tr>
                     )}
                 </tbody>
-            </table>
+            </table></div>
             <Footer />
         </Wrapper>
     )
