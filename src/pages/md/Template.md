@@ -1,8 +1,6 @@
 ---
 title: "Template"
-path: "/md/<>"
-published: "false"
-date: "2018-06-01"
+date: "2018-01-01"
 tags: [shortcuts, utilities, math]
 ---
 
