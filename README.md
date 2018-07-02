@@ -1,9 +1,8 @@
 ---
 title: 'readme'
 date: '2018-06-13'
-path: 'readme'
-published: true
 ---
+
 # [Prp1277](https://prp1277.github.io)
 >Source code for my personal website
 
@@ -45,6 +44,8 @@ published: true
 [Font-Awesome License](https://fontawesome.com/license)
 
 [React Cheat Sheet](https://reactcheatsheet.com)
+
+[Code Pen Compiler](https://codepen.io)
 
 Glamor replaces `(prop)` styling component with `className`
 `<div style={{ css }}> => <div className>`
