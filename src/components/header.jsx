@@ -65,14 +65,14 @@ const Header = (props) => (
   style={{ 
     color: `snow`
   }}
-  >B2 -> BI</Link>
+  >Patrick Powell</Link>
   </h1>
   <p
   style={{ 
     color: `snow`,
     marginLeft: `2rem`
   }}
-  >Helping Business Do Business, Intelligently</p>
+  >Financial Analyst | Business Intelligence | Data Visualization</p>
     </div>
 )
 
