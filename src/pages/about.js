@@ -2,13 +2,11 @@ import React from "react";
 import Wrapper from "../components/wrapper"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import linkedin from "../img/linkedin.jpg"
 
 export default ({ data }) => 
   <Wrapper>
     <Header />
     <div className="Content" css={{ marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem` }}>
-    <img src={ linkedin } css={{ float: `center` }} alt=""  />
     <h1 css={{ textAlign: `center` }}
     >About  {data.site.siteMetadata.author}
     </h1>
@@ -50,3 +48,15 @@ export const query = graphql`
       }
   }
 `
+
+/*
+import Footer from "../components/footer"
+
+export default ({ data }) => 
+  <Wrapper>
+    <Header />
+    <div className="Content" css={{ marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem` }}>
+    <h1 css={{ textAlign: `center` }}
+    >About  {data.site.siteMetadata.author}
+
+*/
