@@ -12,7 +12,7 @@ import { rhythm } from "../utils/typography";
 export default ({ data }) => {
   console.log(data);
   return (
-    <Wrapper>
+    <Wrapper className="landing-page">
       <Header />
       <h1 
       css={{ 
@@ -47,7 +47,7 @@ export default ({ data }) => {
         </div>
       ))}
       <Footer />
-    </Wrapper>
+      </Wrapper>
   );
 };
 
