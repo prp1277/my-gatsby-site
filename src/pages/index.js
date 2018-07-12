@@ -5,6 +5,17 @@ import Footer from "../components/footer";
 import Wrapper from "../components/wrapper"
 require("prismjs/themes/prism-okaidia.css");
 
+/* Code themes from https://prism.js.com
+require("prismjs/themes/prism-{coy}.css");
+require("prismjs/themes/prism-{dark}.css");
+require("prismjs/themes/prism-{funky}.css");
+require("prismjs/themes/prism-{okaidia}.css");
+require("prismjs/themes/prism-{solarizedlight}.css");
+require("prismjs/themes/prism-{tomorrow}.css");
+require("prismjs/themes/prism-{twilight}.css");
+require("prismjs/themes/prism-{prism}.css");
+*/
+
 import { rhythm } from "../utils/typography";
 
 // This is essentially the "app"

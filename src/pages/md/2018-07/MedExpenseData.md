@@ -1,3 +1,8 @@
+---
+title: " Med Expense Data"
+date: "2018-07-11"
+---
+
 ```r
 medexpense_data <- read.csv("C:/Users/prp12.000/OneDrive for Business/Courses/BIA-6309-Stats-And-Machine-Learning/csv/medexpense_data.csv")
 attach(medexpense_data)
@@ -33,13 +38,12 @@ Results:
 
 # Issue 2 - Dummy Variables - factoring variables
 
-## if smoker 1, nonsmoker = 0
-
 ```r
+## if smoker 1, nonsmoker = 0
 SMOKER <- ifelse(smoker == "yes", 1, 0)
 SMOKER
-## male = 1, female = 0
 
+## male = 1, female = 0
 GENDER <- ifelse(gender == "male", 1, 0)
 GENDER
 regModel2 <- lm(medical_expenses~
