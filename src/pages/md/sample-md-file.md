@@ -1,7 +1,7 @@
 ---
 title: "Template"
 date: "2018-01-01"
-tags: [shortcuts, utilities, math]
+tags: [ 'shortcuts', 'utilities', 'math']
 ---
 
 ```jsonc

@@ -10,6 +10,7 @@ export default ({ data }) => {
     <Header />
       <h1 css={{ textAlign: `center`, marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem` }}>{post.frontmatter.title}</h1>
       <p css={{ textAlign: `center` }}>Posted - {post.frontmatter.date}</p>
+      <p css={{ textAlign: `center` }}>Tags {post.frontmatter.tags}</p>
       <div className="mdContent" css={{ marginLeft:`auto`, marginRight: `auto` , maxWidth: `42rem` }} dangerouslySetInnerHTML={{ __html: post.html }} />
     <Footer />
     </Wrapper>
@@ -23,6 +24,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        tags
       }
     }
   }
