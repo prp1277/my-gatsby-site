@@ -1,11 +1,11 @@
 import react from "react";
 
 const Wrapper = ({ children }) => (
-  <div>{{ children }}</div>
+  <section>{{ children }}</section>
 );
 
 export default ({children}) => (
-    <div className="Wrapper">
+    <section className="Wrapper" css={{ marginLeft: `auto`, marginRight: `auto`, maxWidth: `100%`, Height:`600px` }}>
     {children}
-    </div>
+    </section>
 );
