@@ -3,6 +3,7 @@ title: "If You're Reading this.. It's Too Late"
 date: "2018-07-20"
 tags: [ "blog" ]
 ---
+![If Youre Reading This its Too Late](public/static/too-late-60420088f1c054439e16c106e045d8fb-9f62f.jpg)
 
 # BIA 6309 - Linear and Multivariate Models
 
