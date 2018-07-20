@@ -1,7 +1,7 @@
 ---
 title: "Assignment 1"
 date: "2018-07-06"
-tags: [ R, Assignment, BIA 6309 ]
+tags: [ "R" , "Assignment" , "BIA 6309" ]
 ---
 # ASSIGNMENT 1
 

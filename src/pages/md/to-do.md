@@ -2,6 +2,7 @@
 title: "To Do"
 path: "/md/to-do"
 date: "2018-06-28"
+tags: [ To-Do, Tasks ]
 ---
 
 # Issues

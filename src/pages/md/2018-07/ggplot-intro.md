@@ -1,8 +1,7 @@
 ---
 title: "GGPLOT Intro"
 date: "2018-05-30"
-output: html_document
-tags: [ R, Assignment, BIA 6309 ]
+tags: [ "R", "Assignment" , "BIA 6309" ]
 ---
 
 # [Source](http://r4ds.had.co.nz/data-visualisation.html)

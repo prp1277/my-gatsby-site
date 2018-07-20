@@ -1,5 +1,6 @@
 {
     "files.associations": {
         ".js": "javascriptreact"
-    }
+    },
+    "cSpell.language": "en"
 }

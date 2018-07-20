@@ -2,7 +2,7 @@
 title: "Cleaning Data"
 date: "2018-05-30"
 output: html_document
-tags: [ R, Assignment, BIA 6309 ]
+tags: [ "R" , "Assignment" , "BIA 6309" ]
 ---
 
 # Import Data into Workspace

@@ -1,7 +1,7 @@
 ---
 title: "Med Expense Data"
 date: "2018-07-11"
-tags: [ R, Stats, Machine Learning, Tutorial ]
+tags: [ "R" , "Stats" , "Machine Learning" , "Tutorial" ]
 ---
 
 ## Initialize Workspace

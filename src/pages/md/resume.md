@@ -2,12 +2,12 @@
 title: "Patrick Powell | Business Analyst"
 date: "2018-05-29"
 path: "/md/resume/"
-tags: [ Resume, Markdown, post_url, link ]
-published: "true"
+tags: [ "Resume" , "Markdown" ]
 ---
-[Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
 
-A business analyst with experience in the Financial Services industry interested in using emerging technology to improve processes and optimize efficiency.
+### [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [GitHub](https://github.com/prp1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
+
+**A business analyst with experience in the Financial Services industry interested in using emerging technology to improve processes and optimize efficiency.**
 
 # Employment
 
@@ -35,7 +35,7 @@ A business analyst with experience in the Financial Services industry interested
 * Received telephone inquiries and provided support to shareholders and financial advisors
 * Used DST's TA2000 and AWD software to maintain shareholder information and records
 
-## Key Bank Real Estate Capital
+## Key Bank Real Estate Capital  
 
  **Loan Surveillance & Asset Management, Surveillance Internship** (Summer 2015)
 * Monitored loans serviced by Key Bank to ensure future cash flow and minimize credit risk
