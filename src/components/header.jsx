@@ -11,10 +11,10 @@ const Header = (props) => (
     marginBottom: `1rem`
   }}>
     <ul 
-    style={{ 
+    css={{ 
       listStyle: `none`, 
       float: `right`, 
-      display: `inline-block`, 
+      display: `block`, 
       fontSize: `15px`
        }}>
        <Link 
@@ -40,12 +40,12 @@ const Header = (props) => (
       marginLeft: `1rem` 
       }}>CV</Link>
     <Link 
-    to="/contact/" 
+    to="/resources/" 
     style={{ 
       color: `snow`,
        marginRight: `1rem`, 
        marginLeft: `1rem` 
-      }}>Contact</Link>
+      }}>Resources</Link>
     <Link 
     to="/my-files/" 
     style={{ 
@@ -54,7 +54,7 @@ const Header = (props) => (
       marginLeft: `1rem` 
       }}>Index</Link>
     </ul>
-  <h1 
+  <h2 
   style={{ 
     color: `snow`, 
     marginLeft: `2rem`, 
@@ -66,13 +66,8 @@ const Header = (props) => (
     color: `snow`
   }}
   >Patrick Powell</Link>
-  </h1>
-  <p
-  style={{ 
-    color: `snow`,
-    marginLeft: `2rem`
-  }}
-  >Financial Analyst | Business Intelligence | Data Visualization</p>
+  </h2>
+  <p css={{ color: `snow`, marginLeft: "2rem" }}>Financial Analyst | Business Intelligence | Data Visualization</p>
     </div>
 )
 

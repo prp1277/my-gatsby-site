@@ -1,13 +1,12 @@
 ---
 title: "Patrick Powell | Business Analyst"
-date: "2018-05-29"
 path: "/md/resume/"
-tags: [ "Resume" , "Markdown" ]
 ---
-
-### [Email](Mailto:Prp1277@gmail.com) -- [Cell](tel:+1-402-415-9083) -- [LinkedIn](https://linkedin.com/in/prpowell1277) -- [GitHub](https://github.com/prp1277) -- [Address](https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114)
-
-**A business analyst with experience in the Financial Services industry interested in using emerging technology to improve processes and optimize efficiency.**
+<center><ul><h2>
+<a href="Mailto:Prp1277@gmail.com"> Email</a><a href="tel:+1-402-415-9083"> -- Cell</a><a href="https://linkedin.com/in/prpowell1277"> -- LinkedIn</a><a href="https://github.com/prp1277"> -- GitHub</a><a href="https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114"> -- Address</a>
+</h2></ul>
+A financial analyst with a background in operations and a passion for improving processes.  
+</center>
 
 # Employment
 

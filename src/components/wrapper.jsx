@@ -5,7 +5,7 @@ const Wrapper = ({ children }) => (
 );
 
 export default ({children}) => (
-    <section className="Wrapper" css={{ marginLeft: `auto`, marginRight: `auto`, maxWidth: `100%`, Height:`600px` }}>
+    <section className="Wrapper" style={{ marginLeft: `auto`, marginRight: `auto`, maxWidth: `100%`, Height:`600px` }}>
     {children}
     </section>
 );

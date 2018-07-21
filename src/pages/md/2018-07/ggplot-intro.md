@@ -4,7 +4,7 @@ date: "2018-05-30"
 tags: [ "R", "Assignment" , "BIA 6309" ]
 ---
 
-# [Source](http://r4ds.had.co.nz/data-visualisation.html)
+> [Source](http://r4ds.had.co.nz/data-visualisation.html)
 
 # Set up a Template
 
@@ -20,7 +20,7 @@ ggplot(
 )
 ```
 
-# Using colors
+## Using colors
 
 ```r
 ggplot(data = mpg) + geom_point(
@@ -32,7 +32,7 @@ ggplot(data = mpg) + geom_point(
 )
 ```
 
-# Using Size instead of color
+## Using Size instead of color
 
 ```r
 ggplot(data = mpg) +
@@ -45,7 +45,7 @@ geom_point(
 )
 ```
 
-# Using alpha
+## Using alpha
 
 ```r
 ggplot(data = mpg) +
@@ -58,7 +58,7 @@ ggplot(data = mpg) +
 )
 ```
 
-# Using Shape - Only shows 6 at a time
+## Using Shape - Only shows 6 at a time
 
 ```r
 ggplot(data = mpg) +
@@ -71,7 +71,7 @@ ggplot(data = mpg) +
 )
 ```
 
-# Lesson: x and y locations of a point are aesthetics themselves and can be used to display information
+### Lesson: x and y locations of a point are aesthetics themselves and can be used to display information
 
 # Setting Aesthetic Properties
 
@@ -87,7 +87,7 @@ ggplot(data = mpg) +
 # Note that color is not an argument and is outside of the bracket
 ```
 
-# Using Facets - subplots that each display one subset of the data 
+## Using Facets - subplots that each display one subset of the data 
 
 ```r
 ggplot(
@@ -104,7 +104,7 @@ ggplot(
             )
 ```
 
-# Format each into a grid
+## Format each into a grid
 
 ```r
 ggplot(data = mpg) +
@@ -113,7 +113,7 @@ ggplot(data = mpg) +
     # Note: Usually put variable with more unique levels in columns
 ```
 
-# <- Exercises ->
+# Exercises
 
 ```r
 ggplot(data = mpg) +
@@ -133,7 +133,8 @@ ggplot(data = mpg) +
 ```
 
 # Changing the geom function
-# Scatterplot
+
+## Scatterplot
 
 ```r
 ggplot(data = mpg) +
@@ -180,17 +181,20 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point(mapping = aes(color = class)) +
   geom_smooth(data = filter(mpg, class == "subcompact"), se = FALSE)
-
-# Some things to note:
-    # Bar charts, histograms and frequency polygons bin data then plot bin counts
-    # Smoothers fit a model to the data and plot predictions from the model
-    # boxplots compute a summary of the distribution then display a specifically formatted box
-# Bins are basically the same thing as creating measures in PBI or DAX
-# Each geom has a default - manually override to change
 ```
 
+## Some things to note:
+
+* Bar charts, histograms and frequency polygons bin data then plot bin counts
+* Smoothers fit a model to the data and plot predictions from the model
+* boxplots compute a summary of the distribution then display a specifically formatted box
+
+### Bins are basically the same thing as creating measures in PBI or DAX
+
+* Each geom has a default - manually override to change
+
 ```r
-ggplot(data = diamonds) + 
+ggplot(data = diamonds) +
   stat_summary(
     mapping = aes(x = cut, y = depth),
     fun.ymin = min,
@@ -209,9 +213,13 @@ ggplot(data = diamonds) +
 # Adding another variable to fill
 ggplot(data = diamonds) + 
   geom_bar(mapping = aes (x = cut, fill = clarity))
+```
 
-# Positioning data 
-# Position = "identity" places objects exactly where it falls on graph - not good for bars
+# Positioning data
+
+Position = "identity" places objects exactly where it falls on graph - not good for bars
+
+```r
 ggplot(data = diamonds, mapping = aes ( x = cut, fill = clarity )) +
   geom_bar(alpha = 1/5, position = "identity")
 ggplot(data = diamonds, mapping = aes (x=cut, color = clarity)) +
@@ -228,13 +236,17 @@ ggplot(data = diamonds) +
 # Using jitter to add some random noise
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy), position = "jitter")
+```
 
-# Jitter trade-off -> makes graph less accurate on small scale,
-#   but more revealing at large scales 
+### Jitter trade-off
+Makes graph less accurate on small scale, but more revealing at large scales 
 
-# Coordinate Systems
-# Default - Cartesian 
-# x and y positions act independently to determine location of each point
+## Coordinate Systems
+
+    * Default - Cartesian
+    * x and y positions act independently to determine location of each point
+
+```r
 ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
   geom_boxplot()
 
@@ -265,27 +277,35 @@ bar <- ggplot(data = diamonds) +
 
 bar + coord_flip()
 bar + coord_polar()
+```
 
 # Updating our Template - 7 Parameters in <BRACKETS>
-# ggplot(data = <DATA>) +
-#   <GEOM_FUNCTION>(
-#     mapping = aes(<MAPPINGS>),
-#     stat = <STAT>,
-#     position = <POSITION>
-#   ) + 
-#   <COORDINATE_FUNCTION> +
-#   <FACET_FUNCTION>
-  
-  # Review / Steps
-  #    1. Start with a dataset
-  #    2. Compute counts or other stats
-  #    3. Represent each observation, graphically
-  #    4. Map the fill to the stat
-  #    5. Place geoms in coordinate system
-  #    6. Map x and y values to axis
 
-#-- Workflow Basics --#
-# [Source](http://r4ds.had.co.nz/workflow-basics.html)
+```r
+ ggplot(data = <DATA>) +
+   <GEOM_FUNCTION>(
+     mapping = aes(<MAPPINGS>),
+     stat = <STAT>,
+     position = <POSITION>
+   ) + 
+   <COORDINATE_FUNCTION> +
+   <FACET_FUNCTION>
+```
+
+# Review / Steps
+
+  * Start with a dataset
+  * Compute counts or other stats
+  * Represent each observation, graphically
+  * Map the fill to the stat
+  * Place geoms in coordinate system
+  * Map x and y values to axis
+
+# Workflow Basics
+
+> [Source](http://r4ds.had.co.nz/workflow-basics.html)
+
+```r
 # Assignment Statements - "object name gets value"
 #   object_name <- value
 
@@ -299,9 +319,9 @@ x
 
 # Instead of immediately checking the value, print it to the screen
 (y <- seq(1,10, length.out = 5))
-
-# Variables will also be shown in the Environment Pane
-
-# Alt + Shift + K -> show shortcuts 
-# Ctrl + Shift + C -> Comment / Uncomment lines
 ```
+
+### Variables will also be shown in the Environment Pane
+
+`Alt + Shift + K` -> show shortcuts
+`Ctrl + Shift + C` -> Comment / Uncomment lines
