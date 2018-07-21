@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Wrapper from "../components/wrapper"
-require("prismjs/themes/prism-dark.css");
+require("prismjs/themes/prism-twilight.css");
 
 /* Code themes from https://prism.js.com
 /* Copy and paste from below over line 6
