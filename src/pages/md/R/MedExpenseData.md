@@ -37,7 +37,7 @@ confint(regModel1)
 
 ```r
 medical expenses = -7056 + 264 [ age ] + 300 [ bmi ] + 390 [ children ]  
-T-Value = [ coefficient / standard error ] 
+T-Value = [ coefficient / standard error ]
         = 10.498  
 ```
 
@@ -68,7 +68,7 @@ R is able to define the strings as factors. Adjusted R2 went up.
 All else equal, the cost of being a smoker increases by $**23,812.57**  
 All else equal, the cost of being a male is $**267.17** lower than being a female
 
-![Smoker Decision Tree](/src/img/smoker-decision-tree.png)
+![Smoker Decision Tree](https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png)
 
 # Issue 3 
 ## Creating New Variables
@@ -149,11 +149,13 @@ newData <- data.frame(age, AGE2, bmi, OBESE, OBESE_SMOKER, SMOKER, GENDER, child
 library(leaps)
 
 regModel6 <- regsubsets(medical_expenses~
-                        age+AGE2+bmi+OBESE+children+SMOKER+GENDER,
+                        age + AGE2 + bmi + OBESE +
+                        children + SMOKER + GENDER,
                       data = newData,
                       nvmax = 7)
 summary(regModel6)
 ```
+
 ### Results:
  Best 1 variable model -> **Smoker**  
  Best 2 variable model -> **age2, smoker**
