@@ -1,6 +1,8 @@
 import React from "react"
 import Link from "gatsby-link"
+
 //Create List Link
+
 const Footer = (props) => ( 
     <section className="footer"
       css={{ 
@@ -30,11 +32,13 @@ const Footer = (props) => (
         <a href={"https://facebook.com/patrick.powell1"}>
           <img src="https://prp1277.github.io/static/facebook-square-2362db2ef99c063558ffe8d9121643d4.svg" alt="Facebook Profile" height="30px" width="30px" />
             </a>
-      </ul>
+        </ul>
       <p css={{ color: `snow`, fontSize: `15px`, float: `center` }}>Patrick Powell 2018</p>
     </center>
     </section>
 ) 
 
-
 export default Footer
+/*
+
+      */
