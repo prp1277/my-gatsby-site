@@ -101,7 +101,7 @@ regModel4 <- lm(medical_expenses~
 summary(regModel4)
 ```
 
-![Smoker Decision Tree]("https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png")
+<img src="https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png" alt="decision-tree">
 
 ### Results:
 The model keeps getting more accurate with each step (Intercept Estimate)
