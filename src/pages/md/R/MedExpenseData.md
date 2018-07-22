@@ -68,7 +68,6 @@ R is able to define the strings as factors. Adjusted R2 went up.
 All else equal, the cost of being a smoker increases by $**23,812.57**  
 All else equal, the cost of being a male is $**267.17** lower than being a female
 
-![Smoker Decision Tree](https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png)
 
 # Issue 3 
 ## Creating New Variables
@@ -101,6 +100,8 @@ regModel4 <- lm(medical_expenses~
                 age + OBESE + children + SMOKER + GENDER + OBESE_SMOKER)
 summary(regModel4)
 ```
+
+![Smoker Decision Tree]("https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png")
 
 ### Results:
 The model keeps getting more accurate with each step (Intercept Estimate)
