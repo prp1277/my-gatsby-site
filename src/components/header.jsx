@@ -3,72 +3,19 @@ import Link from "gatsby-link"
 
 //Should be a Functional Component that is reusable on all pages 
 const Header = (props) => (
-  <div 
-  className = "header" 
-  css={{
-    borderBottom: `2px solid #BBB`,
-    backgroundColor: `green`,
-    marginBottom: `1rem`
-  }}>
-    <ul 
-    css={{ 
-      listStyle: `none`, 
-      float: `right`, 
-      display: `block`, 
-      fontSize: `15px`
-       }}>
-       <Link 
-       to="/" 
-       style={{ 
-      color: `snow`, 
-      marginRight: `1rem`, 
-      marginLeft: `1rem` 
-      }}>Home
-      </Link>
-    <Link 
-    to="/about/" 
-    style={{ 
-      color: `snow`, 
-      marginRight: `1rem`, 
-      marginLeft: `1rem` 
-      }}>About</Link>
-    <Link 
-    to="/md/resume/" 
-    style={{ 
-      color: `snow`, 
-      marginRight: `1rem`, 
-      marginLeft: `1rem` 
-      }}>CV</Link>
-    <Link 
-    to="/resources/" 
-    style={{ 
-      color: `snow`,
-       marginRight: `1rem`, 
-       marginLeft: `1rem` 
-      }}>Resources</Link>
-    <Link 
-    to="/my-files/" 
-    style={{ 
-      color: `snow`, 
-      marginRight: `1rem`, 
-      marginLeft: `1rem` 
-      }}>Index</Link>
-    </ul>
-  <h2 
-  style={{ 
-    color: `snow`, 
-    marginLeft: `2rem`, 
-    display: `inline-block`, 
-    textDecoration: `none` }}>
-  <Link 
-  to="/" 
-  style={{ 
-    color: `snow`
-  }}
-  >Patrick Powell</Link>
-  </h2>
-  <p css={{ color: `snow`, marginLeft: "2rem" }}>Financial Analyst | Business Intelligence | Data Visualization</p>
+  <nav className = "navbar navbar-inverse navbar-fixed-top" css={{ top: `0px`, borderBottom: `2px solid #BBB`, backgroundColor: `green`, width:`100%` }}>
+  <div className="navbar-header" css={{ display: `block`, color: `snow`, marginLeft: `2rem` }}>
+    <Link to="/" css={{ color: `snow`}}>Patrick Powell</Link>
     </div>
+  <ul className="nav navbar-nav" css={{ listStyle: `none` }}>
+       <li><a href="/my-files/" css={{ float:`right`, marginRight: `1rem`, color: `snow` }}>Index</a></li>
+       <li><a href="/resources/" css={{ float:`right`, marginRight: `1rem`, color: `snow` }} >Resources</a></li>
+       <li><a href="/md/resume/" css={{ float:`right`, marginRight: `1rem`, color: `snow` }} >CV</a></li>
+       <li><a href="/about/"css={{ float:`right`, marginRight: `1rem`, color: `snow` }} >About</a></li>
+       <li><a href="/" css={{ float:`right`, marginRight: `1rem`, color: `snow` }} >Home</a></li>
+    </ul>
+  <p css={{ color: `snow`, marginLeft: "2rem", display: `block` }}>Financial Analyst | Business Intelligence | Data Visualization</p>    
+    </nav>
 )
 
 export default Header
