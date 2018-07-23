@@ -1,6 +1,68 @@
 {
-    "files.associations": {
-        ".js": "javascriptreact"
-    },
-    "cSpell.language": "en"
+  "gitlens.advanced.messages": {
+    "gitlens.codeLens.enabled": true,
+    "gitlens.historyExplorer.enabled": false,
+    "gitlens.gitExplorer.files.layout": "auto",
+    "suppressShowKeyBindingsNotice": true,
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "gitlens.gitExplorer.view": "repository",
+    "gitlens.resultsExplorer.location": "scm"
+  },
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "rest-client.includeAdditionalInfoInResponse": true,
+  "json.trace.server": "verbose",
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "TODO": "markdown"
+  },
+  "cSpell.userWords": [
+    "bloomberg",
+    "docx",
+    "dst",
+    "dst's",
+    "dubya",
+    "financials",
+    "foodservice",
+    "frontmatter",
+    "gmail",
+    "okaidia",
+    "oledb",
+    "reddit",
+    "reinhart",
+    "stackoverflow",
+    "waddell"
+  ],
+  "window.zoomLevel": 0,
+  "rest-client.previewResponseInUntitledDocument": true,
+  "r.rterm.windows": "C:\\Program Files\\R\\R-3.5.0\\bin\\x64\\R.exe",
+  "gitlens.advanced.fileHistoryFollowsRenames": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-ocean",
+  "materialTheme.fixIconsRunning": false,
+  "cSpell.language": "en",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "es5",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html"
+  }
 }
