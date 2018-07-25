@@ -1,19 +1,12 @@
 import React from "react"
-import Wrapper from "../components/wrapper"
+import Container from "../components/container"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
 export default ({ data }) => (
-  <Wrapper>
+  <div className="Resources-Content">
     <Header />
-    <div
-      className="Content"
-      css={{
-        height: `auto`,
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: `42rem`,
-      }}>
+    <Container>
       <h1 css={{ textAlign: `center` }}>Resources</h1>
 
       <h2>Web Development / APIs </h2>
@@ -24,6 +17,18 @@ export default ({ data }) => (
         <br />
         <a href="https://gatsbyjs.org" alt="Gatsby">
           GatsbyJS
+        </a>
+        <br />
+        <a
+          href="https://auth0.com/blog/building-a-blog-with-gatsby-react-and-webtask/"
+          alt="">
+          Blogging with Gatsby and React
+        </a>
+        <br />
+        <a
+          href="https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/"
+          alt="">
+          Guide to Gatsby with Netlify
         </a>
         <br />
         <a
@@ -163,7 +168,7 @@ export default ({ data }) => (
         </a>
         <br />
       </ul>
-    </div>
+    </Container>
     <Footer />
-  </Wrapper>
+  </div>
 )

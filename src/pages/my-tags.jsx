@@ -1,23 +1,14 @@
 import React from "react"
 import Header from "../components/header"
-import Wrapper from "../components/wrapper"
+import Container from "../components/container"
 import Footer from "../components/footer"
 
 export default ({ data }) => {
   console.log(data)
   return (
-    <Wrapper>
+    <div className="My-Tags-Content">
       <Header />
-      <div
-        className="Content"
-        css={{
-          height: `auto`,
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: `42rem`,
-          textAlign: `center`,
-        }}
-      >
+      <Container>
         <table>
           <thead>
             <tr>
@@ -34,9 +25,9 @@ export default ({ data }) => {
             ))}
           </tbody>
         </table>
-      </div>
+      </Container>
       <Footer />
-    </Wrapper>
+    </div>
   )
 }
 

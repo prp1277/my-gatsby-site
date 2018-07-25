@@ -1,7 +1,7 @@
 ---
 title: "GGPLOT Intro"
 date: "2018-05-30"
-tags: [ "R", "Assignment" , "BIA 6309" ]
+tags: [ "R ", "Tutorial " , "Walkthrough " ]
 ---
 
 > [Source](http://r4ds.had.co.nz/data-visualisation.html)
@@ -87,7 +87,7 @@ ggplot(data = mpg) +
 # Note that color is not an argument and is outside of the bracket
 ```
 
-## Using Facets - subplots that each display one subset of the data 
+## Using Facets - subplots that each display one subset of the data
 
 ```r
 ggplot(
@@ -128,7 +128,7 @@ ggplot(data = mpg) +
   facet_grid(. ~ cyl)
 
 ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
   facet_wrap(~ class, nrow = 2)
 ```
 
@@ -161,16 +161,16 @@ ggplot(data = mpg) +
   )
 
 # Adding multiple geoms to the same plot (Scatter and line)
-ggplot(data = mpg) + 
+ggplot(data = mpg) +
 geom_point(mapping = aes(x = displ, y = hwy)) +
   geom_smooth(mapping = aes(x = displ, y = hwy))
 
-# Layering / mapping data 
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+# Layering / mapping data
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point() +
   geom_smooth()
 
-# Extending mapping for a single layer only 
+# Extending mapping for a single layer only
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point(mapping = aes(color = class )) +
   geom_smooth()
@@ -185,13 +185,13 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ## Some things to note:
 
-* Bar charts, histograms and frequency polygons bin data then plot bin counts
-* Smoothers fit a model to the data and plot predictions from the model
-* boxplots compute a summary of the distribution then display a specifically formatted box
+- Bar charts, histograms and frequency polygons bin data then plot bin counts
+- Smoothers fit a model to the data and plot predictions from the model
+- boxplots compute a summary of the distribution then display a specifically formatted box
 
 ### Bins are basically the same thing as creating measures in PBI or DAX
 
-* Each geom has a default - manually override to change
+- Each geom has a default - manually override to change
 
 ```r
 ggplot(data = diamonds) +
@@ -203,15 +203,15 @@ ggplot(data = diamonds) +
   )
 
 # Color / Fill - Fill is more useful
-ggplot(data = diamonds) + 
+ggplot(data = diamonds) +
   geom_bar(mapping = aes(x=cut, color = cut))
 
 # Color only outlines and looks dumb - use fill
-ggplot(data = diamonds) + 
+ggplot(data = diamonds) +
   geom_bar(mapping = aes(x = cut, fill = cut))
 
 # Adding another variable to fill
-ggplot(data = diamonds) + 
+ggplot(data = diamonds) +
   geom_bar(mapping = aes (x = cut, fill = clarity))
 ```
 
@@ -226,7 +226,7 @@ ggplot(data = diamonds, mapping = aes (x=cut, color = clarity)) +
   geom_bar(fill=NA, position = "identity")
 
 # Position = "fill" makes each set of stacked bars the same height which makes comparing proportions easier
-ggplot(data = diamonds) + 
+ggplot(data = diamonds) +
   geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill")
 
 # Position = "dodge" places each object directly beside one another
@@ -239,7 +239,8 @@ ggplot(data = mpg) +
 ```
 
 ### Jitter trade-off
-Makes graph less accurate on small scale, but more revealing at large scales 
+
+Makes graph less accurate on small scale, but more revealing at large scales
 
 ## Coordinate Systems
 
@@ -247,11 +248,11 @@ Makes graph less accurate on small scale, but more revealing at large scales
     * x and y positions act independently to determine location of each point
 
 ```r
-ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+ggplot(data = mpg, mapping = aes(x = class, y = hwy)) +
   geom_boxplot()
 
 # Flip the coordinates - good for long labels or boxplots
-ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+ggplot(data = mpg, mapping = aes(x = class, y = hwy)) +
   geom_boxplot() +
   coord_flip()
 
@@ -266,7 +267,7 @@ ggplot(nz, aes(long, lat, group = group)) +
   coord_quickmap()
 
 # Polar Coordinates
-bar <- ggplot(data = diamonds) + 
+bar <- ggplot(data = diamonds) +
   geom_bar(
     mapping = aes (x = cut, fill = cut),
     show.legend = FALSE,
@@ -287,19 +288,19 @@ bar + coord_polar()
      mapping = aes(<MAPPINGS>),
      stat = <STAT>,
      position = <POSITION>
-   ) + 
+   ) +
    <COORDINATE_FUNCTION> +
    <FACET_FUNCTION>
 ```
 
 # Review / Steps
 
-  * Start with a dataset
-  * Compute counts or other stats
-  * Represent each observation, graphically
-  * Map the fill to the stat
-  * Place geoms in coordinate system
-  * Map x and y values to axis
+- Start with a dataset
+- Compute counts or other stats
+- Represent each observation, graphically
+- Map the fill to the stat
+- Place geoms in coordinate system
+- Map x and y values to axis
 
 # Workflow Basics
 

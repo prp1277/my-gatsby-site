@@ -1,7 +1,7 @@
 ---
 title: "My Favorite Macro"
 date: "2018-07-20"
-tags: [ "VBA" ]
+tags: [ "VBA ", "Excel ", "Tip " ]
 ---
 
 ## Keep it Simple

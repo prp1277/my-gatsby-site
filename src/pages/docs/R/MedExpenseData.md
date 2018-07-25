@@ -1,7 +1,7 @@
 ---
 title: "Med Expense Data"
 date: "2018-07-11"
-tags: [ "R" , "Stats" , "Machine Learning" , "Tutorial" ]
+tags: [ "R " , "Stats " , "Tutorial " ]
 ---
 
 ## Initialize Workspace
@@ -24,6 +24,7 @@ plot(age, medical_expenses)
 Get the descriptive statistics for the data set and show medical expenses as a function of age.
 
 # Issue 1
+
 ## Interpreting confidence intervals in Multiple Linear Regression
 
 ```r
@@ -41,9 +42,10 @@ T-Value = [ coefficient / standard error ]
         = 10.498  
 ```
 
-Medical expenses rise as age, bmi and number of kids increases  
+Medical expenses rise as age, bmi and number of kids increases
 
-# Issue 2 
+# Issue 2
+
 ## Dummy Variables - Factoring Variables
 
 Factor variables into binary so we can work with numbers and form a decision tree.  
@@ -51,7 +53,6 @@ Smokers = 1, Nonsmokers = 0
 Males = 1, Females = 0
 
 ```r
-
 SMOKER <- ifelse(smoker == "yes", 1, 0)
 view(SMOKER)
 
@@ -68,8 +69,8 @@ R is able to define the strings as factors. Adjusted R2 went up.
 All else equal, the cost of being a smoker increases by $**23,812.57**  
 All else equal, the cost of being a male is $**267.17** lower than being a female
 
+# Issue 3
 
-# Issue 3 
 ## Creating New Variables
 
 ```r
@@ -85,10 +86,12 @@ summary(regModel3)
 
 Being obese increases med expenses by $ 4,034.56
 
-# Issue 4 
+# Issue 4
+
 ## Creating Interaction Variables
- What about an obese smoker?  
- value = [ Class(obese) * Class(smoker) ]  
+
+What about an obese smoker?  
+ value = [ Class(obese) * Class(smoker) ]
 
 ```r
 OBESE_SMOKER <- (OBESE * SMOKER)
@@ -104,6 +107,7 @@ summary(regModel4)
 <img src="https://prp1277.github.io/static/smoker-decision-tree-ed9e675408f598b1eca9da3f7babc75d.png" alt="decision-tree">
 
 ### Results:
+
 The model keeps getting more accurate with each step (Intercept Estimate)
 Always make sure to include the parents when you create new children variables
 
@@ -113,11 +117,12 @@ Always make sure to include the parents when you create new children variables
 = -2593 + 273[ age ] + 88[ bmi ] + 448[ children ] +
    13383[ smoker ] - 635[ gender ] + 19998[ obese-smoker ]
 
-= -2593 + 273[ 40 ] + 88[ 0 ] + 448[ 0 ] + 13383[ 1 ] - 635[ 0 ] + 19998[ 0 * 1 ] 
+= -2593 + 273[ 40 ] + 88[ 0 ] + 448[ 0 ] + 13383[ 1 ] - 635[ 0 ] + 19998[ 0 * 1 ]
 = 21,710
 ```
 
-# Issue 5 
+# Issue 5
+
 ### Modeling Non-Linear Effects
 
 **Polynomial or Quadratic Regression**
@@ -134,7 +139,8 @@ regModel5 <- lm(medical_expenses~
 summary(regModel5)
 ```
 
-# Issue 6 
+# Issue 6
+
 ## Model Selection - Using Regression Subsets
 
 ```r
@@ -158,7 +164,8 @@ summary(regModel6)
 ```
 
 ### Results:
- Best 1 variable model -> **Smoker**  
+
+Best 1 variable model -> **Smoker**  
  Best 2 variable model -> **age2, smoker**
 
 ```r
@@ -169,4 +176,5 @@ regSummary$adjr2
 ```
 
 ### Results:
- Judging by the adjR2 this model gets overfitted after age, obese, smoker
+
+Judging by the adjR2 this model gets overfitted after age, obese, smoker

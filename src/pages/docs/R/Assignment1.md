@@ -1,8 +1,9 @@
 ---
 title: "Assignment 1"
 date: "2018-07-06"
-tags: [ "R" , "Assignment" , "BIA 6309" ]
+tags: [ "R " , "Assignment " , "BIA 6309 " ]
 ---
+
 # ASSIGNMENT 1
 
 [Sharpe Data](/BIA-6309-Stats-And-Machine-Learning/csv/sharpe_data.csv)
@@ -88,7 +89,7 @@ return = 5.54 + .47 (13) = 11.65 (%)
 
 The increase in return is then `11.65% – 10.24% = 1.41%`. Notice that the intercept term has no effect.
 
-Thus, if risk goes up by 3%, return increases by `.47(3) = 1.41%`.  
+Thus, if risk goes up by 3%, return increases by `.47(3) = 1.41%`.
 
 Clearly, as risk goes up, return also goes up, validating the return/risk relationship postulated by finance theory.
 
@@ -128,7 +129,7 @@ Thus:
 = 196
 ```
 
-The goal of an explanatory model is to maximize R2. This can be achieved if we minimize the Residual Sum of Squares. 
+The goal of an explanatory model is to maximize R2. This can be achieved if we minimize the Residual Sum of Squares.
 
 `R2 = [Regression Sum of Squares / Total Sum of Squares]`
 
@@ -154,7 +155,7 @@ If risk were zero, return would be 5.54.
 
 Thus, the intercept value of 5.54% can be interpreted as the return you get when there is no risk. In finance, this is called the “risk free rate”.
 
-The standard example of a risk free rate is the rate of return on 3 month, US Treasury bills. Three month T-bills are guaranteed by the U.S. Treasury and thus have no risk.  
+The standard example of a risk free rate is the rate of return on 3 month, US Treasury bills. Three month T-bills are guaranteed by the U.S. Treasury and thus have no risk.
 
 ### h) “Massachusetts Investors – Growth Stock”, one of the mutual funds in the data set has a return of 18.60% and risk of 22.7%. Is this fund under-performing or over-performing according to the linear regression equation?
 
@@ -200,7 +201,7 @@ names(advertising_data)
 summary(advertising_data)
 ```
 
-### a) Sales = β0 +  β1  (TV)
+### a) Sales = β0 + β1 (TV)
 
 ```r
 REG1<-lm(sales ~ TV)
@@ -208,7 +209,7 @@ summary(REG1)
 anova(REG1)
 ```
 
-### b) Sales = β0 +  β1  (radio)
+### b) Sales = β0 + β1 (radio)
 
 ```r
 REG2<-lm(sales ~ radio)
@@ -216,7 +217,7 @@ summary(REG2)
 anova(REG2)
 ```
 
-### c) Sales = β0 +  β1  (newspaper)
+### c) Sales = β0 + β1 (newspaper)
 
 ```r
 REG3<-lm(sales ~ newspaper)
@@ -224,7 +225,7 @@ summary(REG3)
 anova(REG3)
 ```
 
-### d) Sales = β0 +  β1 (TV ) + β2  (Radio) + β3  (Newspaper)
+### d) Sales = β0 + β1 (TV ) + β2 (Radio) + β3 (Newspaper)
 
 ```r
 REG4<-lm(sales ~ TV + radio + newspaper)
@@ -331,12 +332,13 @@ cor(djia, sp500)
 ```
 
 ## IV. Answer question 2.1 on page 49 of Data Mining for Business Analytics
+
 ANSWERS TO 2.1 PAGE 49
 
 **a) Supervised Learning**
 
 This is supervised learning because there is a distinct outcome variable - whether the loan was approved or not.
-(The appropriate model for binary decisions of this nature is Logistic Regression).  
+(The appropriate model for binary decisions of this nature is Logistic Regression).
 
 **b) Unsupervised Learning**
 
@@ -354,7 +356,7 @@ This is unsupervised learning because there is no clear outcome. Typically, Clus
 **e) Supervised Learning**
 
 This is supervised learning since the outcome variable is bankruptcy or not.
-(The appropriate model for binary decisions of this nature is Logistic Regression).  
+(The appropriate model for binary decisions of this nature is Logistic Regression).
 
 **f) Supervised Learning**
 
@@ -371,15 +373,16 @@ This is unsupervised learning since discount coupons are typically printed based
 (The appropriate model for this is Association Mining).
 
 ## V. Answer question 2.7 on page 50 of “Data Mining for Business Analytics”
+
 ANSWERS TO 2.7 PAGE 50
 
 Since 5% (.05) of the values are missing and these missing values are spread randomly, it can be assumed that the probability that a record is completely intact (i.e. has no missing value) is 95% (.95).
 
 ```r
 # The probability that two records are completely intact is .95 x .95 = .9025.
-# The probability that all 50 records are completely intact 
+# The probability that all 50 records are completely intact
 =.95 x .95 x .95 x ……. .95 = [ .95 ] 50 = .0769
-```  
+```
 
 Thus, only 7.69% of the records are completely intact. If the analyst decides to keep only intact records, he would have to discard nearly 92% of the records which would result in a loss of valuable information.
 
