@@ -88,11 +88,16 @@ export default ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+    ) {
       totalCount
       edges {
         node {
           id
+          timeToRead
+          tableOfContents
           frontmatter {
             title
             tags
