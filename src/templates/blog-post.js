@@ -44,17 +44,13 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query GetTransformHTML {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            date
-            tags
-          }
-          html
-        }
+  query BlogPostQuery($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        date
+        tags
       }
     }
   }
