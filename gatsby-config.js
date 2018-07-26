@@ -30,7 +30,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-<<<<<<< HEAD
         name: "data",
         path: `${__dirname}/src/data`,
       },
@@ -38,22 +37,6 @@ module.exports = {
     `gatsby-plugin-glamor`,
     {
       resolve: "gatsby-source-filesystem",
-=======
-        name: "pages",
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "data",
-        path: `${__dirname}/src/data`,
-      },
-    },
-    `gatsby-plugin-glamor`,
-    {
-      resolve: "gatsby-source-filesystem",
->>>>>>> e026592500e3057ffe3a5bb83aee0175754a1d5d
       options: {
         name: "prp1277.github.io",
         path: `${__dirname}/src/`,
