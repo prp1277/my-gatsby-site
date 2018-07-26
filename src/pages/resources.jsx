@@ -9,7 +9,49 @@ export default ({ data }) => (
     <Container>
       <h1 css={{ textAlign: `center` }}>Resources</h1>
 
-      <h2>Web Development / APIs </h2>
+      <h2>Excel</h2>
+      <ul className="Excel-Links">
+        <a href="https://reddit.com/r/excel" alt="/r/Excel">
+          /r/Excel
+        </a>
+        <br />
+        <a href="https://powerspreadsheets.com" alt="PowerSpreadSheets">
+          PowerSpreadSheets
+        </a>
+        <br />
+        <a href="https://myexcelonline.com" alt="MyExcelOnline" />
+        MyExcelOnline
+        <br />
+        <a href="https://myonlinetraininghub.com" alt="MyOnlineTrainingHub" />
+        MyOnlineTrainingHub
+        <br />
+        <a href="https://thespreadsheetguru.com" alt="TheSpreadsheetGuru" />
+        TheSpreadsheetGuru
+        <br />
+        <a href="https://powerquerytraining.com" alt="PowerQueryTraining" />
+        PowerQueryTraining
+        <br />
+      </ul>
+
+      <h2>RStudio</h2>
+      <ul className="RStudio-Links">
+        <a href="https://www.r-bloggers.com/" alt="r-bloggers">
+          R-Bloggers
+        </a>
+        <br />
+        <a href="https://reddit.com/r/rstudio" alt="/r/Rstudio">
+          /r/RStudio
+        </a>
+        <br />
+        <a
+          href="https://www.r-bloggers.com/where-to-get-help-with-your-r-question/"
+          alt="R-Questions">
+          R Questions
+        </a>
+        <br />
+      </ul>
+
+      <h2>Web Development</h2>
       <ul className="Reference-Links">
         <a href="https://W3schools.com" alt="W3Schools">
           W3schools
@@ -39,37 +81,7 @@ export default ({ data }) => (
         <br />
       </ul>
 
-      <h2>Excel</h2>
-      <ul className="Excel-Links">
-        <a href="https://reddit.com/r/excel" alt="/r/Excel">
-          /r/Excel
-        </a>
-        <br />
-        <a href="https://powerspreadsheets.com" alt="PowerSpreadSheets">
-          PowerSpreadSheets
-        </a>
-        <br />
-      </ul>
-
-      <h2>RStudio</h2>
-      <ul className="RStudio-Links">
-        <a href="https://www.r-bloggers.com/" alt="r-bloggers">
-          R-Bloggers
-        </a>
-        <br />
-        <a href="https://reddit.com/r/rstudio" alt="/r/Rstudio">
-          /r/RStudio
-        </a>
-        <br />
-        <a
-          href="https://www.r-bloggers.com/where-to-get-help-with-your-r-question/"
-          alt="R-Questions">
-          R Questions
-        </a>
-        <br />
-      </ul>
-
-      <h2>Forums</h2>
+      <h2>Forums (Excel and Power BI)</h2>
       <ul className="Forum-Links">
         <a
           href="http://community.powerbi.com/t5/Forums/ct-p/Forums"
@@ -109,7 +121,7 @@ export default ({ data }) => (
         <br />
       </ul>
 
-      <h2>Blogs</h2>
+      <h2>MVP Blogs</h2>
       <ul className="Blogs-Links">
         <a
           href="https://www.thebiccountant.com"
