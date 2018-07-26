@@ -5,7 +5,7 @@ module.exports = {
     description: "My Personal and Professional Blog",
     siteURL: "https://prp1277.github.io",
   },
-  
+
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-twitter`,
@@ -14,40 +14,47 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
-  {
-    resolve:'gatsby-transformer-remark',
-    options: {
-     plugins: ["gatsby-remark-responsive-iframe"]
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: 'img',
-      path: `${__dirname}/src/img`,
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: 'data',
-      path: `${__dirname}/src/data`,
-    },
-  },
-  `gatsby-plugin-glamor`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-transformer-remark",
       options: {
-        name: 'prp1277.github.io',
-        path: `${__dirname}/src/`,
+        plugins: ["gatsby-remark-responsive-iframe"],
+      },
     },
-  },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "img",
+        path: `${__dirname}/src/img`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-plugin-glamor`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "prp1277.github.io",
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: `/src/utils/typography`,
       },
-    },  
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -62,7 +69,8 @@ module.exports = {
           },
         ],
       },
-    },  {
+    },
+    {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
@@ -76,8 +84,6 @@ module.exports = {
     },
   ],
 }
-
-
 
 /* Place configuration options in your gatsby-config.js
 

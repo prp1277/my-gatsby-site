@@ -2,6 +2,7 @@ import React from "react"
 import Container from "../components/container"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Link from "gatsby-link"
 
 export default ({ data }) => {
   console.log(data)
@@ -9,23 +10,21 @@ export default ({ data }) => {
     <div className="My-Files-Content">
       <Header />
       <Container>
-        <h1>Index</h1>
+        <h1 css={{ textAlign: `center` }}>Index</h1>
         <table>
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Source Folder</th>
-              <th css={{ textAlign: `center` }}>File Name</th>
-              <th css={{ textAlign: `center` }}>Public URL</th>
+              <th css={{ textAlign: `center` }}>Relative Path</th>
+              <th css={{ textAlign: `center` }}>Static Location</th>
             </tr>
           </thead>
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
+                <td css={{ textAlign: `center` }}>./{node.relativePath}</td>
                 <td css={{ textAlign: `center` }}>
-                  .{node.sourceInstanceName}
+                  https://prp1277.github.io{node.publicURL}
                 </td>
-                <td css={{ textAlign: `center` }}>.{node.base}</td>
-                <td css={{ textAlign: `center` }}>.{node.publicURL}</td>
               </tr>
             ))}
           </tbody>
@@ -46,8 +45,7 @@ export const query = graphql`
     allFile {
       edges {
         node {
-          sourceInstanceName
-          base
+          relativePath
           publicURL
         }
       }
