@@ -4,11 +4,10 @@ date: "2018-07-22"
 tags: ["Resume"]
 ---
 
-<center><ul><h2>
-<a href="Mailto:Prp1277@gmail.com"> Email</a><a href="tel:+1-402-415-9083"> -- Cell</a><a href="https://linkedin.com/in/prpowell1277"> -- LinkedIn</a><a href="https://github.com/prp1277"> -- GitHub</a><a href="https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114"> -- Address</a>
-</h2></ul>
+<center>
 A financial analyst with a background in operations and a passion for improving processes.  
-</center>
+<ul><h2><a href="Mailto:Prp1277@gmail.com"> Email</a><a href="tel:+1-402-415-9083"> -- Cell</a><a href="https://linkedin.com/in/prpowell1277"> -- LinkedIn</a><a href="https://github.com/prp1277"> -- GitHub</a><a href="https://www.google.com/maps/place/7929+Summit+St,+Kansas+City,+MO+64114"> -- Address</a>
+</center></ul></h2>
 
 # Employment
 

@@ -64,8 +64,8 @@ export default ({ data }) => {
                   color: `#FFFFFF`,
                   backgroundColor: `#005ba1`,
                 }}>
-                {node.frontmatter.title}
-                <small> - {node.frontmatter.date}</small>
+                {node.frontmatter.title} <br />
+                <small>{node.frontmatter.date}</small>
               </h2>
             </Link>
             <p css={{ margin: `auto` }}>

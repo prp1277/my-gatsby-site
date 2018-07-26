@@ -1,6 +1,8 @@
 import React from "react"
 import Link from "gatsby-link"
-
+/*
+**Set navbar to float left and then use the left-sidebar as a right sidebar instead 
+using the headers of the document to fully integrate the Microsoft look         */
 //Should be a Functional Component that is reusable on all pages
 const Header = props => (
   <nav
@@ -13,10 +15,17 @@ const Header = props => (
     }}>
     <div
       className="navbar-header"
-      css={{ display: `block`, color: `snow`, marginLeft: `2rem` }}>
-      <Link to="/" css={{ color: `snow` }}>
-        Patrick Powell
-      </Link>
+      css={{
+        display: `inline`,
+        color: `snow`,
+        marginLeft: `2rem`,
+        fontSize: `28`,
+      }}>
+      <b>
+        <Link to="/" css={{ color: `snow` }}>
+          Patrick Powell
+        </Link>
+      </b>
     </div>
     <ul className="nav navbar-nav" css={{ listStyle: `none` }}>
       <li>
@@ -56,7 +65,7 @@ const Header = props => (
       </li>
     </ul>
     <p css={{ color: `snow`, marginLeft: "2rem", display: `block` }}>
-      Financial Analyst | Business Intelligence | Data Visualization
+      Financial Analyst | Excel Enthusiast
     </p>
   </nav>
 )

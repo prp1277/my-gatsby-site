@@ -23,16 +23,11 @@ export default ({ data }) => {
             textAlign: `center`,
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: `42rem`,
           }}>
           {post.frontmatter.title}
         </h1>
         <p css={{ textAlign: `center` }}>
           <b>Updated -</b> {post.frontmatter.date}
-        </p>
-        <p css={{ textAlign: `center` }}>
-          <b>Tags - </b>
-          {post.frontmatter.tags}
         </p>
         <div
           className="mdContent"
@@ -49,13 +44,17 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date
-        tags
+  query GetTransformHTML {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            tags
+          }
+          html
+        }
       }
     }
   }

@@ -21,7 +21,13 @@ export default ({ data }) => {
         <p>
           I'm originally from Omaha, NE, went to Missouri State University in
           Springfield, MO and moved to Kansas City after graduating in December
-          2015.
+          2015 with a B.S. in Finance and a Minor in Accounting.
+        </p>
+        <p>
+          My background since graduating has primarily been focused on business
+          operations, first in the call center of Waddell & Reed, then in Mutual
+          Fund Operations at State Street and most recently in the FoodService
+          Industry with Reinhart FoodService.
         </p>
       </Container>
       <Footer />
