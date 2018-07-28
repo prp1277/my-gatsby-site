@@ -29,11 +29,13 @@ export default ({ data }) => {
         <p css={{ textAlign: `center` }}>
           <b>Updated -</b> {post.frontmatter.date}
         </p>
+
         <div
           className="mdContent"
           css={{ marginLeft: `auto`, marginRight: `auto`, maxWidth: `42rem` }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+
         <center>
           <p> Tags: {post.frontmatter.tags}</p>
         </center>

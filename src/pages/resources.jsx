@@ -19,17 +19,21 @@ export default ({ data }) => (
           PowerSpreadSheets
         </a>
         <br />
-        <a href="https://myexcelonline.com" alt="MyExcelOnline" />
-        MyExcelOnline
+        <a href="https://myexcelonline.com" alt="MyExcelOnline">
+          MyExcelOnline
+        </a>
         <br />
-        <a href="https://myonlinetraininghub.com" alt="MyOnlineTrainingHub" />
-        MyOnlineTrainingHub
+        <a href="https://myonlinetraininghub.com" alt="MyOnlineTrainingHub">
+          MyOnlineTrainingHub
+        </a>
         <br />
-        <a href="https://thespreadsheetguru.com" alt="TheSpreadsheetGuru" />
-        TheSpreadsheetGuru
+        <a href="https://thespreadsheetguru.com" alt="TheSpreadsheetGuru">
+          TheSpreadsheetGuru
+        </a>
         <br />
-        <a href="https://powerquerytraining.com" alt="PowerQueryTraining" />
-        PowerQueryTraining
+        <a href="https://powerquerytraining.com" alt="PowerQueryTraining">
+          PowerQueryTraining
+        </a>
         <br />
       </ul>
 
