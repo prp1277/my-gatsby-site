@@ -15,19 +15,15 @@ export default ({ data }) => {
         <table>
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Relative Dir </th>
-              <th css={{ textAlign: `center` }}>Source Name </th>
-              <th css={{ textAlign: `center` }}>Base </th>
+              <th css={{ textAlign: `center` }}>Link </th>
             </tr>
           </thead>
           <tbody>
-            {data.allFile.edges.map(({ node }, index) => (
+            {data.allSitePage.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td css={{ textAlign: `center` }}>.{node.relativeDirectory}</td>
                 <td css={{ textAlign: `center` }}>
-                  .{node.sourceInstanceName}
+                  <a href={node.path}>{node.path}</a>
                 </td>
-                <td css={{ textAlign: `center` }}>.{node.base}</td>
               </tr>
             ))}
           </tbody>
@@ -40,13 +36,12 @@ export default ({ data }) => {
 
 export const query = graphql`
   query DirectoryQuery {
-    allFile {
+    allSitePage {
+      totalCount
       edges {
         node {
-          relativeDirectory
-          sourceInstanceName
-          base
-          name
+          path
+          id
         }
       }
     }
