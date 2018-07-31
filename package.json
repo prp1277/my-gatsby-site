@@ -27,6 +27,7 @@
     "gatsby-remark-responsive-iframe": "^1.4.19",
     "gatsby-source-apiserver": "^1.2.6",
     "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-excel": "^1.0.9",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.26",
     "glamorous": "^4.13.1",
