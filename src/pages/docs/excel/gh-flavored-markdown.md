@@ -73,7 +73,7 @@ Markdown will turn myFunction into `myFunction.`
 
 Markdown image syntax looks a lot like the syntax for links; it is essentially the same syntax preceded by an exclamation point (!). For example, if you want to link to an image at `https://github.com/unicorn.png` with the alternate text "My Unicorn", you would write
 
-```
+```md
 ![My Unicorn](https://github.com/unicorn.png).
 ```
 
@@ -90,3 +90,64 @@ For example, the link https://github.com/ is easily produced by writing <https:/
 ## Escaping
 
 If you want to use a special Markdown character in your document (such as displaying literal asterisks), you can escape the character with the backslash `(\)`. Markdown will ignore the character directly after a backslash.
+
+## Colors
+
+> [Source]("https://github.com/faressoft/terminalizer") and [W3Schools CSS]("https://www.w3schools.com/cssref/css_colors.asp")
+
+```css
+ {
+  foreground: #afafaf;
+}
+ {
+  cursor: #c7c7c7;
+}
+ {
+  black: #232628;
+}
+ {
+  red: #fc4384;
+}
+ {
+  green: #b3e33b;
+}
+ {
+  yellow: #ffa727;
+}
+ {
+  blue: #75dff2;
+}
+ {
+  magenta: #ae89fe;
+}
+ {
+  cyan: #708387;
+}
+ {
+  white: #d5d5d0;
+}
+ {
+  brightblack: #626566;
+}
+ {
+  brightred: #ff7fac;
+}
+ {
+  brightgreen: #c8ed71;
+}
+ {
+  brightyellow: #ebdf86;
+}
+ {
+  brightblue: #75dff2;
+}
+ {
+  brightmagenta: #ae89fe;
+}
+ {
+  brightcyan: #b1c6ca;
+}
+ {
+  brightwhite: #f9f9f4;
+}
+```
