@@ -83,6 +83,11 @@ export default ({ data }) => (
           Personal Resources Repository
         </a>
         <br />
+        <a
+          href="https://reactjsexample.com/react-flexbox-grid-made-simple/"
+          alt="React-Flexbox"
+        />
+        <br />
       </ul>
 
       <h2>Forums (Excel and Power BI)</h2>

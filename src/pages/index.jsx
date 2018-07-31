@@ -5,24 +5,23 @@ import Footer from "../components/footer"
 import Container from "../components/container"
 require("prismjs/themes/prism-twilight.css")
 
-/* Code themes from https://prism.js.com
-/* Copy and paste from below over line 6
-/* Make sure the {} are removed before saving
-/* to change the code theme */
+/* 
+** Code themes from https://prism.js.com
+** Make sure the {} are removed before saving to change the code theme 
+**  require("prismjs/themes/prism-coy.css");require("prismjs/themes/prism-dark.css");require("prismjs/themes/prism-funky.css");require("prismjs/themes/prism-okaidia.css");require("prismjs/themes/prism-solarizedlight.css");require("prismjs/themes/prism-tomorrow.css");require("prismjs/themes/prism-twilight.css");require("prismjs/themes/prism-prism}.css");
+
+** This is essentially the "app"
+**  It's also the only page 
+**  actually working (locally)
+*/
 
 /*
-require("prismjs/themes/prism-{coy}.css");
-require("prismjs/themes/prism-{dark}.css");
-require("prismjs/themes/prism-{funky}.css");
-require("prismjs/themes/prism-{okaidia}.css");
-require("prismjs/themes/prism-{solarizedlight}.css");
-require("prismjs/themes/prism-{tomorrow}.css");
-require("prismjs/themes/prism-{twilight}.css");
-require("prismjs/themes/prism-{prism}.css");*/
-
-/* This is essentially the "app"
-/* It's also the only page 
-/* actually working (locally)*/
+css components:
+<h1> Blog Posts
+<ul "Category Links">
+<div "card">
+<h2>
+*/
 
 export default ({ data }) => {
   console.log(data)
@@ -30,23 +29,40 @@ export default ({ data }) => {
     <div className="Index-Content">
       <Header />
       <Container className="Index-Page">
-        <h1
+        <h1 // Posts Header
           css={{
             display: `block`,
-            fontStyle: `calibri`,
+            fontStyle: `Calibri`,
             textAlign: `center`,
             marginLeft: `auto`,
             marginRight: `auto`,
           }}>
-          Posts
+          Blog Posts
         </h1>
+        {/* <p> 
+          <b>Categories:</b>
+        </p>
+        <ul
+          className="Category-Links"
+          css={{ listStyle: `none`, float: `middle` }}>
+          <a href="./docs/excel/" alt="Excel">
+            Excel{" "}
+          </a>
+          <a href="./docs/mdUtilities/" alt="Markdown">
+            Markdown{" "}
+          </a>
+          <a href="./docs/R/" alt="R">
+            R{" "}
+          </a>
+        </ul>*/}
         {data.allMarkdownRemark.edges.map(({ node }) => (
+          // Everything below this line is populated by the graphql query Cards component supposed to look like Excel tables
           <div
             className="card"
             key={node.id}
             css={{
               display: `block`,
-              fontStyle: "calibri",
+              fontStyle: `Calibri`,
               textAlign: `center`,
               marginLeft: `auto`,
               marginRight: `auto`,
@@ -57,8 +73,9 @@ export default ({ data }) => {
               borderLeft: `2px solid #BBB`,
               backgroundColor: `#eaeaea`,
             }}>
-            <Link to={node.fields.slug}>
+            <Link className="Blog-Post-Links" to={node.fields.slug}>
               <h2
+                className="Blog-Post-Title"
                 css={{
                   borderBottom: `2px solid #BBB`,
                   color: `#FFFFFF`,
@@ -68,13 +85,17 @@ export default ({ data }) => {
                 <small>{node.frontmatter.date}</small>
               </h2>
             </Link>
-            <p css={{ margin: `auto` }}>
+            <p
+              className="Tags-Link"
+              css={{ margin: `1rem`, textAlign: `center` }}>
+              {/* The rest is the actual content inside the card */}
               <b>
                 Tags:<Link to={/my-tags/}> {node.frontmatter.tags}</Link>
               </b>
               <br /> {node.excerpt}
             </p>
           </div>
+          //This is the end of the card
         ))}
       </Container>
       <Footer />
@@ -83,14 +104,15 @@ export default ({ data }) => {
 }
 
 /* This is the query that creates the feedr
-/* TODO - Create card component to mimic  
-/*          a reddit / outlook display */
+** TODO - Create card component to mimic  
+**   a reddit / outlook display
+*/
 
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
+      limit: 10
     ) {
       totalCount
       edges {
@@ -112,3 +134,34 @@ export const query = graphql`
     }
   }
 `
+{
+  /*
+  <ol
+  class="pagination"
+  style={{ listStyle: `none`, display: `inline-block` }}>
+  <li>
+  <a href="#">«</a>
+  </li>
+  <li>
+  <a href="#">1</a>
+  </li>
+  <li>
+  <a href="#">2</a>
+  </li>
+  <li>
+  <a href="#">3</a>
+  </li>
+  <li>
+  <a href="#">4</a>
+  </li>
+  <li>
+  <a href="#">5</a>
+  </li>
+  <li>
+  <a href="#">6</a>
+  </li>
+  <li>
+  <a href="#">»</a>
+  </li>
+</ol>  */
+}
