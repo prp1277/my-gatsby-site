@@ -25,6 +25,7 @@ export default ({ data }) => {
                 <td css={{ textAlign: `center` }}>
                   https://prp1277.github.io{node.publicURL}
                 </td>
+                {/* http://pat-facts.netlify.com/docs/mdutilities/sample-md-file/ */}
               </tr>
             ))}
           </tbody>
