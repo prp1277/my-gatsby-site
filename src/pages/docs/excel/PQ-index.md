@@ -6,14 +6,14 @@ tags: ["Excel"]
 
 <!-->
 
-```sql
+```less
 let
     Source = Folder.Files("C:\Users\prp12.000\prp1277-Github\prp1277.github.io\src\pages\docs\excel")
 in
     Source
 ```
 
-```sql
+```less
 let
     Source = Folder.Files("C:\Users\prp12.000\prp1277-Github\prp1277.github.io\src\pages\docs\excel"),
     #"C:\Users\prp12 000\prp1277-Github\prp1277 github io\src\pages\docs\excel\_gh-flavored-markdown md" = Source{[#"Folder Path"="C:\Users\prp12.000\prp1277-Github\prp1277.github.io\src\pages\docs\excel\",Name="gh-flavored-markdown.md"]}[Content],
