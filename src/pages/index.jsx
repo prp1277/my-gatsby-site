@@ -90,7 +90,7 @@ export default ({ data }) => {
               css={{ margin: `1rem`, textAlign: `center` }}>
               {/* The rest is the actual content inside the card */}
               <b>
-                Tags:<Link to={/my-tags/}> {node.frontmatter.tags}</Link>
+                Tags:<Link to={node.path}>{node.frontmatter.tags}</Link>
               </b>
               <br /> {node.excerpt}
             </p>
@@ -120,6 +120,7 @@ export const query = graphql`
           id
           timeToRead
           tableOfContents
+          excerpt
           frontmatter {
             title
             tags
@@ -128,7 +129,15 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+        }
+      }
+    }
+    allSitePage {
+      totalCount
+      edges {
+        node {
+          path
+          id
         }
       }
     }

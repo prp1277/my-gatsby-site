@@ -30,9 +30,9 @@ const Header = props => (
     <ul className="nav navbar-nav" css={{ listStyle: `none` }}>
       <li>
         <a
-          href="/my-files/"
+          href="/directory/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          Index
+          Directory
         </a>
       </li>
       <li>
@@ -46,7 +46,7 @@ const Header = props => (
         <a
           href="/docs/mdUtilities/resume/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          CV
+          Resume
         </a>
       </li>
       <li>

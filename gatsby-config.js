@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Fake News",
+    title: "Pat Facts",
     author: "Patrick Powell",
     description: "My Personal and Professional Blog",
     siteURL: "https://prp1277.github.io",
