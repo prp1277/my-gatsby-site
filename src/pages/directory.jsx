@@ -15,13 +15,13 @@ export default ({ data }) => {
         <table>
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Link </th>
+              <th css={{ textAlign: `center` }}>Links </th>
             </tr>
           </thead>
           <tbody>
             {data.allSitePage.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td css={{ textAlign: `center` }}>
+                <td>
                   <a href={node.path}>{node.path}</a>
                 </td>
               </tr>
