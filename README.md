@@ -4,38 +4,39 @@ date: '2018-06-13'
 ---
 
 # [Prp1277](https://prp1277.github.io)
->Source code for my personal website
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prp1277/prp1277.github.io)
 
-## Work in Progress
+## Tree View
 
-### Tree View
->[Source](https://github.com/wangsongiam/songwang.io/blob/master/README.md)
-
-```md
 .
-├── gatsby-node.js        > Nodes Manipulations
-└── gatsby-config.js      > Gatsby Configuration
-├── static
-│  └── admin              > Netlify CMS
+├── gatsby-node.js -> Nodes Manipulations
+└── gatsby-config.js -> Gatsby Configuration
 ├── src
-│  ├── components
-│  ├── html.jsx           > React Entry Point
-│  ├── images             > Image Uploads
-│  ├── layouts/           > Global layout
-│  ├── templates
-│  └── theme              > Styled Components
-│  ├── pages              > Pages
-│  │  ├── about
-│  │  ├── index.js        > Landing
-│  │  ├── search.js       > Search
-│  │  └── tags.js         > Tag
-│  │  ├── md              > Posts
-│  │  │  ├── blog/
-│  │  │  ├── links/
-│  │  │  └── notes/
-```
+│ ├── **data** -> Misc Binary (MSFT) Files
+│ ├── **img**
+│ ├── **components**
+│ │ ├── container.jsx -> Page Wrapper
+│ │ ├── footer.jsx -> Footer & Social Media Links
+│ │ ├── header.jsx -> Site name & Nav
+│ │ └── table.jsx -> Table template for reference
+│ ├── **templates**
+│ │ └── blog-post.js -> Controls formatting for md pages
+│ ├── **utils**
+│ │ └── Typography.js -> Controls theme, font, etc.
+│ ├── **pages**
+│ │ ├── about.jsx -> Self-descriptive
+│ │ ├── index.jsx -> Landing page with dynamic content
+│ │ ├── my-tags.jsx -> Lists all tags - not working great
+│ │ ├── directory.jsx -> Links to allSite pages
+│ │ ├── resources.jsx -> Helpful blogs & websites
+│ │ ├── my-files.jsx -> Relative paths & Public URLs
+│ │ └── docs
+│ │ │ ├── blog/ -> Thoughts & Opinions
+│ │ │ ├── business/ -> Interesting & Noteworthy Articles
+│ │ │ ├── excel/ -> Tutorials & such
+│ │ │ ├── md/ -> Markdown Utilities & Reference
+│ │ │ └── R/ -> Files from Stats & Machine Learning
 
 ## Reference
 
@@ -46,6 +47,3 @@ date: '2018-06-13'
 [React Cheat Sheet](https://reactcheatsheet.com)
 
 [Code Pen Compiler](https://codepen.io)
-
-Glamor replaces `(prop)` styling component with `className`
-`<div style={{ css }}> => <div className>`

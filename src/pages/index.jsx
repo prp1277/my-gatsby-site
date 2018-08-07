@@ -3,7 +3,7 @@ import Link from "gatsby-link"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Container from "../components/container"
-require("prismjs/themes/prism-twilight.css")
+require("prismjs/themes/prism-okaidia.css")
 
 /* 
 ** Code themes from https://prism.js.com

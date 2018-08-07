@@ -44,7 +44,7 @@ const Header = props => (
       </li>
       <li>
         <a
-          href="/docs/mdUtilities/resume/"
+          href="/docs/md/resume/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
           Resume
         </a>
