@@ -60,12 +60,12 @@ const Header = props => (
         <a
           href="/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          Home
+          Blog
         </a>
       </li>
     </ul>
     <p css={{ color: `snow`, marginLeft: "2rem", display: `block` }}>
-      Financial Analyst | Excel Enthusiast
+      Financial Analyst | Business Intelligence
     </p>
   </nav>
 )

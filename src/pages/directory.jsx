@@ -15,7 +15,9 @@ export default ({ data }) => {
         <table>
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Links </th>
+              <th css={{ textAlign: `center` }}>
+                Links ({data.allSitePage.totalCount} Total)
+              </th>
             </tr>
           </thead>
           <tbody>
