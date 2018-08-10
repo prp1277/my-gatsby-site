@@ -85,9 +85,15 @@ export default ({ data }) => (
         <br />
         <a
           href="https://reactjsexample.com/react-flexbox-grid-made-simple/"
-          alt="React-Flexbox"
-        />
+          alt="React-Flexbox">
+          React Flexbox
+        </a>
         <br />
+        <a
+          href="https://stackoverflow.com/questions/34436455/calling-multiple-http-requests-in-a-single-http-request-in-node-js"
+          alt="Stackoverflow">
+          Multiple HTTP requests in Node.js
+        </a>
       </ul>
 
       <h2>Forums (Excel and Power BI)</h2>
