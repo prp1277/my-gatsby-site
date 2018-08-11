@@ -1,16 +1,24 @@
 import react from "react"
+import Header from "./header"
+import Footer from "./footer"
 
 const Container = ({ children }) => (
   <div
     className="Container-Component"
     css={{
-      marginLeft: `auto`,
-      marginRight: `auto`,
-      maxWidth: `42rem`,
+      maxWidth: `100%`,
       marginBottom: 0,
       backgroundColor: `#FFFFFF`,
     }}>
-    {children}
+    <Header />
+    <div css={{
+      maxWidth: `42rem`,
+      marginLeft: `auto`,
+      marginRight: `auto`,
+    }}>
+      {children}
+    </div>
+    <Footer />
   </div>
 )
 

@@ -1,13 +1,10 @@
 import React from "react"
 import Container from "../components/container"
-import Header from "../components/header"
-import Footer from "../components/footer"
 
 export default ({ data }) => {
   console.log(data)
   return (
     <div className="About-Me-Content">
-      <Header />
       <Container>
         <h1 css={{ textAlign: `center` }}>About Me</h1>
         <center>
@@ -66,7 +63,6 @@ export default ({ data }) => {
         <p />
         <p>Last Paragraph</p>
       </Container>
-      <Footer />
     </div>
   )
 }

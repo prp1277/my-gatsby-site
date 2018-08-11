@@ -1,14 +1,11 @@
 import React from "react"
 import Container from "../components/container"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Link from "gatsby-link"
 
 export default ({ data }) => {
   console.log(data)
   return (
     <div className="My-Files-Content">
-      <Header />
+
       <Container>
         <h1 css={{ textAlign: `center` }}>Index</h1>
         <table>
@@ -21,9 +18,9 @@ export default ({ data }) => {
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td css={{ textAlign: `center` }}>./{node.relativePath}</td>
-                <td css={{ textAlign: `center` }}>
-                  https://prp1277.github.io{node.publicURL}
+                <td css={{ textAlign: `left` }}>./{node.relativePath}</td>
+                <td css={{ textAlign: `left` }}>
+                  {node.publicURL}
                 </td>
                 {/* http://pat-facts.netlify.com/docs/mdutilities/sample-md-file/ */}
               </tr>
@@ -31,7 +28,7 @@ export default ({ data }) => {
           </tbody>
         </table>
       </Container>
-      <Footer />
+
     </div>
   )
 }

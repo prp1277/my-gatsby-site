@@ -7,7 +7,7 @@ export default ({ data }) => {
   console.log(data)
   return (
     <div className="My-Tags-Content">
-      <Header />
+      
       <Container>
         <table>
           <thead>
@@ -26,7 +26,7 @@ export default ({ data }) => {
           </tbody>
         </table>
       </Container>
-      <Footer />
+      
     </div>
   )
 }

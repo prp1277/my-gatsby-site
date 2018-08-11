@@ -16,7 +16,7 @@ export default ({ data }) => {
        Footer - Footer Navbar and social media links 
     */
     <div className="BLOG-POST-TEMPLATE">
-      <Header />
+
       <Container>
         <h1
           css={{
@@ -40,7 +40,7 @@ export default ({ data }) => {
           <p> Tags: {post.frontmatter.tags}</p>
         </center>
       </Container>
-      <Footer />
+
     </div>
   )
 }

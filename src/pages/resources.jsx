@@ -5,7 +5,7 @@ import Footer from "../components/footer"
 
 export default ({ data }) => (
   <div className="Resources-Content">
-    <Header />
+
     <Container>
       <h1 css={{ textAlign: `center` }}>Resources</h1>
 
@@ -196,6 +196,6 @@ export default ({ data }) => (
         <br />
       </ul>
     </Container>
-    <Footer />
+
   </div>
 )

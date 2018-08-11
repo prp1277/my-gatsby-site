@@ -9,29 +9,31 @@ export default ({ data }) => {
   console.log(data)
   return (
     <div className="Directory-Content">
-      <Header />
-      <Container className="Directory-Page">
-        <h1>Directory</h1>
-        <table>
-          <thead>
-            <tr>
-              <th css={{ textAlign: `center` }}>
-                Links ({data.allSitePage.totalCount} Total)
+      <Container >
+        <div className="Directory-Page">
+          <h1>Directory</h1>
+          <table>
+            <thead>
+              <tr>
+                <th css={{ textAlign: `center` }}>
+                  Links ({data.allSitePage.totalCount} Total)
               </th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.allSitePage.edges.map(({ node }, index) => (
-              <tr key={index}>
-                <td>
-                  <a href={node.path}>{node.path}</a>
-                </td>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {data.allSitePage.edges.map(({ node }, index) => (
+                <tr key={index}>
+                  <td css={{ textAlign: `center` }}> {/*
+                [Link to node.path](node.path)
+                */}
+                    <a href={node.path}>{node.path}</a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </Container>
-      <Footer />
     </div>
   )
 }

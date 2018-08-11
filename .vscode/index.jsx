@@ -6,23 +6,28 @@ import Container from "../components/container"
 require("prismjs/themes/prism-okaidia.css")
 
 /* 
-* This is essentially the "app"
-* Code themes from https://prism.js.com
-* Make sure the {} are removed before saving to change the code theme 
-require("prismjs/themes/prism-coy.css");require("prismjs/themes/prism-dark.css");require("prismjs/themes/prism-funky.css");require("prismjs/themes/prism-okaidia.css");require("prismjs/themes/prism-solarizedlight.css");require("prismjs/themes/prism-tomorrow.css");require("prismjs/themes/prism-twilight.css");require("prismjs/themes/prism-prism}.css");
+** Code themes from https://prism.js.com
+** Make sure the {} are removed before saving to change the code theme 
+**  require("prismjs/themes/prism-coy.css");require("prismjs/themes/prism-dark.css");require("prismjs/themes/prism-funky.css");require("prismjs/themes/prism-okaidia.css");require("prismjs/themes/prism-solarizedlight.css");require("prismjs/themes/prism-tomorrow.css");require("prismjs/themes/prism-twilight.css");require("prismjs/themes/prism-prism}.css");
 
-* css components:
-** <h1> Blog Posts
-** <ul "Category Links">
-** <div "card">
-** <h2>
+** This is essentially the "app"
+**  It's also the only page 
+**  actually working (locally)
+*/
+
+/*
+css components:
+<h1> Blog Posts
+<ul "Category Links">
+<div "card">
+<h2>
 */
 
 export default ({ data }) => {
   console.log(data)
   return (
     <div className="Index-Content">
-
+      <Header />
       <Container className="Index-Page">
         <h1 // Posts Header
           css={{
@@ -36,6 +41,7 @@ export default ({ data }) => {
         </h1>
 
         {data.allMarkdownRemark.edges.map(({ node }) => (
+          // Everything below this line is populated by the graphql query Cards component supposed to look like Excel tables
           <div
             className="card"
             key={node.id}
@@ -52,9 +58,7 @@ export default ({ data }) => {
               borderLeft: `2px solid #BBB`,
               backgroundColor: `#eaeaea`,
             }}>
-            <Link
-              className="Blog-Post-Links"
-              to={node.fields.slug}>
+            <Link className="Blog-Post-Links" to={node.fields.slug}>
               <h2
                 className="Blog-Post-Title"
                 css={{
@@ -71,7 +75,8 @@ export default ({ data }) => {
               css={{ margin: `1rem`, textAlign: `center` }}>
               {/* The rest is the actual content inside the card */}
               <b>
-                Tags:<Link to={node.path}>{node.frontmatter.tags}</Link>
+                Tags:
+                <Link to={node.path}>{node.frontmatter.tags}</Link>
               </b>
               <br /> {node.excerpt}
             </p>
@@ -79,7 +84,7 @@ export default ({ data }) => {
           //This is the end of the card
         ))}
       </Container>
-
+      <Footer />
     </div>
   )
 }

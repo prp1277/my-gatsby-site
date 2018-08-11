@@ -4,8 +4,8 @@ import Link from "gatsby-link"
 //Create List Link
 
 const Footer = props => (
-  <nav
-    className="footer"
+  <div
+    className="Footer"
     css={{
       borderTop: `2px solid #BBB`,
       marginTop: `1rem`,
@@ -83,7 +83,7 @@ const Footer = props => (
       </a>
     </ul>
     <p css={{ color: `snow`, marginBottom: `0` }}>Patrick Powell 2018</p>
-  </nav>
+  </div>
 )
 
 export default Footer
