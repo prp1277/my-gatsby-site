@@ -8,7 +8,7 @@ tags: ["Excel", "Power Query"]
 
 Code from Ken Puls' [XLGuru blog]("https://www.excelguru.ca/blog/2014/11/26/building-a-parameter-table-for-power-query/").
 
-```lisp
+```
 (ParameterName as text) =>
 let
     ParamSource = Excel.CurrentWorkbook(){[Name="Parameters"]}[Content],
@@ -19,7 +19,7 @@ in
     Value
 ```
 
-```lisp
+```
 let
     Source = Excel.CurrentWorkbook(){[Name="MyTable"]}[Content],
     #"Changed Type" = Table.TransformColumnTypes(Source,{{"MyTable", type text}}),
