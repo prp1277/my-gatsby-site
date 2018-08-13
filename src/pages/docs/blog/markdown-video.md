@@ -15,17 +15,16 @@ I've been using Excel for years. In college, I majored in Finance and Minored in
 
 > [Case](https://www.slideshare.net/ntweisen/20-unique-uses-of-excel-spreadsheets) and [point](https://chandoo.org/wp/unusual-excel-uses/)
 
-As I attempt to learn how to program I have a tendency to revert back to Excel as my go to GUI / IDE. Modern Excel is not just the spreadsheet application it once was. The advent of the Data Model and Power Queries Add-in in Excel 2013 was expanded in Excel 2016 and new features are rolled out continuously to Office 365 users and insiders.
-
-Although this post isn't going to go into detail about those features, I thought it was important to note that Modern Excel is not just a spreadsheet app. Now that that's out of the way, let's jump into the tutorial.
+As I attempt to learn how to program I have a tendency to revert back to Excel as my go to GUI / IDE.
 
 ## Set-Up
 
-[![img](./src/img/hyperlink-list.jpg)](./src/img/hyperlink-list.jpg)
+<center><img src="https://prp1277.github.io/static/hyperlink-list-379263a4d593dcab892865a798a87f70.JPG" alt="hyperlink-list" width="500" height="300"></center>
 
 Setting up your workbook for this tutorial is extremely simple. All you need to do is create a list of hyperlinks in your workbook. It doesn't matter where they come from, all that matters is that they are formatted to have a text to display and an underlying address.
 
-[![img](https://prp1277.github.io/static/display-vs-address-761415ed384c49d525fe0ba0e0e4f4b9.JPG)](https://prp1277.github.io/static/display-vs-address-761415ed384c49d525fe0ba0e0e4f4b9.JPG)
+<center><img src="https://prp1277.github.io/static/display-vs-address-761415ed384c49d525fe0ba0e0e4f4b9.JPG" alt="edit-hyperlink" width="500" height="300"></center>
+
 > This is equivalent to an `<a href="" alt=""/>` in HTML
 
 ## Defining the Problem
@@ -41,12 +40,13 @@ Although the task is nearly identical in Excel, it's going to take forever to cl
 ### Ready to jam that pen through your ear yet?
 **Good.**
 
-[![gif](https://media.giphy.com/media/bWM2eWYfN3r20/giphy.gif)](https://media.giphy.com/media/bWM2eWYfN3r20/giphy.gif)
+<center><img src="https://media.giphy.com/media/bWM2eWYfN3r20/giphy.gif" alt="no-time"></center>
 
-We have the keystrokes down to an art, why don't we use the macro recorder to take a peek under Excel's _hood_.
+We have the keystrokes down to an art, why don't we use the macro recorder to take a peek under Excel's hood.
 
-![gif](https://prp1277.github.io/static/hyperlink-list-379263a4d593dcab892865a798a87f70.JPG)
-> _Apologies on the quality of the .gif, I'm new to that too!_
+<center><img src="https://prp1277.github.io/static/md-presentation-0afa8a9c5989eb8b06765d096e007773.gif" alt="md-gif"></center>
+
+> _Note: I recorded the Absolute References in small window and opted not to include it_
 
 ## Reviewing the Recording
 
@@ -55,21 +55,21 @@ We have the keystrokes down to an art, why don't we use the macro recorder to ta
 ```visual-basic
     Sub Macro1()
 '
-        Range("A2").Select
-        Selection.Hyperlinks(1).Delete
-        Range("B2").Select
-        ActiveSheet.Paste
-        Range("A3").Select
-        Selection.Hyperlinks(1).Delete
-        Range("B3").Select
-        ActiveSheet.Paste
-        Range("A4").Select
-        Selection.Hyperlinks(1).Delete
+        Range("A2").Select              '|First Link
+        Selection.Hyperlinks(1).Delete  '|
+        Range("B2").Select              '|
+        ActiveSheet.Paste               '|_
+        Range("A3").Select              '|Second Link
+        Selection.Hyperlinks(1).Delete  '|
+        Range("B3").Select              '|
+        ActiveSheet.Paste               '|_
+        Range("A4").Select              '|Third Link
+        Selection.Hyperlinks(1).Delete  '|
 ```
 
 ### Part 2 - Relative References
 
-```visual-Basic
+```visual-basic
         ActiveCell.Offset(0, 1).Range("A1").Select
         ActiveSheet.Paste
         ActiveCell.Offset(1, -1).Range("A1").Select

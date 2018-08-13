@@ -1,8 +1,3 @@
----
-title: 'readme'
-date: '2018-06-13'
----
-
 # [Prp1277](https://prp1277.github.io)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prp1277/prp1277.github.io)
