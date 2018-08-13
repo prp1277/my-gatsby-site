@@ -1,14 +1,7 @@
----
-title: "Parameter Queries in Power Query"
-date: "2018-08-08"
-tags: ["Excel", "Power Query"]
----
+/*-----------------------------------------------------------------------------
+https://www.excelguru.ca/blog/2014/11/26/building-a-parameter-table-for-power-query/
+-----------------------------------------------------------------------------*/
 
-## Creating Dynamic Queries
-
-Code from Ken Puls' [XLGuru blog]("https://www.excelguru.ca/blog/2014/11/26/building-a-parameter-table-for-power-query/").
-
-```
 (ParameterName as text) =>
 let
     ParamSource = Excel.CurrentWorkbook(){[Name="Parameters"]}[Content],
@@ -17,9 +10,8 @@ let
     else Record.Field(ParamRow{0}, "Value")
 in
     Value
-```
 
-```
+
 let
     Source = Excel.CurrentWorkbook(){[Name="MyTable"]}[Content],
     #"Changed Type" = Table.TransformColumnTypes(Source,{{"MyTable", type text}}),
@@ -28,4 +20,3 @@ let
     #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom1",{{"File Path", type text}, {"First Date", type date}})
 in
     #"Changed Type1"
-```

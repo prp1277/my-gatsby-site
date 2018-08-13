@@ -8,8 +8,10 @@ require("prismjs/themes/prism-okaidia.css")
 /* 
 * This is essentially the "app"
 * Code themes from https://prism.js.com
+* https://github.com/PrismJS/prism/tree/1d5047df37aacc900f8270b1c6215028f6988eb1/themes
 * Make sure the {} are removed before saving to change the code theme 
-require("prismjs/themes/prism-coy.css");require("prismjs/themes/prism-dark.css");require("prismjs/themes/prism-funky.css");require("prismjs/themes/prism-okaidia.css");require("prismjs/themes/prism-solarizedlight.css");require("prismjs/themes/prism-tomorrow.css");require("prismjs/themes/prism-twilight.css");require("prismjs/themes/prism-prism}.css");
+
+require("prismjs/themes/prism-coy.css");require("prismjs/themes/prism-dark.css");require("prismjs/themes/prism-funky.css");require("prismjs/themes/prism-okaidia.css");require("prismjs/themes/prism-solarizedlight.css");require("prismjs/themes/prism-tomorrow.css");require("prismjs/themes/prism-twilight.css");require("prismjs/themes/prism-prism.css");
 
 * css components:
 ** <h1> Blog Posts

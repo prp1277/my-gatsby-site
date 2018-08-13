@@ -1,6 +1,8 @@
-// src: https://www.reddit.com/r/PowerBI/comments/8ls3fo/iterating_over_each_cell_in_a_column_in_power/
+/*-----------------------------------------------------------------------------
+src: https://www.reddit.com/r/PowerBI/comments/8ls3fo/iterating_over_each_cell_in_a_column_in_power/
+Set-up Parameters for websites
+-----------------------------------------------------------------------------*/
 
-// Set-up Parameters for websites
 let
     Parameter = Excel.CurrentWorkbook(){[Name="Table3"]}[Content],
     URL= Parameter{1}[Value],
@@ -12,7 +14,9 @@ let
 in
     #"Sorted Rows" 
 
-// Iterate through each cell in Table3
+/*-----------------------------------------------------------------------------
+Iterate through each cell in Table3
+-----------------------------------------------------------------------------*/
 let
 Source = Excel.CurrentWorkbook(){[Name="Table3"]}[Content],
     #"Added Custom" = Table.AddColumn(Source, "Web.Page", each Web.Page(Web.Contents([URL]))),

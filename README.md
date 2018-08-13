@@ -28,6 +28,7 @@
 
 |Web Dev|
 |:----|
+|[All About Programming - EQuimper](https://github.com/EQuimper/All-About-Programming)|
 |[Source to Source Compiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)|
 |[Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)|
 |[Google Location History](https://stackoverflow.com/questions/32332904/current-url-to-download-kml-data-from-google-location-history)|
@@ -42,6 +43,7 @@
 |[Editor Configuration](http://editorconfig.org/)|
 |[Bootsrapping](https://bootsnipp.com/)|
 |[PatP0w Reddit Feed](https://www.reddit.com/.json?feed=4e6cf8d760d7d15b9f9b50288143800681feed51&user=PATP0W)|
+|[CSS Website Layout](https://www.w3schools.com/Css/css_website_layout.asp)|
 
 |API|
 |:----|
@@ -49,12 +51,13 @@
 |[Google APIs](https://docs.google.com/spreadsheets/d/e/2PACX-1vSagKTIeMWiRffzpL8vL9eu_BAr_2DSyBSQJKbWwPSOl0Z7JOhBQaIPenm4lYXXtEzZOdTGXCbd1U6D/pubhtml)|
 |[IEX Documentation](https://iextrading.com/developer/)|
 |[BF Tracker](https://battlefieldtracker.com/bf1/profile/xbox/imamiget1277/live)|
-|[Additional APIs](onenote:)|
+|[Google Cloud Platform API](https://cloud.google.com/bigquery/docs/reference/)|
 
 |Finance|
 |:----|
 |[Econometrics](https://www.bing.com/search?q=exconometrics&form=EDGTCT&qs=PF&cvid=294feca3c6e840998d1faa3fda70ae45&cc=US&setlang=en-US&PC=LSJS)|
 |[Klipfolio](https://www.klipfolio.com/)|
+|[Trading Economics API](https://tradingeconomics.com/api/?source=table)|
 
 |Excel / BI|
 |:----|
@@ -66,6 +69,8 @@
 |[DIYBI-PowerQuery](C:\Users\prp12.000\OneDrive\Documents\Reinhart\Resources\DIYBI-PowerQuery)|
 |[Power BI Geocoding](https://msdn.microsoft.com/en-us/library/ff701714.aspx)|
 |[Chris Webb Crossjoin BI](https://blog.crossjoin.co.uk/)|
+|[Using REST APIs in Excel](http://www.finfolio.com/blog/using-rest-api-data-in-microsoft-excel)|
+|[PBI Streaming Datasets](https://www.youtube.com/watch?v=IPbe4BLoE_s&t=1969s)|
 
 |Visual Basic|
 |:----|
@@ -89,11 +94,14 @@
 |:----|
 |[SQL Cheat sheet](https://www.kdnuggets.com/2018/07/sql-cheat-sheet.html)|
 |[SQL Tutorial](http://sol.gfxile.net/g3/)|
+|[SQL Bolt Tutorials](https://sqlbolt.com/lesson/select_queries_introduction)|
 
 |Git|
 |:----|
 |[Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)|
 |[Git-It](http://jlord.us/git-it/index.html)|
+|[cURL Tutorial](https://gist.github.com/caspyin/2288960)|
+
 
 |Gatsby|
 |:----|
@@ -116,6 +124,7 @@
 |[Solar Winds Network Monitoring](https://www.solarwinds.com/free-tools)|
 |[Windows CLI](https://www.computerhope.com/issues/chusedos.htm)|
 |[Shadow IT](https://wikipedia.org/wiki/Shadow_IT)|
+|[Change OneDrive Location](https://www.howtogeek.com/232287/how-to-change-the-location-of-the-onedrive-folder-in-windows-10/)|
 
 |Other|
 |:----|
