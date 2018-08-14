@@ -3,13 +3,13 @@ title: "Get & Transform An RSS Feed"
 date: "2018-08-08"
 tags: ["Excel", "Power Query", "VBA"]
 ---
-
+> This was originally posted to Reddit, I copied it here for convenience
 ## Problem: Using Parameters
 
 I have a workbook that is set up as an Excel Table as follows:
 
-| Markdown Formula       |    News    | URL                                        |
-| :--------------------- | :--------: | :----------------------------------------- |
+| Markdown Formula | News | URL |
+|:---------------------:|:--------:|:-----------------------------------------|
 | ="["&A2&"]"&"("&B2&")" |    All     | https://www.investing.com/rss/news.rss     |
 | ="["&A3&"]"&"("&B3&")" | Technology | https://www.investing.com/rss/news_288.rss |
 | ="["&A4&"]"&"("&B4&")" | Technology | https://www.investing.com/rss/news_288.rss |

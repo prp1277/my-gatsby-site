@@ -6,7 +6,7 @@ tags: [ "Finance " , "Markets " , "Live " , "Widgets " ]
 
 ## Helpful Financial Information
 
-[Source]("https://www.investing.com/webmaster-tools/")
+[Source](https://www.investing.com/webmaster-tools/)
 
 I've created this page for the purpose of having a reliable `http://` address for my Power Queries. In this case, I plan on using the URL to create a query that pulls information from each of the tables. Once complete, I will make the file available in the `/src/data/` folder.
 
