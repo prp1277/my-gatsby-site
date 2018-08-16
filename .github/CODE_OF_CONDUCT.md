@@ -2,7 +2,7 @@
 
 ## First and Foremost: Everybody Love Everybody
 
-[Everybody Love Everybody](https://youtu.be/I0spFY1I2NQ)
+[![Everybody Love Everybody](https://youtu.be/I0spFY1I2NQ)](https://youtu.be/I0spFY1I2NQ)
 
 ## Our Pledge
 

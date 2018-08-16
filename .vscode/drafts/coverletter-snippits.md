@@ -12,11 +12,8 @@ Address Line 3
 #### { Greeting },
 
 [1] Paragraph about how I found the job listing and prereqs for it.
-
 [2] Paragraph explaining how I'll add value to the company.
-
 [3] Paragraph about my applicable experience doing x and y.
-
 [4] Paragraph explaining why I want the job.
 
 ## 1. Why I'm Qualified

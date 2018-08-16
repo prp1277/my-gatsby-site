@@ -1,0 +1,42 @@
+query AllFilesQuery {
+  allFile{
+    edges{
+      node{
+        relativePath
+        sourceInstanceName
+        internal {
+          type
+          description
+        }
+      }
+    }
+  }
+};
+
+###############
+# Output
+###############
+#{
+#  "data": {
+#    "allFile": {
+#      "edges": [
+#        {
+#          "node": {
+#            "relativePath": "CatastrophicFail.jpg",
+#            "sourceInstanceName": "img",
+#            "internal": {
+#              "type": "File",
+#              "description": "File \"src\\img\\CatastrophicFail.jpg\""
+#            }
+#          }
+#        },
+#        {
+#          "node": {
+#            "relativePath": "LinkedIn.jpg",
+#            "sourceInstanceName": "img",
+#            "internal": {
+#              "type": "File",
+#              "description": "File \"src\\img\\LinkedIn.jpg\""
+#            }
+#          }
+#        },
