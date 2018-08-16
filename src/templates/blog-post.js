@@ -1,7 +1,6 @@
 import React from "react"
 import Container from "../components/container"
-import Header from "../components/header"
-import Footer from "../components/footer"
+
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -36,9 +35,6 @@ export default ({ data }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
 
-        <center>
-          <p> Tags: {post.frontmatter.tags}</p>
-        </center>
       </Container>
 
     </div>
@@ -52,7 +48,6 @@ export const query = graphql`
       frontmatter {
         title
         date
-        tags
       }
     }
   }

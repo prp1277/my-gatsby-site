@@ -1,9 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
-import Header from "../components/header"
-import Footer from "../components/footer"
 import Container from "../components/container"
-require("prismjs/themes/prism-twilight.css")
 
 export default ({ data }) => {
   console.log(data)
@@ -23,7 +19,7 @@ export default ({ data }) => {
             <tbody>
               {data.allSitePage.edges.map(({ node }, index) => (
                 <tr key={index}>
-                  <td css={{ textAlign: `center` }}> {/*
+                  <td css={{ textAlign: `left` }}> {/*
                 [Link to node.path](node.path)
                 */}
                     <a href={node.path}>{node.path}</a>

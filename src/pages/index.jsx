@@ -1,7 +1,5 @@
 import React from "react"
 import Link from "gatsby-link"
-import Header from "../components/header"
-import Footer from "../components/footer"
 import Container from "../components/container"
 require("prismjs/themes/prism-okaidia.css")
 
@@ -37,49 +35,51 @@ export default ({ data }) => {
           Blog Posts
         </h1>
 
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div
-            className="card"
-            key={node.id}
-            css={{
-              display: `block`,
-              fontStyle: `Calibri`,
-              textAlign: `center`,
-              marginLeft: `auto`,
-              marginRight: `auto`,
-              marginTop: `auto`,
-              marginBottom: `auto`,
-              borderBottom: `2px solid #BBB`,
-              borderRight: `2px solid #BBB`,
-              borderLeft: `2px solid #BBB`,
-              backgroundColor: `#eaeaea`,
-            }}>
-            <Link
-              className="Blog-Post-Links"
-              to={node.fields.slug}>
-              <h2
-                className="Blog-Post-Title"
-                css={{
-                  borderBottom: `2px solid #BBB`,
-                  color: `#FFFFFF`,
-                  backgroundColor: `#005ba1`,
-                }}>
-                {node.frontmatter.title} <br />
-                <small>{node.frontmatter.date}</small>
-              </h2>
-            </Link>
-            <p
-              className="Tags-Link"
-              css={{ margin: `1rem`, textAlign: `center` }}>
-              {/* The rest is the actual content inside the card */}
-              <b>
-                Tags:<Link to={node.path}>{node.frontmatter.tags}</Link>
-              </b>
-              <br /> {node.excerpt}
-            </p>
-          </div>
-          //This is the end of the card
-        ))}
+        <div className="Card-Container">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div
+              className="card"
+              key={node.id}
+              css={{
+                display: `block`,
+                fontStyle: `Calibri`,
+                textAlign: `center`,
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                marginTop: `auto`,
+                marginBottom: `auto`,
+                borderBottom: `2px solid #BBB`,
+                borderRight: `2px solid #BBB`,
+                borderLeft: `2px solid #BBB`,
+                backgroundColor: `#eaeaea`,
+              }}>
+              <Link
+                className="Blog-Post-Links"
+                to={node.fields.slug}>
+                <h2
+                  className="Blog-Post-Title"
+                  css={{
+                    borderBottom: `2px solid #BBB`,
+                    color: `#FFFFFF`,
+                    backgroundColor: `#005ba1`,
+                  }}>
+                  {node.frontmatter.title}
+                </h2>
+              </Link>
+
+              <p className="Post-Date"
+                css={{ marginTop: `auto`, marginRight: `1rem`, marginLeft: `1rem`, textAlign: `center` }}><b>Updated: {node.frontmatter.date}</b></p>
+
+              <p
+                className="Excerpt"
+                css={{ marginTop: `auto`, marginRight: `1rem`, marginLeft: `1rem`, textAlign: `center` }}>{node.excerpt}
+
+              </p>
+
+            </div>
+            //This is the end of the card
+          ))}
+        </div>
       </Container>
 
     </div>
@@ -95,7 +95,7 @@ export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 10
+      limit: 5
     ) {
       totalCount
       edges {
@@ -103,7 +103,7 @@ export const query = graphql`
           id
           timeToRead
           tableOfContents
-          excerpt
+          excerpt(pruneLength: 150)
           frontmatter {
             title
             tags

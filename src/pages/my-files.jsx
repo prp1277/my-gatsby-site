@@ -11,16 +11,16 @@ export default ({ data }) => {
         <table>
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Relative Path</th>
-              <th css={{ textAlign: `center` }}>Static Location</th>
+              <th css={{ textAlign: `center` }}>Source</th>
+              <th css={{ textAlign: `center` }}>Path</th>
             </tr>
           </thead>
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td css={{ textAlign: `left` }}>./{node.relativePath}</td>
+                <td css={{ textAlign: `right` }}>/{node.sourceInstanceName}/</td>
                 <td css={{ textAlign: `left` }}>
-                  {node.publicURL}
+                  {node.relativePath}
                 </td>
                 {/* http://pat-facts.netlify.com/docs/mdutilities/sample-md-file/ */}
               </tr>
@@ -43,8 +43,13 @@ export const query = graphql`
     allFile {
       edges {
         node {
+          sourceInstanceName
           relativePath
           publicURL
+          internal {
+            type
+            description
+          }
         }
       }
     }

@@ -1,8 +1,7 @@
 import React from "react"
 import Container from "../components/container"
 
-export default ({ data }) => {
-  console.log(data)
+export default () => {
   return (
     <div className="About-Me-Content">
       <Container>
@@ -60,29 +59,8 @@ export default ({ data }) => {
           the bigger picture. Power BI opened my eyes to the fact that you can
           literally get data from anywhere.
         </p>
-        <p />
-        <p>Last Paragraph</p>
       </Container>
     </div>
   )
 }
 
-export const query = graphql`
-  query MyImagesQuery {
-    allImageSharp {
-      edges {
-        node {
-          original {
-            width
-            height
-            src
-          }
-          resolutions {
-            width
-            height
-          }
-        }
-      }
-    }
-  }
-`

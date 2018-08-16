@@ -22,4 +22,4 @@ const Container = ({ children }) => (
   </div>
 )
 
-export default ({ children }) => <Container>{children}</Container>
+export default ({ children }) => <Container>{children}<br /></Container>
