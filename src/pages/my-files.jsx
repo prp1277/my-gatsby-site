@@ -9,19 +9,21 @@ export default ({ data }) => {
       <Container>
         <h1 className="Page-Title"
           css={{ textAlign: `center` }}
-        >Index
+        >File References
         </h1>
+
+        <h2>All Files Query</h2>
 
         <table className="Files-Table">
           <thead>
             <tr>
               <th className="Col-1"
                 css={{ textAlign: `center` }}
-              >Source
+              >Source/Path
               </th>
               <th className="Col-2"
                 css={{ textAlign: `center` }}
-              >Path
+              >Static URL
                </th>
             </tr>
           </thead>
@@ -31,17 +33,37 @@ export default ({ data }) => {
               <tr key={index}>
 
                 <td className="Col-1-Graphql"
-                  css={{ textAlign: `right` }}
-                >/{node.sourceInstanceName}/
-                 </td>
+                  css={{ textAlign: `left` }}
+                >/{node.sourceInstanceName}/{node.relativePath}
+                </td>
 
                 <td className="Col-2-Graphql"
                   css={{ textAlign: `left` }}
-                >{node.relativePath}
+                >{node.publicURL}
                 </td>
 
               </tr>
             ))}
+          </tbody>
+        </table><br />
+
+        <h2>All Image Sharp Query</h2>
+
+        <table className="Images-Table">
+          <thead>
+            <tr>
+              <th>Image Name</th>
+              <th>Sizes</th>
+            </tr>
+          </thead>
+          <tbody className="Image-Details">
+            {data.allImageSharp.edges.map(({ node }, index) => (
+              <tr key={index}>
+                <td>{node.sizes.originalName}</td>
+                <td>{node.sizes.sizes}</td>
+              </tr>
+            )
+            )}
           </tbody>
         </table>
       </Container>
@@ -61,5 +83,16 @@ export const query = graphql`
         }
       }
     }
+    allImageSharp{
+    edges{
+      node{
+        sizes{
+          originalName
+          sizes
+          aspectRatio
+        }
+      }
+    }
   }
+}
 `
