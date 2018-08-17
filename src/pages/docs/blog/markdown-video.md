@@ -3,7 +3,7 @@ title: "Markdown Link Tutorial"
 date: "2018-08-10"
 tags: ["YouTube ", "Excel ", "Markdown ", "Blog "]
 ---
-
+<!-- Mp4 to Gif: https://www.onlineconverter.com/convert/11c5599d606be7ef5e3fc70d1e5ff2110e -->
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/FH_Ivm0MvrU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 ## Background Information
@@ -19,9 +19,11 @@ As I attempt to learn how to program I have a tendency to revert back to Excel a
 
 ## Set-Up
 
+
 <center><img src="https://prp1277.github.io/static/hyperlink-list-379263a4d593dcab892865a798a87f70.JPG" alt="hyperlink-list" width="500" height="300"></center>
 
 Setting up your workbook for this tutorial is extremely simple. All you need to do is create a list of hyperlinks in your workbook. It doesn't matter where they come from, all that matters is that they are formatted to have a text to display and an underlying address.
+
 
 <center><img src="https://prp1277.github.io/static/display-vs-address-761415ed384c49d525fe0ba0e0e4f4b9.JPG" alt="edit-hyperlink" width="500" height="300"></center>
 
@@ -84,10 +86,4 @@ We have the keystrokes down to an art, why don't we use the macro recorder to ta
 
 ```
 
-###
-
-[Mp4 to Gif](https://www.onlineconverter.com/convert/11c5599d606be7ef5e3fc70d1e5ff2110e)
-<!--
-## Developing the Solution
-In his book _Excel 2013: Power Programming with VBA_, John Walkenbach stresses the importance of using Excel's built-in macro recorder.
-> 
+Stay tuned for Part 2, where we'll dive into the recording output and finish up our template.

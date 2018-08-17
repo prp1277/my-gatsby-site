@@ -1,3 +1,5 @@
+# From Index.jsx
+
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(

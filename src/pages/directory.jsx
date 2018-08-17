@@ -4,7 +4,7 @@ import Container from "../components/container"
 export default ({ data }) => {
   console.log(data)
   return (
-    <div className="Directory-Content">
+    <div>
       <Container >
         <div className="Directory-Page">
           <h1>Directory</h1>
@@ -14,15 +14,22 @@ export default ({ data }) => {
                 <th css={{ textAlign: `center` }}>
                   Links ({data.allSitePage.totalCount} Total)
               </th>
+                <th css={{ textAlign: `center` }}>
+                  jsonName
+              </th>
               </tr>
             </thead>
             <tbody>
               {data.allSitePage.edges.map(({ node }, index) => (
                 <tr key={index}>
-                  <td css={{ textAlign: `left` }}> {/*
+                  <td css={{ textAlign: `left` }}>
+                    {/*
                 [Link to node.path](node.path)
                 */}
                     <a href={node.path}>{node.path}</a>
+                  </td>
+                  <td>
+                    {node.jsonName}
                   </td>
                 </tr>
               ))}
@@ -42,6 +49,7 @@ export const query = graphql`
         node {
           path
           id
+          jsonName
         }
       }
     }

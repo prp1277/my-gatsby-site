@@ -17,7 +17,7 @@ export default ({ data }) => {
     <div className="BLOG-POST-TEMPLATE">
 
       <Container>
-        <h1
+        <h1 className="Blog-Post-Title"
           css={{
             textAlign: `center`,
             marginLeft: `auto`,
@@ -25,10 +25,11 @@ export default ({ data }) => {
           }}>
           {post.frontmatter.title}
         </h1>
-        <p css={{ textAlign: `center` }}>
+        <p className="Last-Updated"
+          css={{ textAlign: `center` }}>
           <b>Updated -</b> {post.frontmatter.date}
         </p>
-
+        {/* Everything below this point is a transformed Markdown Doc */}
         <div
           className="mdContent"
           css={{ marginLeft: `auto`, marginRight: `auto`, maxWidth: `42rem` }}

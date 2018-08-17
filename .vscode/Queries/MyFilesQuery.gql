@@ -1,3 +1,5 @@
+# From My-Files.jsx
+
 export const query = graphql`
   query MyFilesQuery {
     site {

@@ -7,22 +7,39 @@ export default ({ data }) => {
     <div className="My-Files-Content">
 
       <Container>
-        <h1 css={{ textAlign: `center` }}>Index</h1>
-        <table>
+        <h1 className="Page-Title"
+          css={{ textAlign: `center` }}
+        >Index
+        </h1>
+
+        <table className="Files-Table">
           <thead>
             <tr>
-              <th css={{ textAlign: `center` }}>Source</th>
-              <th css={{ textAlign: `center` }}>Path</th>
+              <th className="Col-1"
+                css={{ textAlign: `center` }}
+              >Source
+              </th>
+              <th className="Col-2"
+                css={{ textAlign: `center` }}
+              >Path
+               </th>
             </tr>
           </thead>
+
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td css={{ textAlign: `right` }}>/{node.sourceInstanceName}/</td>
-                <td css={{ textAlign: `left` }}>
-                  {node.relativePath}
+
+                <td className="Col-1-Graphql"
+                  css={{ textAlign: `right` }}
+                >/{node.sourceInstanceName}/
+                 </td>
+
+                <td className="Col-2-Graphql"
+                  css={{ textAlign: `left` }}
+                >{node.relativePath}
                 </td>
-                {/* http://pat-facts.netlify.com/docs/mdutilities/sample-md-file/ */}
+
               </tr>
             ))}
           </tbody>
@@ -35,21 +52,12 @@ export default ({ data }) => {
 
 export const query = graphql`
   query MyFilesQuery {
-    site {
-      siteMetadata {
-        siteURL
-      }
-    }
     allFile {
       edges {
         node {
           sourceInstanceName
           relativePath
           publicURL
-          internal {
-            type
-            description
-          }
         }
       }
     }
