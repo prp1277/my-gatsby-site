@@ -30,23 +30,9 @@ const Header = props => (
     <ul className="nav navbar-nav" css={{ listStyle: `none` }}>
       <li>
         <a
-          href="/directory/"
-          css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          Directory
-        </a>
-      </li>
-      <li>
-        <a
           href="/resources/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          Resources
-        </a>
-      </li>
-      <li>
-        <a
-          href="/pages/docs/md/resume/"
-          css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
-          Resume
+          Links
         </a>
       </li>
       <li>
@@ -54,6 +40,13 @@ const Header = props => (
           href="/about/"
           css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
           About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/directory/"
+          css={{ float: `right`, marginRight: `1rem`, color: `snow` }}>
+          Pages
         </a>
       </li>
       <li>
