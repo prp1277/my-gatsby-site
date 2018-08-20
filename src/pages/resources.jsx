@@ -196,9 +196,7 @@ export default () => (
                 <a href="http://tinylizard.com/" alt="Scott Senkeresty">
                     tinylizard - Scott Senkeresty
         </a>
-                <br />
             </ul>
-            <br />
         </Container>
 
     </div>

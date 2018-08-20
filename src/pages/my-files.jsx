@@ -52,14 +52,14 @@ export default ({ data }) => {
         <table className="Images-Table">
           <thead>
             <tr>
-              <th>Image Name</th>
+              <th>img src=".."</th>
               <th>Sizes</th>
             </tr>
           </thead>
           <tbody className="Image-Details">
             {data.allImageSharp.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td>{node.sizes.originalName}</td>
+                <td>{node.original.src}</td>
                 <td>{node.sizes.sizes}</td>
               </tr>
             )
@@ -86,6 +86,9 @@ export const query = graphql`
     allImageSharp{
     edges{
       node{
+        original{
+          src
+        }
         sizes{
           originalName
           sizes

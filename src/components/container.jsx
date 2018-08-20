@@ -1,11 +1,10 @@
-import react from "react"
+import React from "react"
 import Header from "./header"
 import Footer from "./footer"
 
 const Container = ({ children }) => (
   <div className="Container-Component"
     css={{
-      marginLeft: "1rem"
       maxWidth: `100%`,
       marginBottom: 0,
       backgroundColor: `#FFFFFF`,

@@ -1,7 +1,10 @@
 query MyImagesQuery{
-  allImageSharp{
+    allImageSharp{
     edges{
       node{
+        original{
+          src
+        }
         sizes{
           originalName
           sizes
