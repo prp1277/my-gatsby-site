@@ -20,3 +20,6 @@ let
     #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom1",{{"File Path", type text}, {"First Date", type date}})
 in
     #"Changed Type1"
+
+// If you have a list that you want to use as a parameter
+each List.ContainsAny(ListQuery, {[ValueField]})

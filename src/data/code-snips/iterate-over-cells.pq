@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
-src: https://www.reddit.com/r/PowerBI/comments/8ls3fo/iterating_over_each_cell_in_a_column_in_power/
-Set-up Parameters for websites
+    src: https://www.reddit.com/r/PowerBI/comments/8ls3fo/iterating_over_each_cell_in_a_column_in_power/
+    Set-up Parameters for websites
 -----------------------------------------------------------------------------*/
 
 let
@@ -15,7 +15,7 @@ in
     #"Sorted Rows" 
 
 /*-----------------------------------------------------------------------------
-Iterate through each cell in Table3
+    Iterate through each cell in Table3
 -----------------------------------------------------------------------------*/
 let
 Source = Excel.CurrentWorkbook(){[Name="Table3"]}[Content],
@@ -26,3 +26,12 @@ Source = Excel.CurrentWorkbook(){[Name="Table3"]}[Content],
     #"Expanded Table.PromoteHeaders" = Table.ExpandTableColumn(#"Removed Other Columns", "Table.PromoteHeaders", {"Full name", "Toronto Football Club", "Montreal Impact (English)#(cr)#(lf)#(lf)Impact de Montréal (French)"}, {"Full name", "Toronto Football Club", "Montreal Impact (English)#(cr)#(lf)#(lf)Impact de Montréal (French)"})
 in
     #"Expanded Table.PromoteHeaders"
+
+
+let 
+Parameter = Excel.CurrentWorkbook(){[Name="Parameters"]}[Content],
+URL = Parameter[Value], //This gets us to the list of parameters
+Source = Web.Page(Web.Contents(URL)),
+Data0 = Source{0}[Data]
+in
+Data0

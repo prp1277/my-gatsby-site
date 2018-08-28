@@ -38,6 +38,14 @@ export default () => (
                     Data Organization in Spreadsheets
         </a>
                 <br />
+                <a href="http://dmcritchie.mvps.org/excel/colors.htm" alt="Excel-Colors">
+                    Excel Color Palette
+        </a>
+                <br />
+                <a href="https://www.powerquery.io/" alt="PowerQuery Reference">
+                    Power Query M Reference Guide
+        </a>
+                <br />
             </ul>
 
             <h2>RStudio</h2>

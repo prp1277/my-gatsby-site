@@ -6,7 +6,7 @@ fnGetaTick |u|Small_Trunks
 let
     Source =(pTicker as any)=> 
     let
-        Source = Json.Document(.Contents("https://api.iextrading.com/1.0/stock/market/batch?symbols="&pTicker&"&types=quote,stats,financials,company,peers")),
+        Source = Json.Document(Web.Contents("https://api.iextrading.com/1.0/stock/market/batch?symbols="&pTicker&"&types=quote,stats,financials,company,peers")),
         #"Converted to Table" = Record.ToTable(Source),
         #"Expanded Value" = Table.ExpandRecordColumn(#"Converted to Table", "Value",{"quote","stats","financials","company","peers"},{"quote", "stats", "financials", "company", "peers"})
     in

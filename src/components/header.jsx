@@ -1,9 +1,11 @@
 import React from "react"
 import Link from "gatsby-link"
+
 /*
 **Set navbar to float left and then use the left-sidebar as a right sidebar instead 
 using the headers of the document to fully integrate the Microsoft look         */
 //Should be a Functional Component that is reusable on all pages
+
 const Header = props => (
   <nav
     className="navbar navbar-inverse navbar-fixed-top"
