@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        "react",
+        "jsx-ally",
+        "import"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-console": 1
+    }
+}

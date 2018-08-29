@@ -3,10 +3,10 @@
 # Command is build command
 # Base is directory to change to before building - that's where it'll look for package.json
 #
-# [build]
+ [build]
 #  base = "public/"
-#  publish = "public/"
-#  command = "gatsby build"
+  publish = "public"
+  command = "gatsby build"
 #
 # Production context:
 # All deploys to main repository branch
