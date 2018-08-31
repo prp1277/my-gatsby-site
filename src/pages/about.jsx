@@ -31,7 +31,7 @@ export default () => {
         <p>Email: <a href="Mailto:prp1277@gmail.com" alt="email">Prp1277@gmail.com</a></p>
         <p>Cell Phone: <a href="tel:14024159083" alt="mobile">402-415-9083</a></p>
         <p>LinkedIn Profile: <a href="https://linkedin.com/in/prpowell1277/" alt="linkedin">/in/prpowell1277</a></p>
-        <p>Resume: <a href="https://1drv.ms/w/s!AoLkNBOSNnKyhel7Dp8q06YYxobiHQ" alt="word-resume">.docx |</a><a href="https://prp1277.github.io/pages/docs/md/resume/" alt="web-resume"> web page</a></p>
+        <p>Resume: <a href="https://1drv.ms/w/s!AoLkNBOSNnKyhel7Dp8q06YYxobiHQ" alt="word-resume">.docx |</a><a href="http://pat-facts.netlify.com/resume/" alt="web-resume"> web page</a></p>
 
       </Container>
     </div>

@@ -8,12 +8,14 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-offline`,
-    `gatsby-plugin-twitter`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {

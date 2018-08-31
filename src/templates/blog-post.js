@@ -22,13 +22,10 @@ export default ({ data }) => {
             textAlign: `center`,
             marginLeft: `auto`,
             marginRight: `auto`,
-          }}>
-          {post.frontmatter.title}
-        </h1>
+          }}>{post.frontmatter.title}</h1>
         <p className="Last-Updated"
           css={{ textAlign: `center` }}>
-          <b>Updated -</b> {post.frontmatter.date}
-        </p>
+          <b>Updated -</b> {post.frontmatter.date}</p>
         {/* Everything below this point is a transformed Markdown Doc */}
         <div
           className="mdContent"
