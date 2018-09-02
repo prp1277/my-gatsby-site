@@ -62,4 +62,3 @@ typings/
 /.cache/
 public
 yarn-error.log
-src/pages/md/calendar.md
