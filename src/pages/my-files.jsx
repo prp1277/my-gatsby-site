@@ -1,51 +1,36 @@
-import React from "react"
-import Container from "../components/container"
+import React from "react";
+import Container from "../components/container";
 
 export default ({ data }) => {
-  console.log(data)
+  console.log(data);
   return (
     <div className="My-Files-Content">
-
       <Container>
-        <h1 className="Page-Title"
-          css={{ textAlign: `center` }}
-        >File References
-        </h1>
+        <h1 className="Page-Title">File References</h1>
 
         <h2>All Files Query</h2>
 
         <table className="Files-Table">
           <thead>
             <tr>
-              <th className="Col-1"
-                css={{ textAlign: `center` }}
-              >Source/Path
-              </th>
-              <th className="Col-2"
-                css={{ textAlign: `center` }}
-              >Static URL
-               </th>
+              <th className="Col-1">Source/Path</th>
+              <th className="Col-2">Static URL</th>
             </tr>
           </thead>
 
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
-
-                <td className="Col-1-Graphql"
-                  css={{ textAlign: `left` }}
-                >/{node.sourceInstanceName}/{node.relativePath}
+                <td className="Col-1-Graphql">
+                  /{node.sourceInstanceName}/{node.relativePath}
                 </td>
 
-                <td className="Col-2-Graphql"
-                  css={{ textAlign: `left` }}
-                >{node.publicURL}
-                </td>
-
+                <td className="Col-2-Graphql">{node.publicURL}</td>
               </tr>
             ))}
           </tbody>
-        </table><br />
+        </table>
+        <br />
 
         <h2>All Image Sharp Query</h2>
 
@@ -62,15 +47,13 @@ export default ({ data }) => {
                 <td>{node.original.src}</td>
                 <td>{node.sizes.sizes}</td>
               </tr>
-            )
-            )}
+            ))}
           </tbody>
         </table>
       </Container>
-
     </div>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query MyFilesQuery {
@@ -83,19 +66,19 @@ export const query = graphql`
         }
       }
     }
-    allImageSharp{
-    edges{
-      node{
-        original{
-          src
-        }
-        sizes{
-          originalName
-          sizes
-          aspectRatio
+    allImageSharp {
+      edges {
+        node {
+          original {
+            src
+          }
+          sizes {
+            originalName
+            sizes
+            aspectRatio
+          }
         }
       }
     }
   }
-}
-`
+`;

@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "gatsby-link";
 import Container from "../components/container";
 require("prismjs/themes/prism-okaidia.css");
+require("../favicon.ico");
 
 /**
  * Themes from: https://github.com/PrismJS/prism/tree/1d5047df37aacc900f8270b1c6215028f6988eb1/themes
@@ -9,39 +9,27 @@ require("prismjs/themes/prism-okaidia.css");
  */
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <div className="Main">
       <Container className="Index-Page">
         <h1 className="Page-Title">Blog Posts</h1>
-        <div>
-          <div className="Card-Container">
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <div className="card" key={node.id}>
-                <h3 className="Blog-Post-Title">
-                  <Link className="Blog-Post-Links" to={node.fields.slug}>
-                    {node.frontmatter.title}
-                  </Link>
-                </h3>
-                <p>
-                  <b>-Updated: {node.frontmatter.date}</b>
-                </p>
-                {/*<p className="Post-Date">
-                <b>Updated:</b> {node.frontmatter.date}
-              </p>*/}
-              </div>
-            ))}
-          </div>
+
+        <div className="Card-Container">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <h3 className="Blog-Post-Title">
+                <a href={node.fields.slug}>{node.frontmatter.title}</a>
+              </h3>
+              <p>
+                <b>-Updated: {node.frontmatter.date}</b>
+              </p>
+            </div>
+          ))}
         </div>
       </Container>
     </div>
   );
 };
-
-/* This is the query that creates the feedr
-** TODO - Create card component to mimic  
-**   a reddit / outlook display
-*/
 
 export const query = graphql`
   query IndexQuery {
