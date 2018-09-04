@@ -35,13 +35,6 @@ module.exports = {
         path: `${__dirname}/src/img`
       }
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "data",
-        path: `${__dirname}/src/data`
-      }
-    },
     `gatsby-plugin-glamor`,
     {
       resolve: "gatsby-source-filesystem",
