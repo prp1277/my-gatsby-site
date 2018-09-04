@@ -5,9 +5,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "dev": "npm run develop",
-    "serve": "gatsby build && gh-pages -d public -b master",
-    "build": "gatsby build && gh-pages -d public -b master",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "build:pp": "gatsby build --prefix-paths",
+    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js, .jsx.",
     "format:js": "prettier '**/*.{js,jsx}' --write"
@@ -26,7 +27,6 @@
     "gatsby-plugin-offline": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sharp": "^1.6.46",
-    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-remark-copy-linked-files": "^1.5.35",
     "gatsby-remark-prismjs": "^2.0.4",

@@ -3,7 +3,7 @@ module.exports = {
     title: "Pat Facts",
     author: "Patrick Powell",
     description: "My Personal and Professional Blog",
-    siteURL: "https://prp1277.github.io",
+    siteURL: "https://prp1277.github.io"
   },
 
   plugins: [
@@ -14,71 +14,47 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     {
-      resolve: `gatsby-plugin-sitemap`
-    },
-    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: "UA-115800548-1",
         includeInDevelopment: true,
         gtmAuth: "",
-        gtmPreview: "",
-      },
+        gtmPreview: ""
+      }
     },
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: ["gatsby-remark-responsive-iframe"],
-      },
+        plugins: ["gatsby-remark-responsive-iframe"]
+      }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "img",
-        path: `${__dirname}/src/img`,
-      },
+        path: `${__dirname}/src/img`
+      }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "data",
-        path: `${__dirname}/src/data`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "blog",
-        path: `${__dirname}/src/pages/docs/blog`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "excel",
-        path: `${__dirname}/src/pages/docs/excel`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "markdown",
-        path: `${__dirname}/src/pages/docs/md`,
-      },
+        path: `${__dirname}/src/data`
+      }
     },
     `gatsby-plugin-glamor`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "prp1277.github.io",
-        path: `${__dirname}/src/`,
-      },
+        path: `${__dirname}/src/`
+      }
     },
     {
       resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: `/src/utils/typography`,
-      },
+        pathToConfigModule: `/src/utils/typography`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -89,11 +65,11 @@ module.exports = {
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {},
-            },
-          },
-        ],
-      },
+              aliases: {}
+            }
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-netlify`,
@@ -104,11 +80,11 @@ module.exports = {
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
-    },
-  ],
-}
+        generateMatchPathRewrites: true // boolean to turn off automatic creation of redirect rules for client only paths
+      }
+    }
+  ]
+};
 
 /* Place configuration options in your gatsby-config.js
 
