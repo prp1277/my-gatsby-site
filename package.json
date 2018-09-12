@@ -39,6 +39,7 @@
     "react-helmet": "^5.2.0",
     "typography-theme-bootstrap": "^0.16.7",
     "typography-theme-github": "^0.15.10",
+    "typography-theme-irving": "^0.15.10",
     "typography-theme-wikipedia": "^0.15.11"
   },
   "devDependencies": {
