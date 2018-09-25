@@ -60,5 +60,5 @@ typings/
 .env
 /.vscode/_test_
 /.cache/
-public/static
+public/
 yarn-error.log

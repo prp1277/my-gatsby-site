@@ -1,16 +1,24 @@
 import Typography from "typography";
-import githubTheme from "typography-theme-github";
-githubTheme.baseFontSize = `16px`;
+import irvingTheme from "typography-theme-irving";
 
-const typography = new Typography(githubTheme);
+irvingTheme.baseFontSize = `18px`;
+irvingTheme.headerFontFamily = ["Trebuchet MS Bold"];
+irvingTheme.bodyFontFamily = ["Trebuchet MS"];
+irvingTheme.blockMarginBottom = `1.5rem`;
+
+const typography = new Typography(irvingTheme);
 
 export default typography;
 
 /** Additional Themes:
  *  import bootstrapTheme from "typography-theme-bootstrap"
- *
+ *  import moragaTheme from "typography-theme-moraga"
+ *  import moragaTheme from "typography-theme-irving"
  *  import wikipediaTheme from "typography-theme-wikipedia";
- *  wikipediaTheme.baseFontSize = `18px`
- *  const typography = new Typography(wikipediaTheme);
  *
+ * <--- Template --->
+ * import Typography from "typography";
+ * import {X}Theme from "typography-theme-{X}";
+ * {X}Theme.baseFontSize = `{i}px`;
+ * const typography = new Typography({X}Theme);
  */
